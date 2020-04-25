@@ -1,0 +1,38 @@
+﻿ 
+
+.con {  width: 100%; text-align: center; padding-top: 100px;   } 
+
+.con .form {  margin: auto;}
+.con .form .title { height: 80px; font-size: 20px; padding: 0px 35px; padding-top: 36px; text-align: left; color: #5DBFF9; }
+.con .form .bottom { position: relative; width: 400px; left: calc(0% - 25px); }
+ 
+.con .form input { padding-left: 1%; border-radius: 2px;     
+     line-height: 28px;
+    height: 40px; width: 280px; border: 0; border: 1px rgba(29,60,80,0.12) solid; background-color: rgba(0,0,0,0.5); padding-left: 3%;color:#fff; }
+#msgtips{color:#fff;}
+
+.con .form .name,
+.con .form .pass { padding-top: 5px; color: #fff; padding-bottom: 20px; }
+.con .form .formimg{
+    padding: 20px 0px;}
+.con .form .formimg img{height: 60px;}
+
+.con .form .btn { padding: 0; color: #fff; margin-top: 10px; }
+.con .form .icheck { padding: 0px 35px; padding-top: 20px; text-align: left; font-size: 14px; color: #5DBFF9; }
+.con .form .icheck .icheckbox_square-blue { margin-right: 10px; }
+.con .form .icheck .icheckfont { display: inline-block; }
+.con .form #loginform { height: 80% !important; }
+
+.con .form .btn input { letter-spacing: 14px; padding-left: 5%; transition: all 1s ease 0s; background: #5DBFF9; }
+
+.con .form .btn input:hover,
+.con .form .btn input:focus{background:#5DBF9E;}
+
+.footer { position: fixed; bottom: 0px; text-align: center; width: 100%; background-color: #fff; }
+.footer img { width: 100%; }
+
+/*@media only screen and (max-height: 870px) {
+    .footer,
+    .header { position: static; }
+    .con { padding-top: 0; }
+}*/

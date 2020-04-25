@@ -1,0 +1,24 @@
+.mui-bar{
+	-webkit-backface-visibility: visible;
+	backface-visibility: visible;
+}
+.heating_nav{
+	padding: 10px;
+}
+.heating_nav ul{
+	border: 1px #fff solid; 
+	border-radius: 4px;
+}
+.heating_nav ul li{
+	padding: 8px;
+}
+.liactive{
+	background-color: #fff; 
+}
+.liactive a{
+	color: #000 !important;
+}
+.con{ 
+	height: calc(100vh - 105px); 
+	overflow: auto;
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; " charset="utf-8"/> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">   <!-- 在IE运行最新的渲染模式 -->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+      <!--CSS-->
+    <link rel="stylesheet" href="../assets/css/reset.css"  type="text/css" />
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/statistics.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="../assets/plugins/gauge/css/gauge.css">
+	<link rel="stylesheet" href="../assets/plugins/check/css/blue.css" />
+	<script src="../assets/plugins/ie_more/repond.js" type="text/javascript" charset="utf-8"></script> 
+    <!--JS-->
+    <script type="text/javascript" src="../assets/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- gauge-->
+    <script src="../assets/plugins/gauge/js/excanves.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../assets/plugins/gauge/js/jquery.AshAlom.gaugeMeter-2.0.0.min.js"></script>
+    <!--fullpage-->
+	<script src="../assets/plugins/fullpage/js/jquery.easings.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../assets/plugins/fullpage/js/jquery.slimscroll.js" ></script>
+	<script src="../assets/plugins/fullpage/js/jquery.fullPage.js"></script>
+	<!--图表-->
+	<script src="../assets/plugins/chart/js/jquery.animsition.min.js"></script>
+	<script src="../assets/plugins/chart/js/echarts.min.js"></script>
+	<script src="../assets/plugins/chart/js/macarons .js"></script>
+	<script src="../assets/plugins/chart/js/charts_forecast.js" type="text/javascript" charset="utf-8"></script>
+	<!--数据-->
+	<script src="../assets/plugins/check/js/icheck.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../assets/plugins/check/js/check_aside.js" type="text/javascript" charset="utf-8"></script>
+
+	<!--数字动画-->
+	<script src="../assets/plugins/number/jquery.waypoints.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../assets/plugins/number/jquery.countup.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="../assets/js/statistics.js"></script>
+</head>
+<body >
+	<div id="fullpage">
+		<div class="all_data container-fiuld  section">
+	    	<!--头部-->
+	        <div class="header clearfix hidden-xs">
+	                <div class="row  clearfix">
+	                    <div class=" col-lg-5 col-md-6 col-sm-6 col-xs-6 pull-left logo_all clearfix   ">
+	                        <div class="logo  pull-left">
+	                            <img src="../assets/img/logo.png" alt="Alternate Text" align="absmiddle" />
+	                            <span class=" hidden-sm hidden-xs">建筑综合性能监督平台</span>
+	                        </div>
+	                        <div class="cloud clearfix  pull-left  hidden-xs">
+	                        	<ul class="clearfix">
+										<li><img src="../assets/img/cloud.png" alt="" /></li>
+										<li><a href="">多云</a>&nbsp;<span class="more_cloud">30</span>m</li>
+										<li><a href="">PM2.5</a>&nbsp;<span class="PM2.5">36</span>m</li>
+										<li class="border0"><a href="">湿度</a>&nbsp;<span class="">77</span>m</li>
+									</ul>
+	                        </div>
+	                    </div>
+	                    <div class=" col-lg-3 col-md-6 col-sm-6 col-xs-6  more  pull-right clearfix">
+								<ul class="pull-right clearfix">
+									<li ><img src="../assets/img/sir.png" alt="" /></li>
+									<li><img src="../assets/img/mes.png" alt="" /></li>
+									<li><img src="../assets/img/sys.png" alt="" /></li>
+									<li><img src="../assets/img/person.png" alt="" /></li>
+									<li class="padding0"><a href=""  class=" hidden-sm hidden-xs">欢迎您，超级管理员</a></li>
+								</ul>
+	                    </div>
+	                </div>
+	        </div>
+	        <!--导航-->
+		    <nav class="navbar navbar-default navbar-inverse"id="nav_all">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header clearfix">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="colorwhite">更多</span>
+			      </button>
+			      <a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#"><span>能耗预测</span></a>
+			    </div>
+			
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			       		<li ><a href="index.html">能耗总览</a></li>
+				 		<li ><a href="subentry.html" >分项能耗</a></li>
+				 		<li ><a href="facility.html">设备能耗</a></li>
+				 		<li ><a href="analyze.html">能耗分析</a></li>
+				 		<li ><a href="contrast.html">能耗对比</a></li>
+				 		<li ><a href="forecast.html"class="nav_active">能耗预测</a></li>
+				 		<li ><a href="benchmarking.html" >能耗对标</a></li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+	 		<!--内容-->
+	 		<div class="con container-fiuld" >
+	 			<!--能耗预测-->
+		  		<div class="pandect_con container-fiuld bench">
+				 		<div class=" dataf pull-left first100 ">
+				 			<div class="dataf_kind">
+				 				<div class="title clearfix">
+				 					<div class="title_kind ">
+				 						<img src="../assets/img/electricity.png" alt="" class="data_img"/>
+				 						<span class="dataf_font"><span class="liebie">A12F照明插座</span>&nbsp;（<span class="danwei">kw·h</span>）</span>
+				 					</div>
+				 					<div class=" sel ">
+					 					<select name="" size="1" class="data_time">
+					 						<option value="今日">今日</option>
+					 						<option value="昨日">昨日</option>
+					 						<option value="本周">本周</option>
+					 						<option value="上周">上周</option>
+					 					</select>
+					 					
+				 					</div>
+				 					<button class="dataf_point  colorwhite btn-primary">分项指标》</button>
+				 					<div class="dataf_point_more">
+				 						  <div class="builder-list clear">
+									        	<h5 class="list_title"><span class="glyphicon glyphicon-arrow-right back"></span>分线指标筛选</h5>
+									        	<!--1-->
+									          <ul class="checklist">
+									          	 <li class="border_bottom">
+									             选择区域
+									            </li>
+									            <li>
+									              <input  type="radio" id="add-1" class="check1" name="po" checked="checked">
+									              <label for="add-1">区域1</label>
+									            </li>
+									            <li>
+									              <input  type="radio" id="add-2" class="check1"   name="po">
+									              <label for="add-2">区域2</label>
+									            </li>
+									            <li>
+									              <input  type="radio" id="add-3" class="check1"  name="po" >
+									              <label for="add-3">区域3</label>
+									            </li>
+									          </ul>
+									          <!--2-->
+									          <ul class="checklist">
+									          	 <li class="border_bottom">
+									              <input  type="checkbox" class="checkall" id="ele" >
+									              <label for="ele">电</label>
+									            </li>
+									          	 <li >
+									              <input  type="checkbox" class="check1" id="light_ele" >
+									              <label for="light_ele">照明用电</label>
+									            </li>
+									          	 <li >
+									              <input  type="checkbox" class="check1" id="cold_ele" >
+									              <label for="cold_ele">空调用电</label>
+									            </li>
+									          	 <li >
+									              <input  type="checkbox" class="check1" id="fast_ele" >
+									              <label for="fast_ele">动力用电</label>
+									            </li>
+									          </ul>
+									           <!--3-->
+									          <ul class="checklist">
+									          	 <li class="border_bottom">
+									              <input  type="checkbox" class="checkall" id="water" >
+									              <label for="water">水</label>
+									            </li>
+									          	 <li >
+									              <input  type="checkbox" class="check1" id="hot_water" >
+									              <label for="hot_water">采暖空调补水</label>
+									            </li>
+									          	 <li >
+									              <input  type="checkbox" class="check1" id="green_water" >
+									              <label for="green_water">绿化用水</label>
+									            </li>
+									          	 <li >
+									              <input  type="checkbox" class="check1" id="left_water" >
+									              <label for="left_water">动力用电</label>
+									            </li>
+									          </ul>
+									          <!--4-->
+									          <ul class="checklist">
+									          	 <li class="border_bottom">
+									              <input  type="checkbox" class="checkall" id="hot" >
+									              <label for="hot">热</label>
+									            </li>
+									          	 <li >
+									              <input  type="checkbox" class="check1" id="hot_user" >
+									              <label for="hot_user">采暖用热</label>
+									            </li>
+									          	 <li >
+									              <input  type="checkbox" class="check1" id="left_user" >
+									              <label for="left_user">生活用热</label>
+									            </li>
+									          </ul>
+									           <!--5-->
+									          <ul class="checklist">
+									          	 <li class="border_bottom">
+									              <input  type="checkbox" class="checkall" id="gas" >
+									              <label for="gas">气</label>
+									            </li>
+									          	 <li >
+									              <input  type="checkbox" class="check1" id="eat_gas" >
+									              <label for="eat_gas">食堂用气</label>
+									            </li>
+									          	 <li >
+									              <input  type="checkbox" class="check1" id="oth_gas" >
+									              <label for="oth_gas">其他用气</label>
+									            </li>
+									          </ul>
+									            <!--6-->
+									          <ul class="checklist">
+									          	 <li class="border_bottom">
+									              <input  type="checkbox" class="checkall" id="diff" >
+									              <label for="diff">特殊</label>
+									            </li>
+									          	 <li >
+									              <input  type="checkbox" class="check1" id="sun" >
+									              <label for="sun">太阳能</label>
+									            </li>
+									          	 <li >
+									              <input  type="checkbox" class="check1" id="sun_hot" >
+									              <label for="sun_hot">地源热泵</label>
+									            </li>
+									          </ul>
+									        <input class="btn-primary btn-md  sub" type="submit" onclick="pointsel()"></input>
+				 						  </div>
+				 					</div>
+				 				</div>
+				 				<p class="region"><span class="selpo">区域1</span><span class="glyphicon glyphicon-arrow-right pull-right"></span></p>
+				 				
+				 				<div class="main"  >
+									<div id="main1" ></div>
+				 				</div>
+				 				<div class="footer clearfix">
+				 					<ul class="clearfix">
+				 						<li><i class="i_ora"></i>实际值</li>
+				 						<li><i class="i_red"></i>预测值</li>
+				 					</ul>
+				 				</div>
+				 			</div>
+				 		</div>
+				`		<div class="dataview">
+							<table border="" cellspacing="" cellpadding="" class="col-sm-12 col-xs-12 table_list">
+								<tr>
+									<td class="namef">
+										<ul class="clearfix name fontsize15">
+											<li>时间</li>
+										</ul>
+									</td>
+								</tr>
+								<tr>
+								<td class="namef">
+										<ul class="clearfix name fontsize14">
+											<li>实际</li>
+										</ul>
+								</td>
+								</tr>
+								<tr>
+									<td class="namef">
+										<ul class="clearfix name fontsize14">
+											<li>预测</li>
+										</ul>
+									</td>
+								</tr>
+								<tr >
+									<td class="print" >
+										<ul class="clearfix">
+											<li class="pull-left">
+												<div class=" clearfix">
+													<p class="print_img pull-left"><img src="../assets/img/educe.png" alt="" /></p>
+													<p class="print_pro pull-left">导出</p>
+												</div>
+											</li>
+											<li class="pull-left">
+												<div class=" clearfix">
+													<p class="print_img pull-left"><img src="../assets/img/print.png" alt="" /></p>
+													<p class="print_pro pull-left">打印</p>
+												</div>
+											</li>
+										</ul>
+									</td>
+								</tr>
+							</table>
+						</div>
+		  		</div>
+		  	</div>
+		</div>
+	</div>
+</body>
+</html>

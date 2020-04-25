@@ -1,0 +1,72 @@
+.mui-bar{
+	-webkit-backface-visibility: visible;
+	backface-visibility: visible;
+}
+.equip_nav{
+	padding: 10px;
+}
+.equip_nav ul{
+	border: 1px #fff solid; 
+	border-radius: 4px;
+}
+.equip_nav ul li{
+	padding: 8px;
+}
+.liactive{
+	background-color: #fff; 
+}
+.liactive a{
+	color: #000 !important;
+}
+.info-list{
+	height: calc(100vh - 120px); 
+	overflow: hidden; 
+}
+.info-a-list{
+	height: calc(100vh - 200px); 
+	overflow: auto; 
+	
+}
+#equip_list { 
+	padding: 10px;
+	border-radius: 4px; 
+	overflow: auto; 
+}
+#equip_list li{ 
+	margin-bottom: 10px;
+	line-height: 20px; 
+} 
+#equip_list li .licon{
+	padding:  15px; 
+}  
+#equip_list .litip li{
+	border-bottom: 1px #ECECEC solid;
+	line-height: 50px;
+}
+#equip_list .litip li p:nth-child(1){
+	width: 30%; 
+	text-align: center;
+}
+#equip_list .litip li p:nth-child(2){
+	width: 70%;
+}  
+.lipicture{
+	height: 50px;
+	margin-bottom: 10 px;
+}
+.lipicture img{
+	height: 50px;
+}
+.info-seach{
+	padding: 5px;
+}
+#infocon{ 
+	width: calc(100% - 40px);
+	line-height: 40px; 
+}
+#infocon li{
+	border-right: 1px #EEEEEE solid;
+}
+#infoadd{
+	width: 40px;
+}

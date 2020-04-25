@@ -1,0 +1,17 @@
+ .con{
+ 	padding: 10px;
+ }
+ .hotel{
+ 	padding: 10px;
+ 	margin-bottom: 10px;
+ }
+.hotel .hotelimg img{width: 100%;}
+.hotel .hotelinfo {
+	padding:5px 10px ;
+}
+.hotel .hoteltemp {
+	padding:  10px 0px ;
+}
+.hotel .hoteltemp li{
+	border-right: 1px #E4E4E4 dashed;
+}

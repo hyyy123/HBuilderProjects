@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title></title>
+	<script src="js/mui.min.js"></script>
+	<link href="css/mui.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/normal.css" />
+	<link rel="stylesheet" href="css/index.css" />
+	<link rel="stylesheet" href="plugins/font-awesome-4.7.0/css/font-awesome.css" />
+	<script src="plugins/jquery/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="plugins/jquery.cookie.js"  type="text/javascript" charset="utf-8"></script>
+	<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/sweep.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body class="index mui-bg-white">
+	<header class="mui-bar mui-bar-nav mui-bar-nav-bg"> 
+		<h1 class="mui-title" >供热站</h1> 
+	</header> 
+	<!--主页面底部选项卡-->
+	<nav class="mui-bar mui-bar-tab   mui-bar-nav-bg">
+		<a  class="mui-tab-item mui-active "  href="my_work/order_seacher.html">
+			<span class="mui-tab-label">我的工单</span>
+		</a>
+		<a class="mui-tab-item "  href="heating/heating_info.html">
+			<span class="mui-tab-label">供热信息</span>
+		</a>
+		<a class="mui-tab-item "  href="user/userinfo.html">
+			<span class="mui-tab-label border0">个人中心</span>
+		</a>
+	</nav>
+			<!-- 内容 -->
+		<div class="con  mui-content"> 
+			<!--头部-->
+			<div class="conhead">
+				<div class="conheadul"> 
+					<div class="conheadulcon clearfix" > 
+						<p class="headimg pull-left" ><img src="img/heating/hot.png" class="height100" alt="" /></p>
+						<ul class="pull-left width110px" >
+							<li>姓名：张三</li>
+							<li class="fontsize12 colorgray" >工号：20532345</li>
+						</ul>
+						<ul class="pull-left text-center text-red" >
+							<li><b class="fontfamily" >1</b></li>
+							<li><b>待处理</b></li>
+						</ul>
+						<ul class="pull-left text-center text-green" >
+							<li><b class="fontfamily" >1</b></li>
+							<li><b>已处理</b></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--尾部-->
+		<div class="confoot"> 
+			<ul class="confootul">
+				<li class="pull-left pool">
+					<!--<a href="index/robbery.html?type=1">-->
+						<img src="img/index/index1.png" alt="" />
+						<p class="colorblack">抢单</p>
+					<!--</a>-->
+				</li>
+				<li class="pull-left"  >
+					<a href="my_work/order_seacher.html">
+						<img src="img/index/index2.png" alt="" />
+						<p class="colorblack">工单查询</p>
+					</a>
+				</li>
+				<li class="pull-left">
+					<a href="heating/heating_info.html">
+						<img src="img/index/index3.png" alt="" />
+						<p class="colorblack">供热信息</p>
+					</a>
+				</li>
+				<li class="pull-left">
+					<a href="index/inspection.html">
+						<img src="img/index/index4.png" alt="" />
+						<p class="colorblack">巡检保修</p>
+					</a>
+				</li>
+				<li class="pull-left " id="equipcode" >
+					<a onclick="clicked('sweep.html',true,true)" >
+						<img src="img/index/index5.png" alt="" />
+						<p class="colorblack">设备扫一扫</p>
+					</a>
+				</li>
+				<li class="pull-left">
+					<a href="index/maintenance.html">
+						<img src="img/index/index6.png" alt="" />
+						<p class="colorblack">维保检修</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="list-pool-father hide" >
+		<div class="list-pool" >
+			<h4 class="text-center" >工单池</h4>
+			<ul>
+				<li class="clearfix">
+					<div class="pull-left clearfix bgcolorblue " >
+						<p class="headimg pull-left" ><img src="img/List_pool/call.png" class="height100" alt="" /></p>
+						<h3>用户来电</h3>
+					</div>
+					<div class="pull-left text-center">
+						<h2 class="colorblue fontfamily" >20</h2>
+						<p class="colorblack" ><a href="index/robbery.html?type=1">抢单</a></p>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="pull-left clearfix bgcolororange" >
+						<p class="headimg pull-left" ><img src="img/List_pool/question.png" class="height100" alt="" /></p>
+						<h3>巡检问题</h3>
+					</div>
+					<div class="pull-left text-center">
+						<h2 class="colororange fontfamily" >20</h2>
+						<p class="colorblack" ><a href="index/robbery.html?type=2">抢单</a></p>
+					</div>
+				</li>
+				<li class="clearfix">
+					<div class="pull-left clearfix bgcolorgreen" >
+						<p class="headimg pull-left" ><img src="img/List_pool/warn.png" class="height100" alt="" /></p>
+						<h3>平台报警</h3>
+					</div>
+					<div class="pull-left text-center">
+						<h2 class="colorgreen fontfamily" >20</h2>
+						<p class="colorblack" ><a href="index/robbery.html?type=3">抢单</a></p>
+					</div>
+				</li>
+			</ul>
+			<p class="text-center removep" ><span><i class="fa fa-remove" ></i></span></p>
+		</div> 
+	</div>
+	
+	
+</body> 
+</html>

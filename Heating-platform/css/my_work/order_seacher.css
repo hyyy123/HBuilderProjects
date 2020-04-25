@@ -1,0 +1,60 @@
+.mui-bar{
+	-webkit-backface-visibility: visible;
+	backface-visibility: visible;
+}
+.robbery_nav{
+	padding: 10px;
+} 
+.robbery_nav ul li a{
+	padding: 9px;
+}
+.navliactive{
+	border-bottom: 3px #fff solid;
+} 
+.robbery_select{ 
+	padding: 10px; 
+}
+.robbery_select a{
+	color: #000 !important;
+}
+.selectactive a{
+	color: #287DB6 !important;
+}  
+.info-list{
+	height: calc(100vh - 150px); 
+	overflow: auto; 
+}
+#robbery_list { 
+	padding: 10px;
+	border-radius: 4px;
+}
+#robbery_list li{
+	padding: 10px 15px;
+	margin-bottom: 10px;
+	line-height: 20px;
+	height: 85px;
+}
+#robbery_list .licon{
+	width: 100%;
+}
+#robbery_list .inspection_mark {
+	padding-top: 5px;
+}
+#robbery_list .inspection_mark span{
+	padding: 3px 8px;
+	margin-right: 5px;
+}
+#robbery_list .inspection_mark .red{
+	background: #FEECEE;
+	color: #DC4255;
+}
+#robbery_list .inspection_mark .orange{
+	background: #FFF7EA;
+	color: #F7B953;
+}
+#robbery_list .inspection_mark .blue{
+	background: #EDF5FF;
+	color: #75AAEA;
+} 
+
+

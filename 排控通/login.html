@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link rel="stylesheet" href="plugins/font-awesome-4.7.0/css/font-awesome.css" />
+
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<!--jquery-->
+		<script src="plugins/jquery/jquery-1.11.2.min.js"></script>
+		<!--bootstrap-->
+		<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+		<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+		<!--layer-->
+		<link rel="stylesheet" href="plugins/layer/theme/default/layer.css" />
+		<script src="plugins/layer/layer.js"></script>
+		<script src="plugins/layer/layerbox.js"></script>
+		<!--接口-->
+		<script src="js/lesson-apply/common.js"></script>
+		<!--<script src="js/lesson-apply/post_api_rms.js"></script>
+		<script src="js/lesson-apply/post_term.js"></script> -->
+			
+		<!--通用-->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/normal.css" /> 
+		<script src="js/ajax.js"></script>
+		<script src="js/common.js"></script>   
+		<!--自身-->
+		<script src="js/login.js"></script>
+	</head>
+
+	<body class="login">
+		<div class="logo">
+			<img src="img/login-logo.png" height="60" />
+			<h2>排控通</h2>
+		</div>
+		<div class="form" >
+			<div class="form_group">
+				<label>用户名</label>
+				<input type="text" id="txtUserName" class="login-text"  />
+			</div>
+			<div class="form_group">
+				<label>密码</label>
+				<input type="password" id="txtPassword" class="login-text" />
+			</div>
+			<div class="btn_group">
+				<input type="button" id="btnSubmit" class="login-btn" value="立即登录" onclick="btnSubmit_Click()" />
+			</div>
+			<div class="msg-tip">
+				<i class="fa fa-exclamation-circle"></i>
+				<span id="msgtip">请输入用户名和密码</span>
+			</div>
+		</div>
+		<div class="login-support">官方网站&nbsp;|&nbsp;技术支持热线：400-825-7699</div>
+	</body>
+
+</html>

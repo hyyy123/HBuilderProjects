@@ -1,0 +1,474 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; " charset="utf-8"/> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">   <!-- 在IE运行最新的渲染模式 -->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../assets/css/reset.css"  type="text/css" />
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/statistics.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="../assets/plugins/gauge/css/gauge.css">
+	<script src="../assets/plugins/ie_more/repond.js" type="text/javascript" charset="utf-8"></script> 
+    <!--JS-->
+    <script type="text/javascript" src="../assets/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- gauge-->
+    <script src="../assets/plugins/gauge/js/excanves.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../assets/plugins/gauge/js/jquery.AshAlom.gaugeMeter-2.0.0.min.js"></script>
+    <!--fullpage-->
+	<script src="../assets/plugins/fullpage/js/jquery.easings.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../assets/plugins/fullpage/js/jquery.slimscroll.js" ></script>
+	<script src="../assets/plugins/fullpage/js/jquery.fullPage.js"></script>
+	<!--图表-->
+	<script src="../assets/plugins/chart/js/jquery.animsition.min.js"></script>
+	<script src="../assets/plugins/chart/js/echarts.min.js"></script>
+	<script src="../assets/plugins/chart/js/macarons .js"></script>
+	<script src="../assets/plugins/chart/js/charts_index.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script src="js/common.js" type="text/javascript" charset="utf-8"></script>-->
+	<!--数字动画-->
+	<script src="../assets/plugins/number/jquery.waypoints.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../assets/plugins/number/jquery.countup.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="../assets/js/statistics.js"></script>
+</head>
+<body >
+	<div id="fullpage">
+		<div class="all_data container-fiuld  section">
+	    	<!--头部-->
+	        <div class="header clearfix hidden-xs">
+	                <div class="row  clearfix">
+	                    <div class=" col-lg-5 col-md-6 col-sm-6 col-xs-6 pull-left logo_all clearfix   ">
+	                        <div class="logo  pull-left">
+	                            <img src="../assets/img/logo.png" alt="Alternate Text" align="absmiddle" />
+	                            <span class=" hidden-sm hidden-xs">建筑综合性能监督平台</span>
+	                        </div>
+	                        <div class="cloud clearfix  pull-left  hidden-xs">
+	                        	<ul class="clearfix">
+										<li><img src="../assets/img/cloud.png" alt="" /></li>
+										<li><a href="">多云</a>&nbsp;<span class="more_cloud">30</span>m</li>
+										<li><a href="">PM2.5</a>&nbsp;<span class="PM2.5">36</span>m</li>
+										<li class="border0"><a href="">湿度</a>&nbsp;<span class="">77</span>m</li>
+									</ul>
+	                        </div>
+	                    </div>
+	                    <div class=" col-lg-3 col-md-6 col-sm-6 col-xs-6  more  pull-right clearfix">
+								<ul class="pull-right clearfix">
+									<li ><img src="../assets/img/sir.png" alt="" /></li>
+									<li><img src="../assets/img/mes.png" alt="" /></li>
+									<li><img src="../assets/img/sys.png" alt="" /></li>
+									<li><img src="../assets/img/person.png" alt="" /></li>
+									<li class="padding0"><a href=""  class=" hidden-sm hidden-xs">欢迎您，超级管理员</a></li>
+								</ul>
+	                    </div>
+	                </div>
+	        </div>
+	         <!--导航-->
+		    <nav class="navbar navbar-default navbar-inverse"id="nav_all">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header clearfix">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="colorwhite">更多</span>
+			      </button>
+			      <a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#"><span>能源总览</span></a>
+			    </div>
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			       		<li ><a href="index.html" class="nav_active">能耗总览</a></li>
+				 		<li ><a href="subentry.html">分项能耗</a></li>
+				 		<li ><a href="facility.html">设备能耗</a></li>
+				 		<li ><a href="analyze.html">能耗分析</a></li>
+				 		<li ><a href="contrast.html">能耗对比</a></li>
+				 		<li ><a href="forecast.html">能耗预测</a></li>
+				 		<li ><a href="benchmarking.html">能耗对标</a></li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+	 		<!--内容-->
+	 		<div class="con container-fiuld" >
+	 			<!--能耗总览页-->
+		 		<div class="pandect_con container-fiuld all_con">
+			 		<!--分类-->
+			 		<div class="pandect row ">
+			 				<ul class="clearfix small_width ">
+				 				<li>
+				 					<div class="pandect_kind kind_smallred">
+				 						<div class="title">
+				 							<img src="../assets/img/electricity.png" alt="" />
+				 							<span>耗电量</span>
+				 						</div>
+				 						<div class="main">
+				 							<div class="charts">
+				 								<!--仪表盘-->
+				 									<div class="GaugeMeter" id="PreviewGaugeMeter_1" data-percent="80" data-width="20" data-size="170"  data-color="#EB6867" data-back="RGBA(235,104,103,.4)"   data-append="t" data-label_color="#FFF">
+				 										<!--内部文字-->
+				 										<div class="GaugeMeter_num">
+				 											<p >今日</p>
+				 											<p class="timer counter" >239.25</p>
+				 											<p>kw·h</p>
+				 										</div>
+				 									</div>
+											</div>
+				 							<p class="clearfix all"><span class="pull-left ">预计全天耗电量</span> <span class="pull-right all_num">879.45<span class="danwei"> kw·h</span></span></p>
+				 						</div>
+				 					</div>
+				 				</li>
+				 				<li>
+				 					<div class="pandect_kind kind_smallyellow">
+				 						<div class="title">
+				 							<img src="../assets/img/water.png" alt="" />
+				 							<span>耗水量</span>
+				 						</div>
+				 						<div class="main">
+				 							<div class="charts">
+				 									<div class="GaugeMeter" id="PreviewGaugeMeter_2" data-percent="60" data-width="20" data-size="170"  data-color="#F39D15" data-back="RGBA(243,157,21,.4)"   data-append="t" data-label_color="#FFF">
+				 										<div class="GaugeMeter_num">
+				 											<p >今日</p>
+				 											<p class="timer counter" >56</p>
+				 											<p>t</p>
+				 										</div>
+				 									</div>
+											</div>
+				 							<p class="clearfix all"><span class="pull-left ">预计全天耗水量</span> <span class="pull-right all_num">124.5<span class="danwei"> t</span></span></p>
+				 						</div>
+				 					</div>
+				 				</li>
+				 				<li>
+				 					<div class="pandect_kind kind_smallgreen">
+				 					<div class="title">
+				 							<img src="../assets/img/gas.png" alt="" />
+				 							<span>耗气量</span>
+				 						</div>
+				 						<div class="main">
+				 							<div class="charts">
+				 								<div class="GaugeMeter" id="PreviewGaugeMeter_3" data-percent="75" data-width="20" data-size="170"  data-color="#45ADA7" data-back="RGBA(69,173,167,.4)"   data-append="t" data-label_color="#FFF">
+				 										<div class="GaugeMeter_num">
+				 											<p >今日</p>
+				 											<p class="timer counter" >143</p>
+				 											<p>m<sup>3</sup></p>
+				 										</div>
+				 								</div>
+											</div>
+				 							<p class="clearfix all"><span class="pull-left ">预计全天耗气量</span> <span class="pull-right all_num">145.2<span class="danwei"> m<sup>3</sup></span></span></p>
+				 						</div>
+				 					</div>
+				 				</li>
+				 				<li>
+				 					<div class="pandect_kind kind_smallblue">
+				 						<div class="title">
+				 							<img src="../assets/img/hot.png" alt=""  />
+				 							<span>耗热量</span>
+				 						</div>
+				 						<div class="main">
+				 							<div class="charts">
+				 								<div class="GaugeMeter" id="PreviewGaugeMeter_4" data-percent="30" data-width="20" data-size="170"  data-color="#66B9D3" data-back="RGBA(102,185,211,.4)"  data-append="t" data-label_color="#FFF">
+				 										<div class="GaugeMeter_num">
+				 											<p >今日</p>
+				 											<p class="timer counter" >560</p>
+				 											<p>GJ</p>
+				 										</div>
+				 								</div>
+											</div>
+				 							<p class="clearfix all"><span class="pull-left ">预计全天耗热量</span> <span class="pull-right all_num">1421.2 <span class="danwei"> GJ</span></span></p>
+				 					</div>
+				 					</div>
+				 				</li>
+				 				<li>
+				 					<div class="pandect_kind kind_smallgray">
+				 						<div class="title">
+				 							<img src="../assets/img/different.png" alt="" />
+				 							<span>特殊能源消耗</span>
+				 						</div>
+				 						<div class="main">
+				 							<div class="charts">
+				 								<div class="GaugeMeter" id="PreviewGaugeMeter_5" data-percent="40" data-width="20" data-size="170"  data-color="#A5BACB" data-back="RGBA(165,186,203,.4)"  data-append="t" data-label_color="#FFF">
+				 										<div class="GaugeMeter_num">
+				 											<p >今日</p>
+				 											<p class="timer counter" >12.29</p>
+				 											<p>kw·h</p>
+				 										</div>
+				 								</div>
+											</div>
+				 							<p class="clearfix all" ><span class="pull-left ">预计全天特殊能源耗量</span> <span class="pull-right all_num">45.71<span class="danwei" > kw·h</span></span></p>
+				 					</div>
+				 					</div>
+				 				</li>
+			 				</ul>
+			 				<ul class="clearfix big_width ">
+				 				<li>
+				 					<div class="pandect_kind kind_bigred clearfix">
+				 						<div class="title pull-left">
+				 							<img src="../assets/img/electricity.png" alt="" /><br />
+				 							<span>
+				 								耗<br />
+				 								电<br />
+				 								量</span>
+				 						</div>
+				 						<div class="main pull-right clearfix">
+				 							<div class="charts pull-left" id="chart1">
+				 							<!--仪表盘-->
+				 									<div class="GaugeMeter" id="PreviewGaugeMeter_6" data-percent="80" data-width="20" data-size="250"  data-color="#EB6867" data-back="RGBA(235,104,103,.4)"   data-append="t" data-label_color="#FFF">
+				 										<!--内部文字-->
+				 										<div class="GaugeMeter_num">
+				 											<p >今日</p>
+				 											<p class="timer counter" >239.25</p>
+				 											<p>kw·h</p>
+				 										</div>
+				 									</div>
+											</div>
+				 							<p class="pull-right all">
+				 								<span>
+				 								预<br />
+				 								计<br />
+				 								全<br />
+				 								天<br />
+				 								耗<br />
+				 								电<br />
+				 								量<br />
+				 								:<br />
+				 								<span class="all_num">879.45</span><br />
+				 								<span class="danwei">kw·h</span>
+				 								</span>
+				 							</p>
+				 						</div>
+				 					</div>
+				 				</li>
+				 				<li>
+				 					<div class="pandect_kind kind_bigyellow clearfix">
+				 						<div class="title pull-left">
+				 							<img src="../assets/img/water.png" alt="" /><br />
+				 							<span>
+				 								耗<br />
+				 								水<br />
+				 								量</span>
+				 						</div>
+				 						<div class="main pull-right clearfix">
+				 							<div class="charts pull-left" id="chart2">
+				 								<!--仪表盘-->
+				 									<div class="GaugeMeter" id="PreviewGaugeMeter_7" data-percent="60" data-width="20" data-size="250"  data-color="#EB6867" data-back="RGBA(235,104,103,.4)"   data-append="t" data-label_color="#FFF">
+				 										<!--内部文字-->
+				 										<div class="GaugeMeter_num">
+				 											<p >今日</p>
+				 											<p class="timer counter" >56</p>
+				 											<p>t</p>
+				 										</div>
+				 									</div>
+				 							</div>
+				 							<p class="pull-right all">
+				 								<span>
+				 								预<br />
+				 								计<br />
+				 								全<br />
+				 								天<br />
+				 								耗<br />
+				 								水<br />
+				 								量<br />
+				 								:<br />
+				 								<span class="all_num">124.5</span><br />
+				 								<span class="danwei">t</span>
+				 								</span>
+				 							</p>
+				 						</div>
+				 					</div>
+				 				</li>
+				 				<li>
+				 					<div class="pandect_kind kind_biggreen clearfix">
+				 						<div class="title pull-left">
+				 							<img src="../assets/img/gas.png" alt="" /><br />
+				 							<span>
+				 								耗<br />
+				 								气<br />
+				 								量</span>
+				 						</div>
+				 						<div class="main pull-right clearfix">
+				 							<div class="charts pull-left" id="chart3">
+				 								<!--仪表盘-->
+				 									<div class="GaugeMeter" id="PreviewGaugeMeter_8" data-percent="75" data-width="20" data-size="250"  data-color="#EB6867" data-back="RGBA(235,104,103,.4)"   data-append="t" data-label_color="#FFF">
+				 										<!--内部文字-->
+				 										<div class="GaugeMeter_num">
+				 											<p >今日</p>
+				 											<p class="timer counter" >143</p>
+				 											<p>m<sup>3</sup></p>
+				 										</div>
+				 									</div>
+				 							</div>
+				 							<p class="pull-right all">
+				 								<span>
+				 								预<br />
+				 								计<br />
+				 								全<br />
+				 								天<br />
+				 								耗<br />
+				 								气<br />
+				 								量<br />
+				 								:<br />
+				 								<span class="all_num">	145.2</span><br />
+				 								<span class="danwei">m<sup>3</sup></span>
+				 								</span>
+				 							</p>
+				 						</div>
+				 					</div>
+				 				</li>
+				 				<li>
+				 					<div class="pandect_kind kind_bigblue clearfix">
+				 						<div class="title pull-left">
+				 							<img src="../assets/img/hot.png" alt="" /><br />
+				 							<span>
+				 								耗<br />
+				 								热<br />
+				 								量</span>
+				 						</div>
+				 						<div class="main pull-right clearfix">
+				 							<div class="charts pull-left" id="chart4">
+				 								<!--仪表盘-->
+				 									<div class="GaugeMeter" id="PreviewGaugeMeter_9" data-percent="40" data-width="20" data-size="250"  data-color="#EB6867" data-back="RGBA(235,104,103,.4)"   data-append="t" data-label_color="#FFF">
+				 										<!--内部文字-->
+				 										<div class="GaugeMeter_num">
+				 											<p >今日</p>
+				 											<p class="timer counter" >560</p>
+				 											<p>GJ</p>
+				 										</div>
+				 									</div>
+				 							</div>
+				 							<p class="pull-right all" >
+				 								<span>
+				 								预<br />
+				 								计<br />
+				 								全<br />
+				 								天<br />
+				 								耗<br />
+				 								热<br />
+				 								量<br />
+				 								:<br />
+				 								<span class="all_num">1421.2</span><br />
+				 								<span class="danwei">GJ</span>
+				 								</span>
+				 							</p>
+				 						</div>
+				 					</div>
+				 				</li>
+					 			<li>
+				 					<div class="pandect_kind kind_biggray clearfix">
+				 						<div class="title pull-left">
+				 							<img src="../assets/img/different.png" alt="" /><br />
+				 							<span>
+				 								特<br />
+				 								殊<br />
+				 								能<br />
+				 								源<br />
+				 								耗<br />
+				 								量<br /></span>
+				 						</div>
+				 						<div class="main pull-right clearfix">
+				 							<div class="charts pull-left" id="chart5">
+				 								<!--仪表盘-->
+				 									<div class="GaugeMeter" id="PreviewGaugeMeter_10" data-percent="30" data-width="20" data-size="250"  data-color="#EB6867" data-back="RGBA(235,104,103,.4)"   data-append="t" data-label_color="#FFF">
+				 										<!--内部文字-->
+				 										<div class="GaugeMeter_num">
+				 											<p >今日</p>
+				 											<p class="timer counter" >12.29</p>
+				 											<p>kw·h</p>
+				 										</div>
+				 									</div>
+				 							</div>
+				 							<p class="pull-right all">
+				 								<span>
+				 								预<br />
+				 								计<br />
+				 								全<br />
+				 								天<br />
+				 								特<br />
+				 								殊<br />
+				 								能<br />
+				 								源<br />
+				 								耗<br />
+				 								量<br />
+				 								:<br />
+				 								<span class="all_num">45.71</span><br />
+				 								<span class="danwei">kw·h</span>
+				 								</span>
+				 							</p>
+				 						</div>
+				 					</div>
+				 				</li>
+			 				</ul>
+			 			</div>
+			 		<!--数据展现-->
+			 		<div class="data clearfix">
+				 		<div class=" dataf pull-left first80">
+				 			<div class="dataf_kind">
+				 				<div class="title clearfix">
+				 					<div class="title_kind pull-left">
+				 						<img src="../assets/img/electricity.png" alt="" class="data_img"/>
+				 						<span class="dataf_font"><span class="liebie">耗电量</span><span class="danwei">&nbsp;kw·h</span></span>
+				 					</div>
+				 					<div class="pull-left">
+					 					<select name="" size="1" class="data_time">
+					 						<option value="今日">今日</option>
+					 						<option value="昨日">昨日</option>
+					 						<option value="本周">本周</option>
+					 						<option value="上周">上周</option>
+					 					</select>
+					 					<select name="" size="1" class="sendkind">
+					 						<option value="">照明用电</option>
+					 						<option value="">空调用电</option>
+					 						<option value="">动力用电</option>
+					 						<option value="">特殊用电</option>
+					 					</select>
+					 					<select name="" size="1">
+					 						<option value="">总耗能</option>
+					 					</select>
+				 					</div>
+				 				</div>
+				 				<div class="main"  >
+									<div id="main1" ></div>
+				 				</div>
+				 				<div class="footer clearfix">
+				 					<ul class="clearfix">
+				 						<li><i class="i_red"></i>照明用电</li>
+				 						<li><i class="i_ora"></i>走廊应急</li>
+				 						<li><i class="i_blue"></i>室外景观</li>
+				 					</ul>
+				 				</div>
+				 			</div>
+				 		</div>
+				 		<div class=" datas pull-right">
+				 			<div class="datas_kind">
+				 				<div class="title clearfix">
+				 					<p class="pull-left"><img src="../assets/img/General.png" alt="" /></p>
+				 					<p class="datas_font pull-left"><span class="liebie">耗电量</span>概况</p>
+				 				</div>
+				 				<div class="main clearfix">
+				 					 <ul>
+					 					<li class="main_one">
+					 						<p class="t">昨日<span class="liebie">耗电量</span></p>
+					 						<p class="c"><span class="counter timer">15.35</span><span class="danwei">kw·h</span></p>
+					 					</li>
+					 					<li class="main_one">
+					 						<p class="t">本月<span class="liebie">耗电量</span></p>
+					 						<p class="c"><span class="counter timer">224.52</span><span class="danwei">kw·h</span></p>
+					 					</li>
+					 					<li class="main_one">
+					 						<p class="t">上月<span class="liebie">耗电量</span></p>
+					 						<p class="c"><span class="counter timer">264.89</span><span class="danwei">kw·h</span></p>
+					 					</li>
+					 					<li class="main_one">
+					 						<p class="t">本年<span class="liebie">耗电量</span></p>
+					 						<p class="c"><span class="counter timer">3,657.85</span><span class="danwei">kw·h</span></p>
+					 					</li>
+					 					
+				 					 </ul>
+				 				</div>
+				 			</div>
+				 		</div>
+			 		</div>
+		 		</div>
+		  	</div>
+		</div>
+	</div>
+</body>
+</html>

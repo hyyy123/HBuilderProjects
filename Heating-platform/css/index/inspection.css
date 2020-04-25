@@ -1,0 +1,51 @@
+ .inspection-form{
+ 	padding: 10px; 
+ 	padding-bottom: 60px;
+ }
+ .inspection-form li{
+ 	width: 100%;
+ 	margin-bottom: 10px;
+ } 
+.inspection-form .input-group-addon{
+ 	border: 0; 
+ 	background: #fff;
+ 	line-height: 20px;
+}
+.inspection-form .form-control {
+ 	border: 0; 
+ 	background: #fff;
+ 	-webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
+	box-shadow: inset 0 0px 0px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,
+	-webkit-box-shadow ease-in-out .15s;
+}
+.inspection-form .inputtext{
+	background: #fff;
+	line-height: 40px;
+	padding-left: 15px;
+	padding-right: 13px;
+}
+.question-img {
+	background: #fff;
+	padding: 10px;
+}
+.question-img #addimg{ 
+	height: 50px;
+	overflow: hidden;
+	font-size: 60px;  
+	margin-top: 10px; 
+	/*margin-right: 10px;*/
+}
+.question-img #addimg i{
+	position: relative;
+	top: -15px;
+}
+.question-img .imgcon { 
+	height: 50px;
+	margin-top: 10px; 
+	/*margin-right: 10px;*/
+}
+.question-img .imgcon img{
+	height: 50px;
+	width: auto;	
+}

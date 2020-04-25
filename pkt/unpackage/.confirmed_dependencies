@@ -1,0 +1,81 @@
+{
+	"index.html": {
+		"refer": [
+			"classes_list.html",
+			"teacher_list.html",
+			"real_time_list.html",
+			"classroom_list.html",
+			"login.html",
+			"first.html",
+			"my_lesson.html",
+			"myself.html",
+			"student_list.html",
+			"todos.html"
+		],
+		"resources": [
+			"classes_list.html"
+		]
+	},
+	"classes_list.html": {
+		"refer": [
+			"index.html",
+			"student_list.html"
+		]
+	},
+	"teacher_list.html": {
+		"refer": [
+			"index.html",
+			"student_list.html"
+		]
+	},
+	"real_time_list.html": {
+		"refer": [
+			"index.html",
+			"student_list.html"
+		]
+	},
+	"classroom_list.html": {
+		"refer": [
+			"index.html",
+			"student_list.html"
+		]
+	},
+	"login.html": {
+		"refer": [
+			"index.html"
+		]
+	},
+	"first.html": {
+		"refer": [
+			"index.html",
+			"login.html"
+		]
+	},
+	"my_lesson.html": {
+		"resources": [
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"student_list.html": {
+		"refer": [
+			"index.html",
+			"real_time_list.html",
+			"classes_list.html",
+			"teacher_list.html",
+			"classroom_list.html"
+		]
+	},
+	"myself.html": {
+		"refer": [
+			"index.html"
+		]
+	},
+	"todos.html": {
+		"refer": [
+			"index.html"
+		]
+	}
+}

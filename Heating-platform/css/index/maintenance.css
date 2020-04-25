@@ -1,0 +1,27 @@
+ 
+#maintenance_list { 
+	padding: 10px;
+	border-radius: 4px;
+}
+#maintenance_list li{ 
+	margin-bottom: 10px;
+	line-height: 20px; 
+} 
+#maintenance_list li .licon{
+	padding:  15px; 
+} 
+#maintenance_list .liimg{
+	width: 32px; 
+}
+#maintenance_list .litip li{
+	border-bottom: 1px #ECECEC solid;
+	line-height: 50px;
+}
+#maintenance_list .litip li p:nth-child(1){
+	width: 30%; 
+	text-align: center;
+}
+#maintenance_list .litip li p:nth-child(2){
+	width: 70%;
+}
+

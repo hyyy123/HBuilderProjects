@@ -1,0 +1,55 @@
+{
+	"index.html": {
+		"refer": [
+			"classes_list.html",
+			"teacher_list.html",
+			"real_time_list.html",
+			"classroom_list.html",
+			"login.html",
+			"first.html"
+		],
+		"resources": [
+			"classes_list.html",
+			"teacher_list.html"
+		]
+	},
+	"classes_list.html": {
+		"refer": [
+			"index.html"
+		],
+		"resources": []
+	},
+	"teacher_list.html": {
+		"refer": [
+			"index.html"
+		],
+		"resources": []
+	},
+	"real_time_list.html": {
+		"refer": [
+			"index.html"
+		],
+		"resources": [
+			"index.html"
+		]
+	},
+	"classroom_list.html": {
+		"refer": [
+			"index.html"
+		],
+		"resources": []
+	},
+	"login.html": {
+		"refer": [
+			"index.html"
+		],
+		"resources": []
+	},
+	"first.html": {
+		"refer": [
+			"index.html",
+			"login.html"
+		],
+		"resources": []
+	}
+}

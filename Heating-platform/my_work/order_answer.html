@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="../js/mui.min.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../plugins/picker/dist/css/mui.picker.min.css" />
+		<link rel="stylesheet" href="../css/normal.css" />
+		<link rel="stylesheet" href="../css/my_work/order_answer.css" />
+		<link rel="stylesheet" href="../plugins/mobileSelect/css/mobileSelect.css" />
+		<link rel="stylesheet" href="../plugins/font-awesome-4.7.0/css/font-awesome.css" />
+		<script src="../plugins/jquery/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script> 
+		<script src="../plugins/mobileSelect/js/mobileSelect.js"  type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/jquery.cookie.js"  type="text/javascript" charset="utf-8"></script>
+		<script  src="../plugins/picker/dist/js/mui.picker.min.js"  type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/my_work/order_answer.js" type="text/javascript" charset="utf-8"></script> 
+	</head>
+	<body class="mui-bg-gray order_answer" > 
+		<header class="mui-bar mui-bar-nav mui-bar-nav-bg"> 
+			<a id="icon-menu" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title" >工单回复</h1>   
+		</header>   
+		<div class="mui-content">
+			<div class="order_answer-form" >
+				<ul>
+					<li class="clearfix" >
+						<div class="input-group btms">
+						  	<span class="input-group-addon">设备名称</span> 
+						   	<input type="text" class="form-control"    value="24564545645645"  id="equip_name"  >  
+						 </div>
+						<div class="input-group ">
+						  	<span class="input-group-addon">工单类型</span> 
+						   	<input type="text" class="form-control"    value="用户来电"  id="equip_type"  >  
+						 </div>
+					</li> 
+					<li class="clearfix" >
+						<div class="input-group">
+						  <span class="input-group-addon">完成时间</span>
+						    <p class="data inputtext colorblack">
+							  	<span id="datatext">2017-12-12</span>
+							  	<span class="pull-right" ><i class="fa fa-chevron-right" ></i></span> 
+						  </p> 
+						</div>
+					</li>
+					<li class="clearfix" >
+						<div class="input-group">
+						  <span class="input-group-addon">维修人员</span>
+						  <input type="text" class="form-control" placeholder="请填写"  value=""  id="equip_people"  > 
+						</div>
+					</li>
+					<li class="clearfix" >
+						<div class="input-group">
+						  <span class="input-group-addon">完成情况</span>
+						  <input type="text" class="form-control" placeholder="请填写"  value=""  id="equip_finish"  > 
+						</div>
+					</li>
+					<li class="clearfix" >
+						<div class="input-group">
+						  <span class="input-group-addon">解决办法</span>
+						  <textarea  class="form-control"  id="description"  rows="5"   placeholder="请填写"  ></textarea> 
+						</div>
+						<div class="question-img clearfix" >  
+							 <p class="col-xs-4  text-center" id="addimg" >
+							 	<i class="fa fa-plus-square-o" ></i>
+							 </p>
+							 
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="footer" > 
+				<button type="button" class="btn btn-primary" id="submit">提交</button>&nbsp;&nbsp;&nbsp;
+				<button type="button" class="btn btn-default" id="cancel">取消</button> 
+			</div>
+		</div>
+	</body>
+</html>

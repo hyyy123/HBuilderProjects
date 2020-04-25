@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="plugins/font-awesome-4.7.0/css/font-awesome.css" />
+
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<!--jquery-->
+		<script src="plugins/jquery/jquery-1.11.2.min.js"></script>
+		<!--bootstrap-->
+		<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+		<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+		<!--layer-->
+		<link rel="stylesheet" href="plugins/layer/theme/default/layer.css" />
+		<script src="plugins/layer/layer.js"></script>
+		<script src="plugins/layer/layerbox.js"></script>
+		<!--接口-->
+		<script src="js/lesson-apply/common.js"></script>
+		<script src="js/lesson-apply/post_api_rms.js"></script>
+		<script src="js/lesson-apply/post_term.js"></script>
+		<script src="js/lesson-apply/post-common.js"></script>
+		<script src="js/lesson-apply/lesson.js"></script>
+		<!--通用-->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/normal.css" />
+		<script src="js/ajax.js"></script>
+		<script src="js/common.js"></script>
+
+		<!--自身-->
+		<script src="js/teacher.js"></script>
+		<script></script>
+	</head>
+
+	<body class="classes">
+		<header class="mui-bar mui-bar-nav mui-bar-nav-bg">
+			<a id="icon-menu" class="colorfff mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<a class="  mui-icon mui-icon-list mui-pull-right mui-a-color colorfff " onclick="openmenu()"></a>
+			<h1 class="mui-title colorfff"> </h1>
+		</header> 
+		<div class="mui-content">
+			<div class="mui_table_list clearfix">
+				<!--头部-->
+				<div class="nav clearfix">
+					<div class="pull-left title">
+						<p class="colorfff">节次</p>
+						<p class="colorfff">星期</p>
+					</div>
+					<table>
+						<tr> </tr>
+					</table>
+
+				</div>
+				<div class="mui_table_con clearfix">
+					<!--侧边栏-->
+					<div class="slide pull-left">
+						<ul> </ul>
+					</div>
+					<div class="table-responsive  pull-left">
+						<table id="table_list">
+							<tr>
+								<td>
+									<div class='tdab'></div>
+								</td>
+								<td>
+									<div class='tdab'></div>
+								</td>
+								<td>
+									<div class='tdab'></div>
+								</td>
+								<td>
+									<div class='tdab'></div>
+								</td>
+								<td>
+									<div class='tdab'></div>
+								</td>
+								<td>
+									<div class='tdab'></div>
+								</td>
+								<td>
+									<div class='tdab'></div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+			</div>
+			<div id="sidemenu">
+				<div class="sideitem">
+					<h5><span class="colorblue">选择周次</span><span class="pull-right"><i class="mui-icon mui-icon-closeempty sideclose" onclick="closemenu()"> </i> </span></h5>
+					<ul id="weekdata" class="clearfix"> </ul>
+				</div>
+				<div class="sideitem">
+					<h5><span class="colorblue">选择教师</span></h5>
+					<ul id="teacherdata" class="clearfix"> </ul>
+				</div>
+				<p class="btn btn-md btn-block sideclose" onclick="sideSubmit()">确定</p>
+			</div>
+		</div>
+	</body>
+
+</html>

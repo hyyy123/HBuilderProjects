@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="../js/mui.min.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../plugins/picker/dist/css/mui.picker.min.css" />
+		<link rel="stylesheet" href="../css/normal.css" />
+		<link rel="stylesheet" href="../css/heating/heating_info.css" />
+		<link rel="stylesheet" href="../plugins/mobileSelect/css/mobileSelect.css" />
+		<link rel="stylesheet" href="../plugins/font-awesome-4.7.0/css/font-awesome.css" />
+		<script src="../plugins/jquery/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script> 
+		<script src="../plugins/mobileSelect/js/mobileSelect.js"  type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/jquery.cookie.js"  type="text/javascript" charset="utf-8"></script>
+		<script  src="../plugins/picker/dist/js/mui.picker.min.js"  type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/heating/heating_info.js" type="text/javascript" charset="utf-8"></script> 
+	</head>
+	<body class="mui-bg-gray heating" > 
+		<header class="mui-bar mui-bar-nav mui-bar-nav-bg"> 
+			<a id="icon-menu" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title" >供热信息</h1>   
+		</header>   
+		<div class="mui-content">  
+			<!-- 导航 -->
+			<div class="heating_nav  mui-bar-nav-bg">
+				<ul class="clearfix row">
+					<li class="col-xs-4  text-center borderrsolid liactive">
+						<a>锅炉房1</a>
+					</li>
+					<li class="col-xs-4  text-center borderrsolid">
+						<a>锅炉房2</a>
+					</li>
+					<li class="col-xs-4  text-center">
+						<a>锅炉房3</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 内容 --> 
+			<div class="info-list">
+				<div class="info-seach mui-bg-white " >
+					<div class="seach-up" > 
+						<div class="mui-input-row mui-search">
+						    <input type="search" class="mui-input-clear" placeholder="查找末端支路名称">
+						</div>
+					</div>
+					<div class="seach-down" >
+						<ul class="clearfix no-margin" >
+							<li class="col-xs-4 text-center padding0" >
+								<a href="heating_boiler.html">
+									<img src="../img/heating/boiler.png" alt="" />
+									<p class="fontsize12 ">锅炉参数</p>
+								</a>
+							</li>
+							<li class="col-xs-4 text-center padding0" >
+								<a href="heating_temp.html">
+									<img src="../img/heating/hot.png" alt="" />
+									<p class="fontsize12 ">查看末端支路图</p>
+								</a>
+							</li>
+							<li class="col-xs-4 text-center padding0" >
+								<a href="heating_transfer.html">
+									<img src="../img/heating/hotel.png" alt="" />
+									<p class="fontsize12 ">换热站总览</p>
+								</a>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+				
+				<ul class="con" id="heating_list">
+					<li>
+						<div class="licon  clearfix " >  
+							<p class="text-blue-deep borderlsolidblue paddinglf15" ><b>支路4-1 DN374</b></p> 
+						</div>
+						<div class="litip" >
+							<ul >
+								<li class="clearfix mui-bg-white " > 
+									<a href="heating_temp.html">
+										<div class="pull-left litipcon " >
+											<p class="colorblack ellipsis" >浦东心愿(45612KW)</p>
+											<p class="fontsize12" >支路4-1 DN374</p> 
+										</div>
+										<p class="pull-right" ><i class="fa fa-chevron-right" ></i></p>
+									</a>
+								</li>
+								<li class="clearfix mui-bg-white " > 
+									<a href="heating_temp.html">
+										<div class="pull-left litipcon " >
+											<p class="colorblack ellipsis" >浦东心愿(45612KW)</p>
+											<p class="fontsize12" >支路4-1 DN374</p> 
+										</div>
+										<p class="pull-right" ><i class="fa fa-chevron-right" ></i></p>
+									</a>
+								</li>
+							</ul> 
+						</div>
+					</li>   
+					<li>
+						<div class="licon  clearfix " >  
+							<p class="text-blue-deep borderlsolidblue paddinglf15" ><b>支路4-1 DN374</b></p> 
+						</div>
+						<div class="litip" >
+							<ul >
+								<li class="clearfix mui-bg-white " > 
+									<a href="heating_temp.html">
+										<div class="pull-left litipcon " >
+											<p class="colorblack ellipsis" >浦东心愿(45612KW)</p>
+											<p class="fontsize12" >支路4-1 DN374</p> 
+										</div>
+										<p class="pull-right" ><i class="fa fa-chevron-right" ></i></p>
+									</a>
+								</li>
+								<li class="clearfix mui-bg-white " > 
+									<a href="heating_temp.html">
+										<div class="pull-left litipcon " >
+											<p class="colorblack ellipsis" >浦东心愿(45612KW)</p>
+											<p class="fontsize12" >支路4-1 DN374</p> 
+										</div>
+										<p class="pull-right" ><i class="fa fa-chevron-right" ></i></p>
+									</a>
+								</li>
+							</ul> 
+						</div>
+					</li>    
+				</ul>
+			</div>
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; " charset="utf-8"/> 
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">   <!-- 在IE运行最新的渲染模式 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		    <title></title>
+		    <!--CSS-->
+		    <link rel="stylesheet" href="assets/css/reset.css"  type="text/css" />
+		    <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		    <link href="assets/css/index.css" rel="stylesheet" type="text/css" />
+			<!--<link rel="stylesheet" type="text/css" href="assets/plugins/gauge/css/gauge.css">-->
+			<!--图表-->
+			<!--<link rel="stylesheet" href="assets/plugins/cmGauge-master/css/cmGauge.css" />-->
+			<script src="assets/plugins/ie_more/repond.js" type="text/javascript" charset="utf-8"></script> 
+		    <!--JS-->
+		    <script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
+		    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+		    <!--fullpage-->
+			<script src="assets/plugins/fullpage/js/jquery.easings.min.js" type="text/javascript" charset="utf-8"></script>
+			<script src="assets/plugins/fullpage/js/jquery.slimscroll.js" ></script>
+			<script src="assets/plugins/fullpage/js/jquery.fullPage.js"></script>
+			<!--图表-->
+			<script src="assets/plugins/chart/js/jquery.animsition.min.js"></script>
+			<script src="assets/plugins/chart/js/echarts.min.js"></script>
+			<script src="assets/plugins/chart/js/charts_gaugetwo.js" type="text/javascript" charset="utf-8"></script>
+			<!--数字动画-->
+			<script src="assets/plugins/number/jquery.waypoints.min.js" type="text/javascript" charset="utf-8"></script>
+			<script src="assets/plugins/number/jquery.countup.min.js" type="text/javascript" charset="utf-8"></script>
+		    <script type="text/javascript" src="assets/js/index.js"></script>
+	</head>
+	<body>
+	<div id="fullpage">
+		<div class="building container-fiuld  section">
+				<!--头部-->
+		        <div class="header clearfix ">
+	                <div class="row  clearfix">
+	                    <div class=" col-lg-5 col-md-6 col-sm-6 col-xs-6 pull-left logo_all clearfix   ">
+	                        <div class="logo  pull-left ">
+	                            <img src="assets/img/logo.png" alt="Alternate Text"  />
+	                            <span class=" hidden-sm ">建筑综合性能监督平台</span>
+	                        </div>
+	                        <div class="cloud clearfix  pull-left  hidden-xs">
+	                        	<ul class="clearfix">
+										<li><img src="assets/img/cloud.png" alt="" /></li>
+										<li><a href="">多云</a>&nbsp;<span class="more_cloud">30</span>m</li>
+										<li><a href="">PM2.5</a>&nbsp;<span class="PM2.5">36</span>m</li>
+										<li class="border0"><a href="">湿度</a>&nbsp;<span class="">77</span>m</li>
+									</ul>
+	                        </div>
+	                    </div>
+	                    <div class=" col-lg-3 col-md-6 col-sm-6 col-xs-6  more  pull-right clearfix hidden-xs">
+								<ul class="pull-right clearfix">
+									<li ><img src="assets/img/sir.png" alt="" /></li>
+									<li><img src="assets/img/mes.png" alt="" /></li>
+									<li><img src="assets/img/sys.png" alt="" /></li>
+									<li><img src="assets/img/person.png" alt="" /></li>
+									<li class="padding0"><a href=""  class=" hidden-sm hidden-xs">欢迎您，超级管理员</a></li>
+								</ul>
+	                    </div>
+	                </div>
+	        	</div>
+	        	<!--内容1-->
+	        	<div class="con_big  row hidden-sm hidden-xs">
+	        		<!--楼层数据显示-->
+		        	<div class="floor_con col-lg-7 col-md-7 col-sm-12  col-xs-12 clearfix ">
+		        		<!--楼层-->
+		        		<div class="f_num pull-left col-lg-2 col-md-2 col-md-2 col-xs-2 ">
+		        			<ul class="text-right">
+								<li>10F</li>
+								<li>9F&nbsp;</li>
+								<li>8F&nbsp;</li>
+								<li>7F&nbsp;</li>
+								<li>6F&nbsp;</li>
+								<li>5F&nbsp;</li>
+								<li>4F&nbsp;</li>
+								<li>3F&nbsp;</li>
+								<li>2F&nbsp;</li>
+								<li>1F&nbsp;</li>
+							</ul>
+		        		</div>
+		        		<!--楼与数据-->
+		        		<div class="f_building col-lg-10 col-md-10 col-sm-10 col-xs-10">
+		        			<!--圈-->
+			        		<div class="f_circle pull-left col-lg-6 col-md-6 hidden-sm hidden-xs"></div>
+			        		<!--数据-->
+			        		<div class="f_data pull-right col-lg-6 col-md-6 col-sm-12 col-xs-12">
+			        			<div class="up_pic">
+			        				<p class="title clearfix">
+				        				<span class="pull-left">分层环境数据显示</span>
+				        				<span class="pull-right f_send">10F</span>
+			        				</p>
+			        			</div>
+				        		<div class="f_data_aside">
+				        			<ul>
+				        				<li class="btms">
+				        					<div class="list clearfix">
+				        						<p class="pull-left list_pic"><img src="assets/img/electricity.png" alt="" /></p>
+				        						<ul class="clearfix pull-left">
+				        							<li class="data_room">
+				        								<p class="fontsize12 ">PM2.5</p>
+				        								<p class="d_num fontsize24"><span class="counter">181</span>psk</p>
+				        							</li>
+				        							<li class="data_room">
+				        								<p class="fontsize12 ">温湿度</p>
+				        								<p class="d_num fontsize24"><span class="counter">11</span>/<span class="counter">18</span></p>
+				        							</li>
+				        							<li class="data_room">
+				        								<p class="fontsize12 ">二氧化碳</p>
+				        								<p class="d_num fontsize24"><span class="counter">26</span>m<sub>3</sub></p>
+				        							</li>
+				        						</ul>
+				        					</div>
+				        				</li>
+				        				<li class="btms">
+				        					<div class="list clearfix">
+				        						<p class="pull-left list_pic"><img src="assets/img/water.png" alt="" /></p>
+				        						<ul class="clearfix pull-left">
+				        							<li class="data_room">
+				        								<p class="fontsize12 ">噪声</p>
+				        								<p class="d_num fontsize24 colorred textshadow counter">26</p>
+				        							</li>
+				        							<li class="data_room">
+				        								<p class="fontsize12 ">照度</p>
+				        								<p class="d_num fontsize24 counter">12</p>
+				        							</li>
+				        						</ul>
+				        					</div>
+				        				</li>
+				        				<li >
+				        					<div class="list clearfix">
+				        						<p class="pull-left list_pic"><img src="assets/img/electricity.png" alt="" /></p>
+				        						<ul class="clearfix pull-left">
+				        							<li class="data_room">
+				        								<p class="fontsize12 ">PM2.5</p>
+				        								<p class="d_num fontsize24"><span class="counter">181</span>psk</p>
+				        							</li>
+				        							<li class="data_room">
+				        								<p class="fontsize12 ">温湿度</p>
+				        								<p class="d_num fontsize24"><span class="counter">11</span>/<span class="counter">18</span></p>
+				        							</li>
+				        						</ul>
+				        					</div>
+				        				</li>
+				        			</ul>
+				        		</div>
+				        		<div class="down_pic"></div>
+			        		</div>
+		        		</div>
+		        	</div>  
+		        	<!--分类数据显示-->
+		        	<div class="kind_con col-lg-5 col-md-5 col-sm-12  col-xs-12 clearfix">
+		        		<!--数据-->
+		        		<div class="k_data pull-left  col-lg-8 col-md-8 col-sm-12 col-xs-12 ">
+		        				<div class="up_pic ">
+			        				<p class="title clearfix">
+				        				<span class="kk">能耗</span>舒适度评分
+			        				</p>
+		        				</div>
+				        		<div class="f_data_aside">
+				        			<!--图表-->
+									<div class="main">
+										<div id="main1" ></div>
+                                        <p class="main_pro">今日舒适度评价：差</p>
+									</div>
+				        			<p class="title clearfix"><span class="kk">能耗</span>数据</p>
+			        					<ul>
+				        				<li class="btms">
+				        					<div class="list clearfix">
+				        						<p class="pull-left list_pic"><img src="assets/img/electricity.png" alt="" /></p>
+				        						<ul class="clearfix pull-left">
+				        							<li class="data_room">
+				        								<p class="fontsize12 ">PM2.5</p>
+				        								<p class="d_num fontsize24"><span class="counter">181</span>psk</p>
+				        							</li>
+				        							<li class="data_room">
+				        								<p class="fontsize12 ">温湿度</p>
+				        								<p class="d_num fontsize24"><span class="counter">11</span>/<span class="counter">18</span></p>
+				        							</li>
+				        							<li class="data_room">
+				        								<p class="fontsize12 ">二氧化碳</p>
+				        								<p class="d_num fontsize24"><span class="counter">26</span>m<sub>3</sub></p>
+				        							</li>
+				        						</ul>
+				        					</div>
+				        				</li>
+				        				<li class="btms">
+				        					<div class="list clearfix">
+				        						<p class="pull-left list_pic"><img src="assets/img/water.png" alt="" /></p>
+				        						<ul class="clearfix pull-left">
+				        							<li class="data_room">
+				        								<p class="fontsize12 ">噪声</p>
+				        								<p class="d_num fontsize24 counter">26</p>
+				        							</li>
+				        							<li class="data_room">
+				        								<p class="fontsize12 ">照度</p>
+				        								<p class="d_num fontsize24 counter">12</p>
+				        							</li>
+				        						</ul>
+				        					</div>
+				        				</li>
+				        				<li  class="btms">
+				        					<div class="list clearfix">
+				        						<p class="pull-left list_pic"><img src="assets/img/electricity.png" alt="" /></p>
+				        						<ul class="clearfix pull-left">
+				        							<li class="data_room">
+				        								<p class="fontsize12 ">PM2.5</p>
+				        								<p class="d_num fontsize24"><span class="counter">181</span>psk</p>
+				        							</li>
+				        							<li class="data_room">
+				        								<p class="fontsize12 ">温湿度</p>
+				        								<p class="d_num fontsize24"><span class="counter">11</span>/<span class="counter">18</span></p>
+				        							</li>
+				        						</ul>
+				        					</div>
+				        				</li>
+				        				
+				        			</ul>
+					        		
+				        		</div>
+				        		<div class="down_pic">
+                                    <p class="k_btn">
+                                        <a href="#" class="btn btn-danger btn-md " role="button">实时监测</a>
+                                        <a href="#" class="btn btn-warning btn-md " role="button">结构拓扑</a>
+                                        <a href="#" class="btn btn-success btn-md marginlr0" role="button">统计报表</a>
+                                    </p>
+				        		</div>
+		        		</div>
+		        		<!--分类样式-->
+		        		<div class="k_floor  col-lg-3 col-md-3 col-sm-12 col-xs-12 clearfix">
+		        			<ul class="pull-right">
+								<li><img src="assets/img/index/energy_diff.png"/> <span>能耗</span></li>
+								<li><img src="assets/img/index/structure_normal.png"/> <span>结构</span></li>
+								<li><img src="assets/img/index/eve_normal.png"/> <span>环境</span></li>
+								<li><img src="assets/img/index/syn_normal.png"/> <span>综合</span></li>
+								<li><img src="assets/img/index/BIM_normal.png"/> <span>BIM</span></li>
+							</ul>
+		        		</div>
+		        		
+		        	</div>
+	        	</div>
+	        	<!--内容2-->
+	        	<div class="con_small row hidden-lg hidden-md">
+	        		<!--楼层导航-->
+	        		<nav class="navbar navbar-default navbar-inverse" id="nav_all">
+					  <div class="container-fluid">
+					    <!-- Brand and toggle get grouped for better mobile display -->
+					    <div class="navbar-header clearfix">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="colorwhite glyphicon glyphicon-menu-down"></span>
+					      </button>
+					      <a class="navbar-brand hidden-lg hidden-md hidden-sm " href="#"><span class="colorwhite">选择楼层</span></a>
+					    </div>
+					    <!-- Collect the nav links, forms, and other content for toggling -->
+					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					      <ul class="nav navbar-nav">
+					       		<li ><a href="#" >1F</a></li>
+					       		<li ><a href="#" >2F</a></li>
+					       		<li ><a href="#" >3F</a></li>
+					       		<li ><a href="#" >4F</a></li>
+					       		<li ><a href="#" >5F</a></li>
+					       		<li ><a href="#" >6F</a></li>
+					       		<li ><a href="#" >7F</a></li>
+					       		<li ><a href="#" >8F</a></li>
+					       		<li ><a href="#" >9F</a></li>
+					       		<li ><a href="#" >10F</a></li>
+					      </ul>
+					    </div><!-- /.navbar-collapse -->
+					  </div><!-- /.container-fluid -->
+					</nav>
+					<!--楼层数据-->
+					<div class="f_data">
+			        	<p class="title clearfix">
+				       		<span class="pull-left">分层环境数据显示</span>
+				       		<span class="pull-right f_send">1F</span>
+			        	</p>
+						<ul>
+				        	<li class="btms">
+					        	<div class="list clearfix">
+					        		<p class="pull-left list_pic"><img src="assets/img/electricity.png" alt="" /></p>
+					      			<ul class="clearfix pull-left">
+				        				<li class="data_room">
+				        					<p class="fontsize12 ">PM2.5</p>
+				        					<p class="d_num fontsize24"><span class="counter">181</span>psk</p>
+				        				</li>
+				        				<li class="data_room">
+				        					<p class="fontsize12 ">温湿度</p>
+				        					<p class="d_num fontsize24"><span class="counter">11</span>/<span class="counter">18</span></p>
+				        				</li>
+				        				<li class="data_room">
+				        					<p class="fontsize12 ">二氧化碳</p>
+				        					<p class="d_num fontsize24"><span class="counter">26</span>m<sub>3</sub></p>
+				        				</li>
+				        			</ul>
+					        	</div>
+				        	</li>
+				        	<li class="btms">
+				        		<div class="list clearfix">
+				        			<p class="pull-left list_pic"><img src="assets/img/water.png" alt="" /></p>
+				        			<ul class="clearfix pull-left">
+				        				<li class="data_room">
+				        					<p class="fontsize12 ">噪声</p>
+				        					<p class="d_num fontsize24 counter colorred textshadow">26</p>
+				        				</li>
+				        				<li class="data_room">
+				        					<p class="fontsize12 ">照度</p>
+				        					<p class="d_num fontsize24 counter">12</p>
+				        				</li>
+				        			</ul>
+				        		</div>
+				        	</li>
+				        	<li >
+				        		<div class="list clearfix">
+				        			<p class="pull-left list_pic"><img src="assets/img/electricity.png" alt="" /></p>
+				        			<ul class="clearfix pull-left">
+				        			<li class="data_room">
+				        					<p class="fontsize12 ">PM2.5</p>
+				        					<p class="d_num fontsize24"><span class="counter">181</span>psk</p>
+				        				</li>
+				        				<li class="data_room">
+				        					<p class="fontsize12 ">温湿度</p>
+				        					<p class="d_num fontsize24"><span class="counter">11</span>/<span class="counter">18</span></p>
+				        				</li>
+				        			</ul>
+				        		</div>
+				        	</li>
+				       </ul>
+					</div>
+					<!--分类导航-->
+					<div class="k_floor">
+						<ul class="clearfix">
+							<li><img src="assets/img/index/energy_diff.png"/> <p class="text-center ">能耗</p></li>
+							<li><img src="assets/img/index/structure_normal.png"/> <p class="text-center">结构</p></li>
+							<li><img src="assets/img/index/eve_normal.png"/> <p class="text-center">环境</p></li>
+							<li><img src="assets/img/index/syn_normal.png"/> <p class="text-center">综合</p></li>
+							<li><img src="assets/img/index/BIM_normal.png"/> <p class="text-center">BIM</p></li>
+						</ul>
+					</div>
+					<!--分类数据-->
+					<div class="k_data">
+						<p class="title clearfix">
+				        	<span class="kk">能耗</span>舒适度评分
+			        	</p>
+			    		<!--图表-->
+						<div class="main">
+							<div id="main2" ></div>
+                            <p class="main_pro">今日舒适度评价：差</p>
+						</div>
+				        <p class="title clearfix">	<span class="kk">能耗</span>数据</p>
+			       			<ul>
+				       			<li class="btms">
+				       			<div class="list clearfix">
+				        			<p class="pull-left list_pic"><img src="assets/img/electricity.png" alt="" /></p>
+				        			<ul class="clearfix pull-left">
+				        				<li class="data_room">
+				        					<p class="fontsize12 ">PM2.5</p>
+				        					<p class="d_num fontsize24"><span class="counter">181</span>psk</p>
+				        				</li>
+				        				<li class="data_room">
+				        					<p class="fontsize12 ">温湿度</p>
+				        					<p class="d_num fontsize24"><span class="counter">11</span>/<span class="counter">18</span></p>
+				        				</li>
+				        				<li class="data_room">
+				        					<p class="fontsize12 ">二氧化碳</p>
+				        					<p class="d_num fontsize24"><span class="counter">26</span>m<sub>3</sub></p>
+				        				</li>
+				        			</ul>
+				        		</div>
+				        	</li>
+				       		<li class="btms">
+				       			<div class="list clearfix">
+				       				<p class="pull-left list_pic"><img src="assets/img/water.png" alt="" /></p>
+				        			<ul class="clearfix pull-left">
+				        				<li class="data_room">
+				        					<p class="fontsize12 ">噪声</p>
+				        					<p class="d_num fontsize24 counter">26</p>
+				        				</li>
+				        				<li class="data_room">
+				        					<p class="fontsize12 ">照度</p>
+				        					<p class="d_num fontsize24 counter">12</p>
+				        				</li>
+				        			</ul>
+				        		</div>
+				        	</li>
+				        	<li  class="btms">
+				        		<div class="list clearfix">
+				        			<p class="pull-left list_pic"><img src="assets/img/electricity.png" alt="" /></p>
+				        			<ul class="clearfix pull-left">
+				        				<li class="data_room">
+				        					<p class="fontsize12 ">PM2.5</p>
+				        					<p class="d_num fontsize24"><span class="counter">181</span>psk</p>
+				        				</li>
+				        				<li class="data_room">
+				        					<p class="fontsize12 ">温湿度</p>
+				        					<p class="d_num fontsize24"><span class="counter">11</span>/<span class="counter">18</span></p>
+				        				</li>
+				        		</ul>
+				       		</div>
+				       	</li>
+				    </ul>
+					<p class="k_btn">
+					     <a href="#" class="btn btn-danger btn-md " role="button">实时监测</a>
+					    <a href="#" class="btn btn-warning btn-md " role="button">结构拓扑</a>
+					    <a href="#" class="btn btn-success btn-md marginlr0" role="button">统计报表</a>
+					</p>  	
+					</div>
+	        	</div>
+	        	<!--尾部-->
+				<div class="footer_father">
+						<div class="footer row">
+							<div class="logo  clearfix col-lg-5 col-md-6 col-sm-12 col-xs-12 pull-left hidden-xs hidden-sm">
+									<ul class="clearfix">
+										<li class="pull-left">北京新世纪酒店</li>
+										<li class=" pull-left">状态：开启 <span class="on "></span></li>
+									</ul>
+							</div>
+							<div class="more  col-lg-3 col-md-6 col-sm-12 col-xs-12  more  pull-right text-right clearfix">
+								<ul class="clearfix">
+									<li class="pull-left  hidden-xs">copyright@2017</li>
+									<li class="pull-left">中国建筑科学研究院天津分院</li>
+									<li class="pull-left hidden-xs">All Rights Reseverd</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+			</div>
+        <!--<div class="section sr-only">
+
+        </div>-->   
+    </div>
+	</body>
+</html>

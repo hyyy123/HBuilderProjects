@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="plugins/font-awesome-4.7.0/css/font-awesome.css" />
+
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<!--jquery-->
+		<script src="plugins/jquery/jquery-1.11.2.min.js"></script>
+		<!--bootstrap-->
+		<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+		<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+		<!--layer-->
+		<link rel="stylesheet" href="plugins/layer/theme/default/layer.css" />
+		<script src="plugins/layer/layer.js"></script>
+		<script src="plugins/layer/layerbox.js"></script>
+		<!--接口-->
+		<script src="js/lesson-apply/common.js"></script>
+		<script src="js/lesson-apply/post_api_rms.js"></script>
+		<script src="js/lesson-apply/post_term.js"></script>
+		<script src="js/lesson-apply/post-common.js"></script>
+		<script src="js/lesson-apply/lesson.js"></script>
+		<!--通用-->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/normal.css" /> 
+		<script src="js/ajax.js"></script>
+		<script src="js/common.js"></script>  
+		<!--自身-->
+		<script src="js/real_time.js"></script>
+	</head>
+
+	<body class="real_time">
+		<header class="mui-bar mui-bar-nav mui-bar-nav-bg">
+			<a id="icon-menu" class="colorfff mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+
+			<a class="mui-pull-right mui-a-color colorfff ">
+				<div class="header clearfix ">
+					<div class="real_data pull-right colorfff clearfix ">
+						<div class="text-right pull-left">
+							<p class="real_time_data colorfff">2017/09/12</p>
+							<p class="real_time_week colorfff">星期一</p>
+						</div>
+						<p class="real_time_now pull-right fontCondensed colorfff">10:20</p>
+					</div>
+				</div>
+			</a>
+
+			<h1 class="mui-title colorfff">实时课表 </h1>
+		</header>
+		
+		<div class="mui-content">
+			<div class="header">
+				<ul class="row">
+					<li class="col-xs-4 text-center "><p class="bgall colorfff">全部教室</p></li>
+					<li class="col-xs-4 text-center active"><p class="bged colorfff">占用教室</p></li>
+					<li class="col-xs-3 text-center hide"><p class="bgfuture colorfff">即将占用</p></li>
+					<li class="col-xs-4 text-center "><p class="bgidle colorfff">空闲教室</p></li> 
+				</ul>
+			</div>
+			<div class="real_time_con">  </div>
+			
+		</div>
+		
+	</body>
+
+</html>

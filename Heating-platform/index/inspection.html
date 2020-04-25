@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="../js/mui.min.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../plugins/picker/dist/css/mui.picker.min.css" />
+		<link rel="stylesheet" href="../plugins/mobileSelect/css/mobileSelect.css"  />
+		<link rel="stylesheet" href="../css/normal.css" />
+		<link rel="stylesheet" href="../css/index/inspection.css" />
+		<link rel="stylesheet" href="../plugins/font-awesome-4.7.0/css/font-awesome.css" />
+		<script src="../plugins/jquery/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script> 
+		<script src="../plugins/mobileSelect/js/mobileSelect.js"></script>
+		<script src="../plugins/jquery.cookie.js"  type="text/javascript" charset="utf-8"></script>
+		<script  src="../plugins/picker/dist/js/mui.picker.min.js"  type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/index/inspection.js" type="text/javascript" charset="utf-8"></script>
+	
+	</head>
+	<body class="inspection mui-bg-gray">
+		<header class="mui-bar mui-bar-nav mui-bar-nav-bg">
+			<a id="icon-menu" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">巡检报修</h1>
+		</header>
+		<div class="mui-content">
+			<div class="inspection-form" >
+				<ul>
+					<li class="clearfix" >
+						<div class="input-group">
+						  <span class="input-group-addon">设备名称</span>  
+						  <p class="equip inputtext colorblack">
+						  	<span id="equiptext">111</span>
+						  	<span class="pull-right" ><i class="fa fa-chevron-right" ></i></span>
+						  	<span class="hide"  id="equip_id">0</span> 
+						  </p>
+						</div> 
+					</li>
+					<li class="clearfix" >
+						<div class="input-group">
+						  <span class="input-group-addon">设备类别</span>
+						  <input type="text" class="form-control" value="111" id="equip_type"  > 
+						</div>
+					</li>
+					<li class="clearfix" >
+						<div class="input-group">
+						  <span class="input-group-addon">设备编号</span>
+						  <input type="text" class="form-control" value="" id="equip_code"  > 
+						</div>
+					</li>
+					<li class="clearfix" >
+						<div class="input-group">
+						  <span class="input-group-addon">工程来源</span>
+						  <input type="text" class="form-control" value="巡检保修" disabled="disabled"   > 
+						</div>
+					</li>
+					<li class="clearfix" >
+						<div class="input-group">
+						  <span class="input-group-addon">巡检人&nbsp;&nbsp;&nbsp;&nbsp;</span>
+						  <input type="text" class="form-control" placeholder="请填写"  value=""  id="equip_people"  > 
+						</div>
+					</li>
+					<li class="clearfix" >
+						<div class="input-group">
+						  <span class="input-group-addon">受理日期</span> 
+						   <p class="data inputtext colorblack">
+						  	<span id="datatext">111</span>
+						  	<span class="pull-right" ><i class="fa fa-chevron-right" ></i></span> 
+						  </p>
+						</div>
+					</li>
+					<li class="clearfix" >
+						<div class="input-group">
+						  <span class="input-group-addon">紧急程度</span> 
+						   <p class="urgent inputtext colorblack">
+						  	<span id="urgenttext">111</span>
+						  	<span class="pull-right" ><i class="fa fa-chevron-right" ></i></span>
+						  	<span class="hide"  id="urgent_id">0</span> 
+						  </p>
+						</div>
+					</li>
+					<li class="clearfix" >
+						<div class="input-group">
+						  <span class="input-group-addon">处理限期</span>
+						  <!--<input type="text" class="form-control deadline" disabled="disabled" placeholder="请选择" value="" >
+						  <span class="input-group-addon deadline"><i class="fa fa-chevron-right" ></i></span>-->
+						   <p class="deadline inputtext colorblack">
+						  	<span id="deadlinetext">111</span>
+						  	<span class="pull-right" ><i class="fa fa-chevron-right" ></i></span> 
+						  </p>
+						</div>
+					</li> 
+					<li class="clearfix" >
+						<div class="input-group">
+						  <span class="input-group-addon">问题描述</span>
+						  <textarea  class="form-control"  id="description"  rows="5"   placeholder="请填写"  ></textarea> 
+						</div>
+						<div class="question-img clearfix" >  
+							 <p class="col-xs-4  text-center" id="addimg" >
+							 	<i class="fa fa-plus-square-o" ></i>
+							 </p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="footer" >
+				<button type="button" class="btn btn-primary" id="submit">提交</button>&nbsp;&nbsp;&nbsp;
+				<button type="button" class="btn btn-default" id="cancel">取消</button> 
+			</div>
+		</div>
+	
+	</body>
+</html>

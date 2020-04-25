@@ -1,0 +1,81 @@
+.category-box { margin: 0 30px; }
+table tr { background: rgba(0,0,0,0) !important; }
+.main { position: relative; min-height: 700px; }
+.category { position: absolute; top: -20px; width: calc(100% - 40px); width: -moz-calc(100% - 40px); }
+.category li { color: #fff; padding: 15px 0; height: 138px; border-top: 1px dashed #fff; }
+/* Draw the lines */
+.jqrgchart-container { margin-left: 80px; margin-top: 40px; }
+.jqrgchart-container > div { float: left; height: 1000px; }
+.jqrgchart-container .jqrgchart .line { position: relative; height: 15px; width: 1px; margin-bottom: 5px !important; }
+.jqrgchart-container .jqrgchart .line .down-arrow { position: absolute; bottom: -3px; left: -4px; font-size: 0; line-height: 0; border-width: 4px; border-bottom-width: 0; border-color: #a5bacb; border-style: dashed; border-top-style: solid; border-left-color: transparent; border-right-color: transparent; }
+.jqrgchart-container .jqrgchart .down { background-color: #a5bacb; margin: 0px auto; }
+.jqrgchart-container .jqrgchart .top { border-top: 1px solid #a5bacb; }
+.jqrgchart-container .jqrgchart .left { border-right: 1px solid #a5bacb; }
+.jqrgchart-container .jqrgchart .right { border-left: 1px solid #a5bacb; margin-bottom: 5px !important; }
+/* node cell */
+.jqrgchart-container .jqrgchart td { text-align: center; vertical-align: top; padding: 0px;
+     line-height: 20px; }
+.jqrgchart-container .node-container { position: relative; }
+.jqrgchart-container .no-child { position: inherit !important; left: 0px !important; }
+/* The node */
+.jqrgchart-container .jqrgchart .node { position: relative; background-color: #a5bacb; line-height: 20px; display: inline-block; min-width: 85px; z-index: 10; margin: 0 2px; padding: 5px; margin-top: 5px; border-radius: 2px; }
+.jqrgchart-container .jqrgchart .node:before { content: ''; position: absolute; z-index: -1; left: 0; top: 0; width: 0px; height: 100%; background: rgba(255,255,255,.1); transition: width 1s; }
+.jqrgchart-container .jqrgchart .node:hover:before { width: 85px; }
+.jqrgchart-container .jqrgchart .node p { color: #fff; margin-bottom: 2px; font-size: 12px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+.jqrgchart-container .jqrgchart .node div.num { /*text-align:left;*/ background-color: rgba(0,0,0,.2); padding: 3px 5px 0; }
+.jqrgchart-container .jqrgchart .node p span.counter { font-family: "DIN Condensed"; }
+.jqrgchart-container .jqrgchart .node p span.unit { float: right; font-family: "Microsoft YaHei"; }
+.jqrgchart-container .jqrgchart .node p.counter { font-size: 16px; }
+.jqrgchart-container .jqrgchart .node img { width: 18px; height: 18px; }
+.jqrgchart-info { display: none; position: absolute; top: 0; left: 0; z-index: 11; min-width: 130px !important; background: rgba(255,255,255,.9); transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1), top 0.4s cubic-bezier(0.23, 1, 0.32, 1); border-radius: 4px; padding: 5px 10px; line-height: 25px; }
+.jqrgchart-info p { color: #333 !important; text-align: left; }
+.jqrgchart-info > p > span { float: right; font-weight: 700; padding-left: 10px; }
+
+
+/*浮现元素过多情况*/
+.mainlight { padding: 5px 10px; }
+.mainlight p { text-align: right; }
+.mainval { width: 65px; display: inline-block; font-weight: 700; }
+.threehigh .mainlight { width: 165px; }
+.threehigh .mainval { width: 80px; text-align: right; padding-left: 10px; }
+
+
+@media screen and (max-width: 767px) {
+    .level-1, .level-2 { display: table-row; }
+    .jqrgchart-container, .category, .title { width: 2400px; }
+    .jqrgchart-container .jqrgchart .line { position: relative; height: 15px !important; width: 1px; margin-bottom: 5px !important; }
+    .container-fiuld { overflow-y: hidden; }
+    .jqrgchart-container { 
+    height: 600px;
+    margin: 0px;
+    overflow: scroll !important;
+    width: 100vh !important; 
+    transform: rotate(90deg);
+    transform-origin: 50vw 50vw;}
+}
+
+/*jQuery drag 'n drop*/
+
+.jqrgchart-container .drag-active { border-style: dotted !important; }
+
+.jqrgchart-container .drop-hover { border-style: solid !important; border-color: #E05E00 !important; }
+
+.jqrgchart-container .bg-red .jqrgchart .down { background: #eb6867; }
+.jqrgchart-container .bg-red .jqrgchart .down-arrow { border-color: #eb6867; border-left-color: transparent; border-right-color: transparent; }
+.jqrgchart-container .bg-red .jqrgchart .left, .jqrgchart-container .bg-red .jqrgchart .right, .jqrgchart-container .bg-red .jqrgchart .top { border-color: #eb6867; }
+.jqrgchart-container .bg-red .jqrgchart .node { background: #eb6867; }
+
+.jqrgchart-container .bg-blue .jqrgchart .down { background: #66b9d3; }
+.jqrgchart-container .bg-blue .jqrgchart .down-arrow { border-color: #66b9d3; border-left-color: transparent; border-right-color: transparent; }
+.jqrgchart-container .bg-blue .jqrgchart .left, .jqrgchart-container .bg-blue .jqrgchart .right, .jqrgchart-container .bg-blue .jqrgchart .top { border-color: #66b9d3; }
+.jqrgchart-container .bg-blue .jqrgchart .node { background: #66b9d3; }
+
+.jqrgchart-container .bg-green .jqrgchart .down { background: #45ada7; }
+.jqrgchart-container .bg-green .jqrgchart .down-arrow { border-color: #45ada7; border-left-color: transparent; border-right-color: transparent; }
+.jqrgchart-container .bg-green .jqrgchart .left, .jqrgchart-container .bg-green .jqrgchart .right, .jqrgchart-container .bg-green .jqrgchart .top { border-color: #45ada7; }
+.jqrgchart-container .bg-green .jqrgchart .node { background: #45ada7; }
+
+.jqrgchart-container .bg-yellow .jqrgchart .down { background: #f39d15; }
+.jqrgchart-container .bg-yellow .jqrgchart .down-arrow { border-color: #f39d15; border-left-color: transparent; border-right-color: transparent; }
+.jqrgchart-container .bg-yellow .jqrgchart .left, .jqrgchart-container .bg-yellow .jqrgchart .right, .jqrgchart-container .bg-yellow .jqrgchart .top { border-color: #f39d15; }
+.jqrgchart-container .bg-yellow .jqrgchart .node { background: #f39d15; }

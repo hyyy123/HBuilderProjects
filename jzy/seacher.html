@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/normal.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/mui.min.js"></script>
+		
+		<script src="plugins/jquery/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ecm.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/seacher.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body class="mui-bg-blue">
+		<header class="mui-bar mui-bar-nav mui-bar-nav-bg">
+			<!--<a id="icon-menu" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>-->
+			<!--<a class="mui-action-back mui-icon mui-icon-home mui-pull-right mui-a-color"></a>-->
+			<h1 class="mui-title">天津医科大学总医院能源管理平台</h1>
+
+		</header>
+		<!--主页面底部选项卡-->
+		<nav class="mui-bar mui-bar-tab">
+			<a id="defaultTab" class="mui-tab-item  indexhref" >
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label"> 首页 </span>
+			</a>
+			<a class="mui-tab-item kindhref mui-active">
+				<span class="mui-icon mui-icon-list"></span>
+				<span class="mui-tab-label"> 分类 </span>
+			</a>
+		</nav>
+		<div id="findhtml" class="mui-content">
+			<div class="finditemlist">
+				<!-- 智慧监控 -->
+				<div class="findtitle">
+					<p class="fontsize12 colorwhite text-left">智慧监控</p>
+				</div>
+				<ul class="clearfix">
+					<li class="text-center pull-left finditem">
+						<a >
+							<p class="text-center"> <img src="img/icon/structure.png" /></p>
+							<p class="fontsize12 colorwhite text-center">能耗总览</p>
+						</a>
+					</li>
+					<li class="text-center pull-left finditem" id="find">
+						<a >
+							<p class="text-center"> <img src="img/icon/facility.png" /></p>
+							<p class="fontsize12 colorwhite text-center">设备能耗</p>
+						</a>
+					</li>
+				</ul>
+				<!-- 统计分析 -->
+				<div class="findtitle">
+					<p class="fontsize12 colorwhite  text-left">统计分析</p>
+				</div>
+				<ul class="clearfix">
+					<li class="text-center pull-left finditem">
+						<a>
+							<p class="text-center"> <img src="img/icon/statistics.png" /></p>
+							<p class="fontsize12 colorwhite text-center">分项能耗</p>
+						</a>
+					</li>
+				</ul>
+				<!-- 专家诊断 -->
+				<div class="findtitle">
+					<p class="fontsize12 colorwhite text-left">专家诊断</p>
+				</div>
+				<ul class="clearfix">
+					<li class="text-center pull-left finditem">
+						<a >
+							<p class="text-center"> <img src="img/icon/warn.png" /></p>
+							<p class="fontsize12 colorwhite text-center">报警信息</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,29 @@
+.info-list{
+	height: calc(100vh - 165px); 
+	overflow-y: auto; 
+}
+#equip_list { 
+	padding: 10px;
+	border-radius: 4px; 
+}
+#equip_list li{ 
+	margin-bottom: 10px;
+	line-height: 20px; 
+} 
+#equip_list li .licon{
+	padding:  15px; 
+	background: rgba(255,255,255,0.1);
+	color: #fff;
+}  
+#equip_list .litip li{
+	border-bottom: 1px #ECECEC solid;
+	line-height: 50px;
+	width: 100%;
+}
+#equip_list .litip li p:nth-child(1){
+	width: 30%; 
+	text-align: center;
+}
+#equip_list .litip li p:nth-child(2){
+	width: 70%;
+}

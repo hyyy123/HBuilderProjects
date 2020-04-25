@@ -1,0 +1,375 @@
+﻿/*公共*/
+ 
+/*移动端*/
+.mui-content{
+	background-color: rgba(0,0,0,0);
+}
+.mui-title {
+	color: #fff;
+	/*line-height: 28px;*/
+}
+
+.mui-bar-nav-bg {
+	background: #08263B;
+	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0);
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0);
+	/*height: 60px;*/
+	/*padding-top: 9px;*/
+}
+.mui-bar-nav-bg a{
+	color: #fff !important;
+	
+}
+ .mui-title p {
+	/*line-height: 1;*/
+}
+.mui-bg-blue{
+	
+	background: #08263B;
+}
+
+/*border*/
+
+.border0 {
+	border: 0 !important;
+}
+
+.borderlf0 {
+	border-left: 0 !important;
+}
+
+.btmd {
+	border-bottom: 1px #DEDEDE dotted;
+}
+
+
+/*padding*/
+
+.paddinglf0 {
+	padding-left: 0px !important;
+}
+
+.paddinglf6 {
+	padding-left: 6px !important;
+}
+
+.paddingtb2 {
+	padding: 2px 0px !important;
+}
+
+
+/*color*/
+
+.colorwhite {
+	color: white !important;
+}
+
+.colorgreen {
+	color: #00CE7D !important;
+}
+
+.colorblue {
+	color: #1090E1 !important;
+}
+
+.colorlinered {
+	color: #CA513A !important;
+}
+
+.colorred {
+	color: #D0021B !important;
+}
+
+.coloryellow {
+	color: #F5A623 !important;
+}
+
+.colorgray {
+	color: #7D8286 !important;
+}
+
+.colorblack {
+	color: #000 !important;
+}
+
+.bgcolorblue {
+	background-color: rgba(33, 128, 210, 1) !important;
+}
+
+.bgcolorred {
+	background-color: rgba(235, 104, 103, 1) !important;
+}
+
+.bgcolorgray {
+	background-color: #7D8286 !important;
+}
+
+.bgcolorgreen {
+	background-color: rgba(78, 165, 120, 1) !important;
+}
+
+.bgcoloryellow {
+	background-color: rgba(247, 133, 79, 1) !important;
+}
+
+.text-yellow {
+	color: #e7e984 !important;
+}
+
+.text-green {
+	color: #7ed321 !important;
+}
+
+.text-red {
+	color: #d0021b !important;
+}
+
+
+/*shadow*/
+
+.redshadow {
+	color: #D0021B !important;
+	text-shadow: 0px 0px 20px #D0021B;
+}
+
+.yellowshadow {
+	color: #F5A623 !important;
+	text-shadow: 0px 0px 20px #F5A623;
+}
+
+.greenshadow {
+	color: #7ED321 !important;
+	text-shadow: 0px 0px 20px #7ED321;
+}
+
+
+/*font*/
+
+.fontsize12 {
+	font-size: 12px !important;
+	font-family: "Microsoft YaHei !important";
+}
+
+.fontsize13 {
+	font-size: 13px !important;
+	font-family: "Microsoft YaHei !important";
+}
+
+.fontsize14 {
+	font-size: 14px !important;
+	font-family: "Microsoft YaHei  !important";
+}
+
+.fontsize15 {
+	font-size: 15px !important;
+	font-family: "Microsoft YaHei  !important";
+}
+
+.fontsize16 {
+	font-size: 16px !important;
+	font-family: "Microsoft YaHei  !important";
+}
+
+.fontsize18 {
+	font-size: 18px !important;
+	font-family: "Microsoft YaHei  !important";
+}
+
+.fontsize20 {
+	font-size: 20px !important;
+	font-family: "Microsoft YaHei  !important";
+}
+
+.fontsize22 {
+	font-size: 22px !important;
+	font-family: "Microsoft YaHei  !important";
+}
+
+.fontsize25 {
+	font-size: 25px !important;
+	font-family: "Microsoft YaHei  !important";
+}
+
+.fontfamily {
+	font-family: "DIN Condensed" !important;
+}
+
+.row {
+	margin: 0;
+}
+
+.btline {
+	border-bottom: 1px #ccc dotted;
+}
+
+.lh30 {
+	height: 30px;
+	line-height: 30px;
+}
+.lh44 {
+	height: 44px;
+	line-height: 44px;
+}
+.lh64 {
+	height: 64px;
+	line-height: 64px;
+}
+
+.lh100 {
+	height: 100px;
+	line-height: 100px;
+}
+
+#main1 div:nth-child(2) {
+	background-color: #fff !important;
+}
+
+
+/*字体*/
+
+@font-face {
+	font-family: "DIN Condensed";
+	src: url("../plugins/bootstrap/fonts/pt-din-condensed-cyrillic.woff");
+	font-weight: normal;
+}
+
+.navlihover a {
+	color: #32CBB6 !important;
+	border-bottom: 2px #32CBB6 solid !important;
+}
+
+.warnlihover a {
+	color: #000 !important;
+	font-weight: bold;
+}
+
+
+/*表格*/
+
+table {
+	min-width: 100%;
+	/*background-color: rgba(0,0,0,0.4);*/
+	color: #B6BEC1;
+}
+
+.table-responsive {
+	border: 0px solid #ddd;
+}
+
+table .namef {
+	width: 160px;
+}
+
+table .namef .name {
+	margin-bottom: 0;
+	border-right: 1px #313B44 solid;
+	width: 160px;
+}
+
+table .name li {
+	float: left;
+	display: inline-block;
+	width: 50%;
+}
+
+table .name li:nth-child(1) {
+	text-align: left;
+	padding-left: 10px;
+}
+
+table .name li:nth-child(2) {
+	text-align: right;
+	padding-right: 10px;
+}
+
+table td {
+	text-align: center;
+	line-height: 45px;
+	padding: 0px 5px;
+	/* width: 80px; */
+}
+
+#item_list {
+	border: 0;
+	border-bottom: 1px #313B44 solid;
+	padding: 0;
+	/*font-family: "DIN Condensed";*/
+	font-size: 15px;
+	cursor: pointer;
+}
+
+table thead {
+	background: rgba(0, 0, 0, 0.3);
+}
+
+tbody tr:nth-child(odd) {
+	background: rgba(0, 0, 0, 0);
+}
+
+tbody tr:nth-child(even) {
+	background: rgba(0, 0, 0, 0.3);
+}
+
+
+/*整体筛选*/
+
+#treeview-checkable {
+	position: fixed;
+	top: 0%;
+     width: 100%;
+	z-index: 10;
+	height: calc(100%);
+	padding-right: 0;
+	left: 0;
+	overflow-y: auto;
+	background-color: rgba(30, 42, 49, 1);
+}
+#treeview-checkable .main_kind{
+      height: calc(100% - 50px);
+      overflow: auto;}
+.list-group-item {
+	background-color: rgba(0, 0, 0, 0);
+	border-color: rgba(0, 0, 0, 0);
+	color: #fff;
+	font-size: 14px;
+}
+
+.list-group-item:hover {
+	background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+#treeview-checkable .mod_btn {
+	position: fixed;
+	width: 100%;
+	height: 33px;
+	bottom: 10px;
+	right: 0px;
+	padding: 0px 10px;
+}
+
+#treeview-checkable .mod_btn button {
+	width: 60px;
+	height: 27px;
+	margin-left: 10px;
+	font-size: 12px;
+	border: 0;
+	border-radius: 6px;
+}
+
+#treeview-checkable .mod_btn .yes {
+	box-shadow: 0 2px 8px 0 rgba(80, 137, 196, 0.48);
+	border-radius: 6px;
+	border: none;
+}
+
+#treeview-checkable .mod_btn .no {
+	border-radius: 6px;
+	border: 1px #394348 solid;
+}
+
+
+/*选择*/
+
+.glyphicon-check {
+	color: red;
+}

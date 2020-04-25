@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../plugins/font-awesome-4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../plugins/jQuery-tree/css/bootstrap-treeview.css" />
+		<link rel="stylesheet" href="../plugins/picker/dist/css/mui.picker.min.css" />
+		<link rel="stylesheet" href="../plugins/mobileSelect/css/mobileSelect.css" />
+		<link rel="stylesheet" href="../css/normal.css" />
+		<link rel="stylesheet" href="../css/index.css" />
+		<script src="../js/mui.min.js"></script>
+		<script src="../plugins/jquery/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../js/fixdata.js"></script>
+		<!--图表-->
+		<script src="../plugins/chart/js/echarts.min.js"></script>
+		<!--<script src="../plugins/chart/js/macarons.js"></script>-->
+		<!-- jQuery-tree -->
+		<script src="../plugins/jQuery-tree/js/bootstrap-treeview.min.js"></script>
+
+		<script src="../plugins/layer_mobile/layer.js"></script>
+		<script src="../plugins/layer_mobile/layerbox.js"></script>
+		<script  src="../plugins/picker/dist/js/mui.picker.min.js"  type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/mobileSelect/js/mobileSelect.js"></script>
+
+		<script src="../plugins/animateNumber/jquery.animateNumber.js"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/ecm.js" type="text/javascript" charset="utf-8"></script>
+
+		<script src="../js/statistics_index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body class="mui-bg-blue">
+		<header class="mui-bar mui-bar-nav mui-bar-nav-bg">
+			<a id="icon-menu" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<!--<a class="mui-action-back mui-icon mui-icon-home mui-pull-right mui-a-color "></a>-->
+			<h1 class="mui-title">分项能耗</h1>
+			<!--<p>更新时间：2017/08/07</p>-->
+		</header>
+		<!--主页面底部选项卡-->
+		<nav class="mui-bar mui-bar-tab">
+			<a href="#popover1" id="defaultTab" class="mui-tab-item mui-active fontsize14">
+				<span class="mui-tab-label">用能性能 <i class="fa fa-angle-up" ></i></span>
+			</a>
+			<a href="#popover2" class="mui-tab-item fontsize14">
+				<span class="mui-tab-label">环境性能 <i class="fa fa-angle-up" ></i></span>
+			</a>
+			<a href="#popover3" class="mui-tab-item fontsize14">
+				<span class="mui-tab-label">安全性能 <i class="fa fa-angle-up" ></i></span>
+			</a>
+		</nav>
+		<div id="popover1" class="mui-popover">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="../hos-struction/structure.html">能耗总览</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="../hos-struction/facility.html">设备能耗</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="../statistics/index.html">分项能耗</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="../statistics/contact.html">同比环比</a>
+				</li>
+			</ul>
+		</div>
+		<div id="popover2" class="mui-popover">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="../envirment/envir_home.html">室内环境</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="../envirment/envir_statistics.html">统计分析</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="../envirment/envir_list.html">详情列表</a>
+				</li>
+			</ul>
+		</div>
+		<div id="popover3" class="mui-popover">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="../security/sec_stress.html">应力应变</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="../security/sec_angle.html">倾角位移</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="../security/sec_down.html">基础沉降</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="../security/sec_energy.html">供电安全</a>
+				</li>
+			</ul>
+		</div>
+		<div class=" mui-content">
+
+			<!-- 导航 -->
+			<div class="nav " id="wrapper">
+				<ul class="clearfix row">
+					<li class="col-xs-3 pull-left text-center navlihover">
+						<a>电</a>
+					</li>
+					<li class="col-xs-3 pull-left  text-center">
+						<a>水</a>
+					</li>
+					<li class="col-xs-3 pull-left text-center">
+						<a>冷</a>
+					</li>
+					<li class="col-xs-3  pull-left text-center">
+						<a>热</a>
+					</li>
+				</ul>
+			</div>
+			<!-- 内容 -->
+			<div class="con index ">
+				<div class="data">
+					<ul class="clearfix">
+						<li class="pull-left now ">
+							<div>
+								<p class="fontsize14 colorwhite"><span class="fontsize20 fontfamily counter"></span>&nbsp;<span class="danwei">kwh</span></p>
+								<p class="fontsize12 colorgray"></p>
+							</div>
+
+						</li>
+						<li class="pull-left today ">
+							<div>
+								<p class="fontsize14 colorwhite"><span class="fontsize20 fontfamily counter"></span>&nbsp;<span class="danwei">kwh</span></p>
+								<p class="fontsize12 colorgray"></p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="main">
+					<div id="main1"></div>
+				</div>
+				<div class="detail">
+					<ul class="clearfix">
+						<li class="text-center pull-left" id="morecon">
+							<p class="text-center"> <img src="../img/icon/seachermore.png" /></p>
+							<p class="fontsize12 colorwhite text-center">详情列表</p>
+						</li>
+						<li class="text-center pull-left" id="find">
+							<p class="text-center"> <img src="../img/icon/kind.png" /></p>
+							<p class="fontsize12 colorwhite text-center">位置筛选</p>
+						</li>
+						<li class="text-center pull-left" id="timeSelect">
+							<p class="text-center"> <img src="../img/icon/kind.png" /></p>
+							<p class="fontsize12 colorwhite text-center">时间筛选</p>
+						</li>
+					</ul>
+				</div>
+				<div id="treeview-checkable" class="col-xs-12 ">
+					<!--hide-->
+					<div class="main_kind"> </div>
+					<div class="mod_btn clearfix">
+						<button type="button" class=" yes mui-btn-primary mui-btn-block">确定</button>
+						<div class="btn-false clearfix" > 
+							<button type="button" class="mui-btn-danger  mui-btn-block clear">清空</button> 
+							<button type="button" class="no mui-btn  mui-btn-block ">取消</button>
+						</div>
+					</div>
+				</div>
+				<!--时间-->
+				<div class="timeCon hide">
+					<!--hide-->
+					<h3 class="text-center colorwhite" >时间筛选</h3>
+					<ul class="clearfix row"> 
+						<li class="clearfix col-xs-12 colorwhite" id="infotime">
+							<span id="infotimetext">日</span>
+							<span id="infotimeid" class="hide">1</span>
+							<span class="pull-right"><i class="fa fa-angle-down" ></i></span>
+						</li>
+						<li class="clearfix col-xs-12">
+							<p class="pull-left colorwhite a1 hide"><span id="timeyear"></span></p>
+							<p class="pull-left colorwhite a1 hide"><span id="timemonth"></span></p>
+							<p class="pull-left colorwhite a1"><span id="timeDate"></span></p>
+							<span class="pull-right"><i class="fa fa-angle-down" ></i></span>
+						</li>
+					</ul>
+
+					<div class="mod_btn clearfix">
+						<button type="button" class=" yes mui-btn-primary mui-btn-block">确定</button>
+						<div class="btn-false clearfix" > 
+							<button type="button" class="mui-btn-danger  mui-btn-block clear">清空</button> 
+							<button type="button" class="no mui-btn  mui-btn-block ">取消</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</body>
+
+</html>

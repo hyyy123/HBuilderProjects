@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/normal.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/mui.min.js"></script>
+		<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="plugins/mobileSelect/css/mobileSelect.css" />
+		<script src="plugins/jquery/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="plugins/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="plugins/animateNumber/jquery.animateNumber.js"></script>
+		<script src="plugins/mobileSelect/js/mobileSelect.js"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ecm.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/sweep.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body class="index mui-bg-blue">
+
+		<header class="mui-bar mui-bar-nav mui-bar-nav-bg">
+			<a id="icon-menu" class=" mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<a class="mui-pull-right mui-a-color" onclick="editLogin()">
+				<p class="fontsize15 " style="line-height: 44px;color: #fff;"><i class="fa fa-power-off" style="margin-right: 5px;"></i></p>
+			</a>
+			<h1 class="mui-title" id="areaPicker"><span id="area" >天津市医科大学总医院三住</span></h1> 
+			<!--<p>更新时间：2017/08/07</p>-->
+		</header>
+
+		<!--主页面底部选项卡-->
+		<nav class="mui-bar mui-bar-tab">
+			<a href="#popover1" id="defaultTab" class="mui-tab-item mui-active fontsize14">
+				<span class="mui-tab-label">能源性能 <i class="fa fa-angle-up" ></i></span>
+			</a>
+			<a href="#popover2" class="mui-tab-item fontsize14">
+				<span class="mui-tab-label">环境性能 <i class="fa fa-angle-up" ></i></span>
+			</a>
+			<a href="#popover3" class="mui-tab-item fontsize14">
+				<span class="mui-tab-label">安全性能 <i class="fa fa-angle-up" ></i></span>
+			</a>
+		</nav>
+		<div id="popover1" class="mui-popover">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="hos-struction/structure.html">能耗总览</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="hos-struction/facility.html">设备能耗</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="statistics/index.html">分项能耗</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="statistics/contact.html">同比环比</a>
+				</li>
+			</ul>
+		</div>
+		<div id="popover2" class="mui-popover">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="envirment/envir_home.html">室内环境</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="envirment/envir_statistics.html">统计分析</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="envirment/envir_list.html">详情列表</a>
+				</li>
+			</ul>
+		</div>
+		<div id="popover3" class="mui-popover">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="security/sec_stress.html">应力应变</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="security/sec_angle.html">倾角位移</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="security/sec_down.html">基础沉降</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="security/sec_energy.html">供电安全</a>
+				</li>
+			</ul>
+		</div>
+		<!-- 内容 -->
+		<div class="con  mui-content">
+			<!--头部-->
+			<div class="conhead">
+				<div class="conheadul">
+					<ul>
+						<li class="pull-left">
+							<div class="borderrdashed">
+								<p class="fontsize14 colorwhite todayenergy"><span class="fontsize16 fontfamily counter"> </span>&nbsp;kwh</p>
+								<p class="fontsize14 colorwhite">今日耗电</p>
+							</div>
+						</li>
+						<li class="pull-left">
+							<div class="borderrdashed">
+								<p class="fontsize14 colorwhite todaywater"><span class="fontsize16 fontfamily counter"> </span>&nbsp;m³</p>
+								<p class="fontsize14 colorwhite">今日耗水</p>
+							</div>
+						</li>
+						<li class="pull-left">
+							<div class="borderrdashed">
+								<p class="fontsize14 colorwhite todaygas"><span class="fontsize16 fontfamily counter"> </span>&nbsp;kwh</p>
+								<p class="fontsize14 colorwhite">今日耗冷</p>
+							</div>
+						</li>
+						<li class="pull-left ">
+							<div class="border0">
+								<p class="fontsize14 colorwhite todayhot"><span class="fontsize16 fontfamily counter"></span>&nbsp;kwh</p>
+								<p class="fontsize14 colorwhite">今日耗热</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--尾部-->
+			<div class="confoot"> 
+				<ul class="confootul">
+					<li class="pull-left">
+						<a href="hos-struction/structure.html"><img src="img/index/icon1.png" alt="" /></a>
+					</li>
+					<li class="pull-left">
+						<a href="hos-struction/facility.html"><img src="img/index/icon2.png" alt="" /></a>
+					</li>
+					<li class="pull-left">
+						<a href="statistics/index.html"><img src="img/index/icon3.png" alt="" /></a>
+					</li>
+					<li class="pull-left">
+						<a href="energy/abnormal.html"><img src="img/index/icon4.png" alt="" /></a>
+					</li>
+					<!--<li class="pull-left">
+						<a href="home_page/maintenance.html"><img src="img/index/icon5.png" alt="" /></a>
+					</li>
+					<li class="pull-left" onclick="clicked('sweep.html',true,true)"><img src="img/index/icon6.png" alt="" /></li>-->
+				</ul>
+			</div>
+		</div>
+	</body>
+
+</html>

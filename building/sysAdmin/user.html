@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title></title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../assets/css/reset.css"  type="text/css" />
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/sysAdmin.css" rel="stylesheet" type="text/css" />
+	<!--<link rel="stylesheet" type="text/css" href="../assets/plugins/gauge/css/gauge.css">-->
+	<!--<link rel="stylesheet" href="../assets/plugins/check/css/blue.css" />-->
+	<script src="../assets/plugins/ie_more/repond.js" type="text/javascript" charset="utf-8"></script> 
+    <!--JS-->
+    <script type="text/javascript" src="../assets/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- gauge-->
+    <!--<script src="../assets/plugins/gauge/js/excanves.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../assets/plugins/gauge/js/jquery.AshAlom.gaugeMeter-2.0.0.min.js"></script>-->
+    <!--fullpage-->
+	<script src="../assets/plugins/fullpage/js/jquery.easings.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../assets/plugins/fullpage/js/jquery.slimscroll.js" ></script>
+	<script src="../assets/plugins/fullpage/js/jquery.fullPage.js"></script>
+	<!--check-->
+	<!--<script src="../assets/plugins/check/js/icheck.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../assets/plugins/check/js/check_aside.js" type="text/javascript" charset="utf-8"></script>-->
+	
+	<!--图表-->
+	<!--<script src="../assets/plugins/chart/js/jquery.animsition.min.js"></script>
+	<script src="../assets/plugins/chart/js/echarts.min.js"></script>
+	<script src="../assets/plugins/chart/js/macarons .js"></script>
+	<script src="../assets/plugins/chart/js/charts_analyze.js" type="text/javascript" charset="utf-8"></script>-->
+	<!--数字动画-->
+	<!--<script src="../assets/plugins/number/jquery.waypoints.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../assets/plugins/number/jquery.countup.min.js" type="text/javascript" charset="utf-8"></script>-->
+    <script type="text/javascript" src="../assets/js/sysadmin.js"></script>
+	</head>
+	<body>
+		<div id="fullpage">
+			<div class="sysadmin container-fiuld  section">
+		    	<!--头部-->
+		        <div class="header clearfix hidden-xs">
+		                <div class="row  clearfix">
+		                    <div class=" col-lg-5 col-md-6 col-sm-6 col-xs-6 pull-left logo_all clearfix   ">
+		                        <div class="logo  pull-left">
+		                            <img src="../assets/img/logo.png" alt="Alternate Text" align="absmiddle" />
+		                            <span class=" hidden-sm hidden-xs">建筑综合性能监督平台</span>
+		                        </div>
+		                        <div class="cloud clearfix  pull-left  hidden-xs">
+		                        	<ul class="clearfix">
+											<li><img src="../assets/img/cloud.png" alt="" /></li>
+											<li><a href="">多云</a>&nbsp;<span class="more_cloud">30</span>m</li>
+											<li><a href="">PM2.5</a>&nbsp;<span class="PM2.5">36</span>m</li>
+											<li class="border0"><a href="">湿度</a>&nbsp;<span class="">77</span>m</li>
+										</ul>
+		                        </div>
+		                    </div>
+		                    <div class=" col-lg-3 col-md-6 col-sm-6 col-xs-6  more  pull-right clearfix">
+									<ul class="pull-right clearfix">
+										<li ><img src="../assets/img/sir.png" alt="" /></li>
+										<li><img src="../assets/img/mes.png" alt="" /></li>
+										<li><img src="../assets/img/sys.png" alt="" /></li>
+										<li><img src="../assets/img/person.png" alt="" /></li>
+										<li class="padding0"><a href=""  class=" hidden-sm hidden-xs">欢迎您，超级管理员</a></li>
+									</ul>
+		                    </div>
+		                </div>
+		        </div>
+		        <!--导航-->
+			    <nav class="navbar navbar-default navbar-inverse"id="nav_all">
+				  <div class="container-fluid">
+				    <!-- Brand and toggle get grouped for better mobile display -->
+				    <div class="navbar-header clearfix">
+				      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="colorwhite glyphicon glyphicon-menu-down"></span>
+				      </button>
+				      <a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#"><span>用户管理</span></a>
+				    </div>
+				
+				    <!-- Collect the nav links, forms, and other content for toggling -->
+				    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul class="nav navbar-nav">
+				       		<li ><a href="user.html" class="nav_active">用户管理</a></li>
+					 		<li ><a href="role.html" >角色管理</a></li>
+					 		<li ><a href="log.html">日志管理</a></li>
+					 		<li ><a href="meter.html">计量表配置</a></li>
+					 		<li ><a href="coderuler.html">编码规则</a></li>
+				      </ul>
+				    </div><!-- /.navbar-collapse -->
+				  </div><!-- /.container-fluid -->
+				</nav>
+		 		<!--内容-->
+				<div class="con container-fiuld">
+					<div class="title"> 
+						<ul class="clearfix">
+							<li class="clearfix pull-left" >
+								<p class="pull-left numone">单位名称</p>
+								<p class="pull-left">
+									<select name=""size="1" class="unitsel">
+										<option value="">请选择</option>
+										<option value="单位A">单位A</option>
+										<option value="单位B">单位B</option>
+										<option value="单位C">单位C</option>
+										<option value="单位D">单位D</option>
+										<option value="单位E">单位E</option>
+									</select>
+								</p>
+							</li>
+							<li class="clearfix pull-left">
+								<p class="pull-left numone">所属部门</p>
+								<p class="pull-left">
+									<select name=""size="1" class="branchsel">
+										<option value="">请选择</option>
+										<option value="管理部">管理部</option>
+										<option value="技术部">技术部</option>
+										<option value="销售部">销售部</option>
+										<option value="管理部">管理部</option>
+										<option value="技术部">技术部</option>
+									</select>
+								</p>
+							</li>
+							<li class="clearfix pull-left">
+								<p class="pull-left numone">职位</p>
+								<p class="pull-left">
+									<select name=""size="1" class="postsel">
+										<option value="">请选择</option>
+										<option value="主管">主管</option>
+										<option value="职员">职员</option>
+									</select>
+								</p>
+							</li>
+							<li class="clearfix pull-left">
+								<p class="pull-left numone">状态</p>
+								<p class="pull-left">
+									<select name=""size="1" class="statesel">
+										<option value="">请选择</option>
+										<option value="待审批">待审批</option>
+										<option value="已驳回">已驳回</option>
+										<option value="已批准">已批准</option>
+									</select>
+								</p>
+							</li>
+							<li class="clearfix pull-left">
+								<input type="button" value="查询" class="btn btn-sm"/>
+							</li>
+							<li class="pull-left">
+								<div class=" clearfix print" >
+									<p class="print_img pull-left"><img src="../assets/img/educe.png" alt="" /></p>
+									<p class="print_pro pull-left">导出</p>
+								</div>
+							</li>
+							<li class="pull-left">
+								<div class=" clearfix print">
+									<p class="print_img pull-left"><img src="../assets/img/print.png" alt="" /></p>
+									<p class="print_pro pull-left">打印</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+                    <div class="table_father">
+                        <table id="tablelist">
+                            <tr class="tabletitle">
+                                <td>用户名</td>
+                                <td>单位名称</td>
+                                <td>所属部门</td>
+                                <td>职位</td>
+                                <td>角色</td>
+                                <td>手机号</td>
+                                <td>性别</td>
+                                <td>状态</td>
+                                <td>处理时间</td>
+                                <td>备注</td>
+                                <td>操作</td>
+                            </tr>
+                           
+                        </table>
+                    </div>
+                  </div>
+				<!--下一页-->
+				<div class="ye clearfix">
+                    <p class="before pull-left">上一页</p>
+                    <div class="ye_con pull-left"> <ul class="clearfix"></ul></div>
+                    <p class="next pull-right">下一页</p>
+				</div>
+			</div>
+	 	</div>
+	</body>
+</html>

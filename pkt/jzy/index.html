@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/normal.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/mui.min.js"></script>
+		<script src="plugins/jquery/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="plugins/jquery.cookie.js"  type="text/javascript" charset="utf-8"></script>
+		<script src="plugins/animateNumber/jquery.animateNumber.js"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/ecm.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body class="index mui-bg-blue">
+
+		<header class="mui-bar mui-bar-nav mui-bar-nav-bg">
+			<!--<a id="icon-menu" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>-->
+			<!--<a class="mui-action-back mui-icon mui-icon-home mui-pull-right mui-a-color "></a>-->
+			<h1 class="mui-title">天津医科大学总医院能源管理平台</h1>
+			<!--<p>更新时间：2017/08/07</p>-->
+
+		</header>
+
+		<!--主页面底部选项卡-->
+		<nav class="mui-bar mui-bar-tab">
+			<a id="defaultTab" class="mui-tab-item mui-active indexhref" >
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label"> 首页 </span>
+			</a>
+			<a class="mui-tab-item kindhref">
+				<span class="mui-icon mui-icon-list"></span>
+				<span class="mui-tab-label"> 分类 </span>
+			</a>
+		</nav>
+
+		<!-- 内容 -->
+		<div class="con  mui-content">
+			<ul>
+				<li class="bgcolorred">
+					<div class="clearfix">
+						<div class="pull-left   ">
+							<p class="fontsize12 colorwhite">第三住院楼-今日耗电量</p>
+							<!--<p class="fontsize12 colorwhite"></p>-->
+							<p class="fontsize14 colorwhite todayenergy"><span class="fontsize25 fontfamily counter"> </span>&nbsp;&nbsp;&nbsp;kwh</p>
+						</div>
+						<p class="pull-right liimg   text-center">
+							<img src="img/icon/electricity.png" />
+						</p>
+					</div>
+				</li>
+				<li class="bgcolorblue">
+					<div class="clearfix">
+						<div class="pull-left    ">
+							<p class="fontsize12 colorwhite">第三住院楼-今日耗水量</p>
+							<!--<p class="fontsize12 colorwhite"></p>-->
+							<p class="fontsize14 colorwhite todaywater"><span class="fontsize25 fontfamily counter"> </span>&nbsp;&nbsp;&nbsp;m³</p>
+						</div>
+						<p class="pull-right liimg   text-center">
+							<img src="img/icon/water.png" />
+						</p>
+					</div>
+				</li>
+				<li class="bgcolorgreen">
+					<div class="clearfix">
+						<div class="pull-left   ">
+							<p class="fontsize12 colorwhite">第三住院楼-今日耗冷量</p>
+							<!--<p class="fontsize12 colorwhite"></p>-->
+							<p class="fontsize14 colorwhite todaygas"><span class="fontsize25 fontfamily counter"> </span>&nbsp;&nbsp;&nbsp;kwh</p>
+						</div>
+						<p class="pull-right liimg   text-center">
+							<img src="img/icon/gas.png" />
+						</p>
+					</div>
+				</li>
+				<li class="bgcoloryellow">
+					<div class="clearfix">
+						<div class="pull-left  ">
+							<p class="fontsize12 colorwhite">第三住院楼-今日耗热量</p>
+							<!--<p class="fontsize12 colorwhite"></p>-->
+							<p class="fontsize14 colorwhite todayhot"><span class="fontsize25 fontfamily counter"> </span>&nbsp;&nbsp;&nbsp;kwh</p>
+						</div>
+						<p class="pull-right liimg   text-center">
+							<img src="img/icon/hot.png" />
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+
+</html>

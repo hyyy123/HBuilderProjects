@@ -1,0 +1,59 @@
+
+
+.GaugeMeter{
+		Position:					Relative;
+		Text-Align:				Center;
+		Overflow:				Hidden;
+		Cursor:					Default;
+		margin:        			 0 auto;
+	}
+
+	.GaugeMeter SPAN,
+	.GaugeMeter B{
+		Margin:					0 23%;
+		Width:						54%;
+		Position:					Absolute;
+		Text-Align:				Center;
+		Display:					Inline-Block;
+		/*Color:					RGBa(0,0,0,.8);*/
+		Font-Weight:			100;
+		Font-Family:			"Open Sans", Arial;
+		Overflow:				Hidden;
+		White-Space:			NoWrap;
+		Text-Overflow:		Ellipsis;
+	}
+	.GaugeMeter S,
+	.GaugeMeter U{
+		Text-Decoration:	None;
+		Font-Size:				.60em;
+		Font-Weight:			200;
+		Opacity:					.6;
+	}
+
+
+
+	@-moz-keyframes BluePrint{
+		0%						{Background-Position: 0 0;}
+		100%					{Background-Position: 1100% 100%;}
+	}
+	
+	@-webkit-keyframes BluePrint{
+		0%						{Background-Position: 0 0;}
+		100%					{Background-Position: 1100% 100%;}
+	}
+	
+	@keyframes BluePrint{
+		0%						{Background-Position: 0 0;}
+		100%					{Background-Position: -100% 100%;}
+	}
+/*新添*/
+	.GaugeMeter span{display: none;}
+	.GaugeMeter {position: relative;}
+	.small_width  .GaugeMeter  .GaugeMeter_num{position: absolute;  top: 47px; left: 35px;line-height: 20px;color: #F5F8F8;font-size: 12px;width: 104px;}
+	.small_width  .GaugeMeter  .GaugeMeter_num .timer{font-size: 45px; color: white;font-family: 'DIN Condensed'}
+	
+	.big_width  .GaugeMeter  .GaugeMeter_num{position: absolute; top: 67px; left:53px;line-height:33px;color: #F5F8F8;font-size: 16px;width: 150px;}
+	.big_width  .GaugeMeter  .GaugeMeter_num .timer{font-size: 65px; color: white;font-family: 'DIN Condensed'}
+/*@media only screen and (max-width: 435px) {
+	.big_width  .GaugeMeter { left: -22px;top: 20px;}
+	}*/

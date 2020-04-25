@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" />
+		<!--jquery-->
+		<script src="plugins/jquery/jquery-1.11.2.min.js"></script>
+		<!--bootstrap-->
+		<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+		<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+		<!--layer-->
+		<link rel="stylesheet" href="plugins/layer/theme/default/layer.css" />
+		<script src="plugins/layer/layer.js"></script>
+		<script src="plugins/layer/layerbox.js"></script>
+		<!--接口-->
+		<script src="js/lesson-apply/common.js"></script>
+		<script src="js/lesson-apply/post_api_rms.js"></script>
+		<script src="js/lesson-apply/post_term.js"></script>
+		<script src="js/lesson-apply/post-common.js"></script>
+		<script src="js/lesson-apply/lesson.js"></script>
+		<!--通用-->
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/normal.css" />
+		<script src="js/ajax.js"></script>
+		<script src="js/common.js"></script>
+		<!--自身-->
+		<script src="js/index.js"></script>
+	</head>
+
+	<body class="index classes">
+		<header class="mui-bar mui-bar-nav mui-bar-nav-bg">
+			<a id="icon-menu" class="colorfff   mui-pull-left">
+				<div class=" clearfix ">
+					<div class="  colorfff clearfix ">
+						<p class=" pull-left  colorfff headimg">
+							<img src="" alt="" />
+						</p>
+						<div class="text-left pull-right headinfo">
+							<p class="colorfff fontsize16"></p>
+							<p class="colorfff"></p>
+						</div>
+					</div>
+				</div>
+			</a>
+			<a class="mui-pull-right mui-a-color" onclick="editLogin()">
+				<p class="fontsize15 colorfff" style="line-height: 44px;"><i class="fa fa-power-off" style="margin-right: 5px;"></i>退出登录</p>
+			</a>
+			<h1 class="mui-title colorfff"></h1>
+		</header>
+		<div class="mui-content">
+			<!--<div class="header clearfix ">
+				<div class="real_data pull-right colorfff clearfix ">
+					<div class="text-right pull-left">
+						<p class="real_time_data"> </p>
+						<p class="real_time_week"> </p>
+					</div>
+					<p class="real_time_now pull-right fontCondensed"> </p>
+				</div>
+			</div>-->
+			<div class="important clearfix hide">
+				<i class="fa fa-volume-up pull-left colorfff fontsize17"></i>
+				<p class="pull-left impcon colorfff">
+					11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+				</p>
+				<span class="pull-right impbtn colorfff">立即处理</span>
+			</div>
+			<div class="con" style="margin-top: 40px;">
+				<div class="row">
+					<div class="col-xs-6 " id="classess">
+						<a href="real_time_list.html" class="pull-right">
+							<div class="item bgred">
+								<p class="item_header colorfff"><img src="img/class.png" alt="" /> 实时课表</p>
+								<ul class="item_con text-center">
+									<!--<li class="colorfff borderbtm">按此进入</li>-->
+									<li class="colorfff fontsize12">可按区域查询当前时刻所占用教室、空闲教室课表</li>
+								</ul>
+								<p class="item_footer text-center "><i class="mui-icon mui-icon-arrowthinright colorred"></i></p>
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-6 " id="teacher">
+						<a href="teacher_list.html" class="pull-left">
+							<div class="item bgblue">
+								<p class="item_header colorfff"><img src="img/teacher.png" alt="" />教师课表</p>
+								<ul class="item_con text-center">
+									<!--<li class="colorfff borderbtm">按此进入</li>-->
+									<li class="colorfff fontsize12">可查询当前学期内所有教师的教师课表</li>
+								</ul>
+								<p class="item_footer text-center "><i class="mui-icon mui-icon-arrowthinright colorblue"></i></p>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-6 " id="classroom">
+						<a href="classroom_list.html" class="pull-right">
+							<div class="item bgpurple">
+								<p class="item_header colorfff"><img src="img/classroom.png" alt="" />教室课表</p>
+								<ul class="item_con text-center">
+									<!--<li class="colorfff borderbtm">按此进入</li>-->
+									<li class="colorfff fontsize12">可查询当前学期内所有教师的教室课表</li>
+								</ul>
+								<p class="item_footer text-center "><i class="mui-icon mui-icon-arrowthinright colorpurple"></i></p>
+
+							</div>
+						</a>
+					</div>
+					<div class="col-xs-6 " id="real_time">
+						<a href="classes_list.html" class="pull-left">
+							<div class="item bggreen">
+								<p class="item_header colorfff"><img src="img/real_time.png" alt="" />班级课表</p>
+								<ul class="item_con text-center">
+									<!--<li class="colorfff borderbtm">按此进入</li>-->
+									<li class="colorfff fontsize12">可查询当前学期内所有班级的班级课表</li>
+								</ul>
+								<p class="item_footer text-center "><i class="mui-icon mui-icon-arrowthinright colorgreen"></i></p>
+
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="row margin0">
+					<div class="  col-xs-10 col-xs-offset-1 clearfix">
+						<div class="col-xs-3">
+							<a href="myself.html">
+								<div class="itemsmall">
+									<img src="img/index1.png" alt="" />
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-3 ">
+							<a href="my_lesson.html">
+								<div class="itemsmall">
+									<img src="img/index2.png" alt="" />
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-3 ">
+							<a href="student_list.html">
+								<div class="itemsmall">
+									<img src="img/index3.png" alt="" />
+								</div>
+							</a>
+						</div>
+						<div class="col-xs-3 ">
+							<a  href="todos.html">
+								<div class="itemsmall">
+									<img src="img/index4.png" alt="" />
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer text-center">
+					<img src="img/logo.png" alt="" />
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>

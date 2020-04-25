@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="../js/mui.min.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../plugins/picker/dist/css/mui.picker.min.css" />
+		<link rel="stylesheet" href="../css/normal.css" />
+		<link rel="stylesheet" href="../css/code/equip_connect.css" />
+		<link rel="stylesheet" href="../plugins/mobileSelect/css/mobileSelect.css" />
+		<link rel="stylesheet" href="../plugins/font-awesome-4.7.0/css/font-awesome.css" />
+		<script src="../plugins/jquery/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script> 
+		<script src="../plugins/mobileSelect/js/mobileSelect.js"  type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/jquery.cookie.js"  type="text/javascript" charset="utf-8"></script>
+		<script  src="../plugins/picker/dist/js/mui.picker.min.js"  type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/code/equip_connect.js" type="text/javascript" charset="utf-8"></script> 
+	</head>
+	<body class="mui-bg-gray equip" > 
+		<header class="mui-bar mui-bar-nav mui-bar-nav-bg"> 
+			<a id="icon-menu" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title" >设备</h1>  
+			<a class="mui-pull-right mui-a-color" href="../index/inspection.html" >
+				<div class="fontsize15 " style="line-height: 44px;color: #fff;padding-top: 2px;" >
+					<i class="fa fa-gears" style="font-size: 14px;"></i>
+					<span style="line-height: 15px;display: inline-block;width: 30px;font-size: 12px;position: relative;top: 5px;">巡检报修</span>
+				</div>
+			</a>
+		</header>  
+		<div class="mui-content"> 
+			<!-- 导航 -->
+			<div class="equip_nav  mui-bar-nav-bg">
+				<ul class="clearfix row">
+					<li class="col-xs-4  text-center borderrsolid ">
+						<a href="equip_info.html" >设备信息</a>
+					</li>
+					<li class="col-xs-4  text-center borderrsolid">
+						<a href="equip_log.html" >维保记录</a>
+					</li>
+					<li class="col-xs-4  text-center liactive">
+						<a href="equip_connect.html" >关联信息</a>
+					</li>
+				</ul>
+			</div>
+			<!--内容--> 
+			<div class="info-list">
+				<ul class="con" id="equip_list">
+					<li>
+						<div class="licon mui-bg-white " >  
+							<p class="text-blue-deep borderlsolidblue paddinglf15" ><b>空调机房运行设备</b></p>
+							<ul class="cool_equip" >
+								<li class="clearfix" >
+									<p class="pull-left" >板换机箱</p>
+									<p class="pull-left clearfix" >
+										<a class="col-xs-4" ><span class="bg-green" >1#</span></a>
+										<a class="col-xs-4" ><span class="bg-red" >2#</span></a>
+										<a class="col-xs-4" ><span class="bg-green" >3#</span></a> 
+									</p>
+								</li>
+								<li class="clearfix" >
+									<p class="pull-left" >循环水泵</p>
+									<p class="pull-left clearfix" >
+										<a class="col-xs-4" ><span class="bg-green" >1#</span></a>
+										<a class="col-xs-4" ><span class="bg-red" >2#</span></a>
+										<a class="col-xs-4" ><span class="bg-green" >3#</span></a> 
+									</p>
+								</li>
+							</ul>
+						</div> 
+					</li>  
+					<li class=" mui-bg-white" >
+						<div class="licon  clearfix" >  
+							<p class="text-blue-deep borderlsolidblue paddinglf15" ><b>空调机房运行数据</b></p>
+							<table>
+								<thead><tr class="btmd" ><td>运行数据</td> <td>1#</td> <td>2#</td> <td>3#</td> </tr></thead>
+								<tbody>
+								  <tr class="btmd" ><td class="colorblack" >一次进水压力</td><td>0.61Mpa</td><td>0.61Mpa</td><td>0.61Mpa</td></tr>
+								  <tr class="btmd" ><td class="colorblack" >一次回水压力</td><td>0.61Mpa</td><td>0.61Mpa</td><td>0.61Mpa</td></tr>
+								  <tr class="btmd" ><td class="colorblack" >二次进水压力</td><td>0.61Mpa</td><td>0.61Mpa</td><td>0.61Mpa</td></tr>
+								  <tr class="btmd" ><td class="colorblack" >二次回水压力</td><td>0.61Mpa</td><td>0.61Mpa</td><td>0.61Mpa</td></tr>
+								  <tr class="btmd" ><td class="colorblack" >一次进水温度</td><td>0.61℃</td><td>0.61℃</td><td>0.61℃</td></tr>
+								  <tr class="btmd" ><td class="colorblack" >一次回水温度</td><td>0.61℃</td><td>0.61℃</td><td>0.61℃</td></tr>
+								  <tr  ><td class="colorblack" >二次进水温度</td><td>0.61℃</td><td>0.61℃</td><td>0.61℃</td></tr>
+								</tbody> 
+							</table>
+						</div> 
+					</li>  
+					
+				</ul>
+			</div>
+		
+			
+		</div>
+	</body>
+</html>
+

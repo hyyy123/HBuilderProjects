@@ -1,0 +1,338 @@
+ /*内容*/
+ /*.index,
+.statistics_index,
+.seacher{background-color: #08263B;}*/
+ 
+ .con {
+ 	padding: 5px 20px;
+ }
+ 
+ .index .con {
+ 	padding: 5px 20px;
+ 	/*margin-top: 60px;*/
+ 	margin-top: 44px;
+ 	background: #08263B;
+ }
+ 
+ .index .con ul li {
+ 	margin-top: 25px;
+ 	padding: 10px 15px;
+ 	line-height: 29px;
+ }
+ 
+ .index .con ul li .liimg {
+ 	line-height: 60px;
+ }
+ 
+ .index .con ul li .liimg img {
+ 	height: 36px;
+ }
+ 
+ .main {
+ 	width: 100%;
+ 	overflow-x: auto;
+ 	height: 320px;
+ 	padding-top: 17px;
+ }
+ 
+ #main1 {
+ 	width: 100%;
+ 	height: 300px;
+ 	line-height: 300px;
+ 	text-align: center;
+ }
+ 
+ #main1 img {
+ 	width: 60px;
+ }
+ /*首页筛选页面*/
+ 
+ #findhtml {
+ 	color: #fff;
+ 	width: 100%;
+ 	height: 100%;
+ 	padding: 10px;
+ 	background: #08263B;
+ 	margin-top: 44px;
+ }
+ 
+ #findhtml .title {
+ 	line-height: 30px;
+ 	text-align: center;
+ 	background-color: rgba(255, 255, 255, 0.1);
+ }
+ 
+ #findhtml .title .fa {
+ 	padding-right: 3px;
+ }
+ 
+ #findhtml ul li {
+ 	background-color: rgba(123, 163, 190, .1);
+ 	margin: 5px 5px 5px;
+ 	width: 65px;
+ 	line-height: 24px;
+ 	padding: 8px 6px;
+ }
+ 
+ #findhtml .findtitle {
+ 	line-height: 40px;
+ }
+ 
+ #findhtml ul li p {
+ 	margin: auto;
+ }
+ 
+ #findhtml ul li img {
+ 	height: 20px;
+ }
+ /*导航*/
+ 
+ #wrapper ul li {
+ 	padding: 0px 10px;
+ 	line-height: 28px;
+ }
+ 
+ #wrapper ul li a {
+ 	padding: 2px;
+ 	border: 1px rgba(0, 0, 0, 0) solid;
+ 	color: #7BA3BE;
+ }
+ /*统计*/
+ 
+ .con .data ul li {
+ 	margin-top: 10px;
+ 	line-height: 20px;
+ 	padding: 0;
+ 	padding-right: 5px;
+ }
+ 
+ .con .data ul li div {
+ 	background-color: rgba(255, 255, 255, .05);
+ 	padding: 10px;
+ }
+ 
+ .con .detail ul li {
+ 	background-color: rgba(123, 163, 190, .1);
+ 	margin-top: 0px;
+ 	margin-right: 10px;
+ 	width: 70px;
+ 	line-height: 24px;
+ 	padding: 6px;
+ }
+ 
+ .con .detail ul li p {
+ 	margin: auto;
+ }
+ 
+ .con .detail ul li img {
+ 	height: 20px;
+ }
+ /*设备能耗*/
+ 
+ .facility {
+ 	background: #F2F2F2;
+ }
+ 
+ .facility .nav {
+ 	position: fixed;
+ 	width: 100%;
+ 	top: 44px;
+ 	background-color: #08263B;
+ 	height: 36px;
+ 	line-height: 36px;
+ 	z-index: 10;
+ }
+ 
+ .facility .nav li {
+ 	padding: 0;
+ 	width: 90px !important;
+ }
+ 
+ .facility .nav li a {
+ 	color: #fff;
+ }
+ 
+ .faimg {
+ 	background-color: #08263B;
+ 	height: 200px;
+ 	padding-top: 10px;
+ 	margin-top: 20px;
+ }
+ 
+ .faimg img {
+ 	height: 75%;
+ }
+ 
+ .facility .con {
+ 	position: relative;
+ 	top: -30px;
+ 	padding: 0px 10px;
+ }
+ 
+ .facility .main {
+ 	height: 275px;
+ 	position: absolute;
+ 	top: 30px;
+ 	left: 0;
+ 	z-index: 10;
+ 	background-color: rgba(0, 0, 0, 0.9);
+ }
+ 
+ .facility .main .remove {
+ 	position: absolute;
+ 	top: 5px;
+ 	width: 100%;
+ 	height: 17px;
+ 	color: #fff;
+ 	padding-right: 16px;
+ 	font-size: 16px;
+ }
+ 
+ .facility #main1 {
+ 	height: 250px;
+ }
+ 
+ .faitem {
+ 	line-height: 20px;
+ 	background: #fff;
+ 	margin-bottom: 10px;
+ 	padding: 6px 12px;
+ }
+ 
+ .faitemname {
+ 	font-size: 14px;
+ 	line-height: 25px;
+ }
+ 
+ .faitemname a {
+ 	font-size: 12px;
+ }
+ 
+ .faitem ul li p {
+ 	width: 50%;
+ }
+ 
+ .faitem ul li p:nth-child(2) {
+ 	color: #78ECD5;
+ }
+ /*报警*/
+ 
+ .warnindex {
+ 	height: 100%;
+ 	background: #F2F2F2;
+ }
+ 
+ .warnindex .nav {
+ 	background: rgba(255, 255, 255, 1);
+ 	position: fixed;
+ 	width: 100%;
+ 	top: 44px;
+ }
+ 
+ .warnindex .nav ul li {
+ 	line-height: 35px;
+ }
+ 
+ .warnindex .nav ul li a {
+ 	padding: 2px;
+ 	color: #ccc;
+ }
+ 
+ .warnindex .info-list {
+ 	margin-top: 50px;
+ }
+ 
+ #warn_list {
+ 	padding: 0px 12px;
+ 	padding-bottom: 12px;
+ }
+ 
+ .warnitem {
+ 	background-color: #fff;
+ 	margin-top: 15px;
+ 	padding: 5px 10px;
+ 	box-shadow: 0px 0px 10px #ccc;
+ }
+ 
+ .warnhead,
+ .warncon,
+ .warnfoot {
+ 	padding: 5px 0px;
+ }
+ 
+ .warncon {
+ 	line-height: 20px;
+ }
+ 
+ .warnimg {
+ 	width: 30px;
+ 	border-radius: 50%;
+ 	height: 30px;
+ 	margin-right: 10px;
+ 	border: 1px #000 solid;
+ 	overflow: hidden;
+ }
+ 
+ .warnimg img {
+ 	width: 100%;
+ }
+ 
+ .warnfoot i {
+ 	padding-left: 10px;
+ 	padding-left: 5px;
+ }
+ /*报警增加*/
+ 
+ #conmsg {
+ 	padding: 0px 12px;
+ }
+ 
+ .warnindex #status {
+ 	line-height: 35px;
+ 	position: static;
+ 	text-align: center;
+ 	color: #99DD50;
+ 	background: #fff;
+ }
+ 
+ .warnindex .conmsgp {
+ 	line-height: 25px;
+ 	background: #fff;
+ 	margin-top: 10px;
+ 	padding: 5px 10px;
+ }
+ 
+ .warnindex .conmsgp .msgname {
+ 	width: 65px;
+ 	display: inline-block;
+ 	font-weight: bold;
+ }
+ 
+ .warnindex .conmsgp i {
+ 	padding-left: 5px;
+ }
+ 
+ .warnindex textarea {
+ 	width: 100%;
+ 	display: block;
+ 	border: 0;
+ }
+ /*结构*/
+ 
+ .structure .nav {
+ 	position: fixed;
+ 	width: 100%;
+ 	top: 44px;
+ 	height: 30px;
+ 	background-color: #08263B;
+ 	z-index: 2;
+ 	line-height: 30px;
+ }
+ 
+ .structure .nav li a {
+ 	color: #fff;
+ }
+ 
+ .structure .jqrgchart-container {
+ 	margin-top: 30px;
+ }

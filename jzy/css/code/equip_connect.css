@@ -1,0 +1,71 @@
+.mui-bar{
+	-webkit-backface-visibility: visible;
+	backface-visibility: visible;
+}
+.equip_nav{
+	padding: 10px;
+}
+.equip_nav ul{
+	border: 1px #fff solid; 
+	border-radius: 4px;
+}
+.equip_nav ul li{
+	padding: 8px;
+}
+.liactive{
+	background-color: #fff; 
+}
+.liactive a{
+	color: #000 !important;
+}
+.info-list{
+	height: calc(100vh - 120px); 
+	overflow: auto; 
+}
+#equip_list { 
+	padding: 10px;
+	border-radius: 4px;
+}
+#equip_list li{ 
+	margin-bottom: 10px;
+	line-height: 20px; 
+} 
+#equip_list li .licon{
+	padding:  15px; 
+}  
+/*设备*/
+.cool_equip li{ 
+	margin-bottom: 0px !important;
+	padding-top: 20px;
+	padding-left: 20px;}
+.cool_equip  li p:nth-child(1){
+	width: 30%; 
+	/*line-height: 40px;*/
+	text-align: left;
+}
+.cool_equip  li p:nth-child(2){
+	/*line-height: 40px;*/
+	width: 70%;  
+} 
+.cool_equip  li p:nth-child(2) a span{
+	color: #fff;
+	padding: 2px 7px;
+}
+.cool_equip  li p:nth-child(2) .bgcolorgreen{
+	background: #7ED321;
+}
+.cool_equip  li p:nth-child(2) .bgcolorgray{
+	background: #FE1A00;
+}
+/*数据*/
+ #rundata tr:first-child{ 
+	font-weight: bolder;}
+#rundevice td ul{width: 200px;padding-top: 10px;}
+#rundevice td ul li { padding: 5px 10px;color: #fff; }
+#rundevice td ul li span { padding: 2px 5px; border-radius: 5px; }
+#rundevice  .bgcolorgreen{
+	background: #7ED321 !important;
+}
+#rundevice  .bgcolorgray{
+	background: #ACAEB0 !important;
+}

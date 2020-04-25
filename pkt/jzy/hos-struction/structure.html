@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+
+		<link href="../plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="../plugins/layer_mobile/need/layer.css" rel="stylesheet" />
+		<link href="../plugins/jorgchart/jquery.jorgchart.css" rel="stylesheet" />
+		<link href="../plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+
+		<link rel="stylesheet" href="../css/normal.css" />
+		<link rel="stylesheet" href="../css/index.css" />
+		<script src="../js/mui.min.js"></script>
+
+		<script src="../plugins/jquery/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/jquery.cookie.js"  type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+		<script src="../plugins/jorgchart/jquery.jorgchart.js"></script>
+		<script src="../plugins/layer_mobile/layer.js"></script>
+		<script src="../plugins/layer_mobile/layerbox.js"></script>
+
+		<script src="../plugins/animateNumber/jquery.animateNumber.js"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/ecm.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/structure.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			body {
+				background: rgba(0, 0, 0, 1);
+			}
+		</style>
+	</head>
+
+	<body class="mui-bg-blue structure ">
+		<header class="mui-bar mui-bar-nav mui-bar-nav-bg">
+			<a id="icon-menu" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<!--<a class="mui-action-back mui-icon mui-icon-home mui-pull-right mui-a-color "></a>-->
+			<h1 class="mui-title">能耗总览</h1>
+			<!--<p>更新时间：2017/08/07</p>-->
+		</header>
+		<div class="mui-content">
+			<!-- 导航 -->
+			<div class="nav">
+				<ul class="clearfix row">
+					<li class="col-xs-6  text-center navlihover">
+						<a href="#">电</a>
+					</li>
+					<li class="col-xs-6  text-center">
+						<a href="#">水、热、冷</a>
+					</li>
+				</ul>
+			</div>
+			<!--显示组织架构图-->
+			<div class="jqrgchart-container">
+				<div id="electric" class="bg-red">
+					<ul id="org-electric" style="display:none"></ul>
+					<div></div>
+				</div>
+				<div id="water" class="bg-yellow">
+					<ul id="org-water" style="display:none"></ul>
+				</div>
+				<div id="hot" class="bg-blue">
+					<ul id="org-hot" style="display:none"></ul>
+				</div>
+				<div id="cold" class="bg-green">
+					<ul id="org-cold" style="display:none"></ul>
+				</div>
+			</div>
+			<div class="jqrgchart-info clearfix" id="eleinfo"></div>
+		</div>
+	</body>
+
+</html>

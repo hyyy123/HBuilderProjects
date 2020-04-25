@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="HandheldFriendly" content="true" />
+		<meta name="MobileOptimized" content="320" />
+		<script type="text/javascript" src="js/mui.js"></script>
+		<script type="text/javascript" src="js/sweep.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript">
+			var all = parseUrl();
+			var token = all["token"];
+			var area_id = all["area_id"];
+			var ws = null,
+				wo = null;
+			var scan = null,
+				domready = false;
+			// H5 plus事件处理
+			function plusReady() {
+				if(ws || !window.plus || !domready) {
+					return;
+				}
+				// 获取窗口对象
+				ws = plus.webview.currentWebview();
+				wo = ws.opener();
+				//              alert(JSON.stringify(ws));
+				// 开始扫描
+				ws.addEventListener('show', function() {
+					scan = new plus.barcode.Barcode('bcid');
+					scan.onmarked = onmarked;
+					scan.start({
+						conserve: true,
+						filename: '_doc/barcode/'
+					});
+					//                  alert(JSON.stringify(scan));
+					//                  alert(scan.start)
+				}, false);
+				// 显示页面并关闭等待框
+				ws.show('pop-in');
+				wo.evalJS('closeWaiting()');
+			}
+			var flag = false;
+
+			function light() {
+				if(flag == false) {
+					scan.setFlash(true);
+					flag = true;
+					document.getElementById("turnTheLight").innerHTML = "关闭闪光灯";
+				} else {
+					scan.setFlash(false);
+					flag = false;
+					document.getElementById("turnTheLight").innerHTML = "打开闪光灯";
+				}
+			}
+			if(window.plus) {
+				plusReady();
+
+			} else {
+				document.addEventListener('plusready', plusReady, false);
+			}
+			// 监听DOMContentLoaded事件
+			document.addEventListener('DOMContentLoaded', function() {
+				domready = true;
+				plusReady();
+			}, false);
+			//改变手机back物理键盘
+			mui.back = function() {
+				back();
+			};
+			// 二维码扫描成功
+			function onmarked(type, result, file) {
+				switch(type) {
+					case plus.barcode.QR:
+						type = 'QR';
+						break;
+					case plus.barcode.EAN13:
+						type = 'EAN13';
+						break;
+					case plus.barcode.EAN8:
+						type = 'EAN8';
+						break;
+					default:
+						type = '其它' + type;
+						break;
+				}
+				//                  window.location.href="code/equip_info.html?token=" + token + "&area_id=" + area_id + "&code="+result;  //根据自己项目来定，跳页面传参
+				//                console.log(type);
+				//                console.log(result); 
+				//                console.log(file);
+
+				mui.ajax('http://www.cabr-emc.com/tools/Qrcode.ashx', {
+					data: {
+						action: 'get_by_code',
+						code: result,
+						token: token
+					},
+					dataType: 'json', //服务器返回json格式数据
+					type: 'get', //HTTP请求类型
+					success: function(data) {
+						//
+						var item = data.data;
+						//						alert(item)
+						var msg = data.msg;
+
+						overTime(data.msg);
+						if(msg > 0) {
+							scan.close(); //此处为关闭二维码界面，此方法必须存在，不关闭为导致下次进扫描页面，相机打不开
+							window.location.href = "code/equip_info.html?token=" + token + "&area_id=" + area_id + "&code=" + result; //根据自己项目来定，跳页面传参
+
+						} else {
+							plus.nativeUI.alert('无法识别此码,请核对后在重新扫码');
+							back();
+
+						}
+					}
+				})
+				//			               wo.evalJS("scaned('" + type + "','" + result + "','" + file + "');");
+				//                window.location.href="check-data_table.html";
+				//                back(); //返回上一级界面
+				//                result = result.split("?")[0]; //扫描的信息
+				//                console.log(result);
+				//              //result中是二维码中的信息，下面条件根据自身项目的条件改变
+				//              if(result.indexOf("&")!=-1){
+				//                  var a=result.split("&");
+				//                  var val1 = a[0].split("=")[1]; //标识
+				//                  var val2 = a[1].split("=")[1]; //表id
+				//                  console.log(result);
+				//                  console.log(val2)
+				//                  if(val1==1){
+				//                      scan.close();  //此处为关闭二维码界面，此方法必须存在，不关闭为导致下次进扫描页面，相机打不开
+				//                      window.location.href="erweima_code.html?erID="+val2;  //根据自己项目来定，跳页面传参
+				//                  }else if(val1==2){
+				//                      scan.close();
+				//                      window.location.href="erweima_company.html?erID="+val2;
+				//                  }else if(val1==3){
+				//                      scan.close();
+				//                      window.location.href="erweima_product.html?erID="+val2;
+				//                  }else if(val1==4){
+				//                      scan.close();
+				//                      window.location.href="erweima_other.html?erID="+val2;
+				//                  }else if(val1==5){
+				//                      scan.close();
+				//                      window.location.href="erweima_user.html?erID="+val2;
+				//                  }else {
+				//                      plus.nativeUI.alert('无法识别此码,请核对后在重新扫码');
+				//                      back();
+				//                  }
+				//              }else {
+				//                  plus.nativeUI.alert('无法识别此码,请核对后在重新扫码');
+				//                  back();
+				//              }
+				//              
+				//              //wo.evalJS("scaned('" + type + "','" + result + "','" + file + "');");
+				//              //window.location.href="check-data_table.html";
+				//              //back(); 返回上一级界面
+
+			}
+			// 从相册中选择二维码图片 
+			function scanPicture() {
+				plus.gallery.pick(function(path) {
+					plus.barcode.scan(path, onmarked, function(error) {
+						plus.nativeUI.alert('无法识别此图片');
+					});
+				}, function(err) {
+					console.log('Failed:' + err.message);
+				});
+			}
+		</script>
+		<link rel="stylesheet" href="css/sweep.css" type="text/css" charset="utf-8" />
+		<link rel="stylesheet" href="css/barcode_scan.css">
+	</head>
+
+	<body style="background-color: #000000;">
+		<div id="bcid">
+			<div style="height:40%"></div>
+			<p class="tip">...载入中...</p>
+		</div>
+		<footer>
+			<div class="fbt" onclick="back()">取　 消</div>
+			<div class="fbt" id="turnTheLight" onclick="light()">打开闪光灯</div>
+		</footer>
+	</body>
+
+</html>

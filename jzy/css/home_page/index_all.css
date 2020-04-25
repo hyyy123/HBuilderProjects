@@ -1,0 +1,23 @@
+#info_list {
+	padding: 20px; 
+}
+#info_list li{
+	margin-bottom: 20px;
+}
+#info_list .licon{
+width: 100%; 
+}
+#info_list .licon img{
+width: 100%;
+	
+}
+#info_list .litip{
+	padding: 0px 10px;
+	background:rgba(255,255,255,0.1) ;
+}
+#info_list .litip li{
+	padding: 10px 10px;
+	margin-bottom: 0px; 
+	border-bottom: 1px #fff dashed;
+	line-height: 25px;
+}

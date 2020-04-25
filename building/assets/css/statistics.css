@@ -1,0 +1,386 @@
+﻿/*公共*/
+.border0{border: 0;}
+.padding0{padding-left: 10px!important; }
+.borderight{border-right: 1px #394045 solid;}
+.borderightdotted{border-right: 1px #1D2026 dotted;}
+.colorwhite{color: white;}
+.fontsize12{font-size: 12px;font-family: "微软雅黑";}
+.fontsize14{font-size: 14px;font-family: "微软雅黑";}
+.fontsize15{font-size: 15px;font-family: "微软雅黑";}
+.none{display: none;}
+.btmd{border-bottom: 1px #DEDEDE dotted;}
+.ptop6{padding-top: 10px}
+.colorgreen{color: #00CE7D;}
+.colorred{color:#D0021B}
+
+.navbar-collapse.in {
+     overflow-y: hidden; 
+}
+/*字体*/
+@font-face {font-family:"DIN Condensed";src: url("../plugins/bootstrap/fonts/PT DIN Condensed Cyrillic.ttf");font-weight: normal;}
+
+body {font-family: "Microsoft YaHei";  font-size:14px; color:#333;}
+a:hover{text-decoration: none;}
+.all_data {background: url(../img/bg.png) repeat-y;background-size:cover;padding:  0px  0px 20px;}
+/*头部*/
+.all_data .header{background-color: rgba(0,0,0,0.2);padding:  15px 25px;}
+/*头部左边logo,天气*/
+.all_data .header .logo{margin-right:  0.5%; transition: all 2s ease 0s;}
+.all_data .header .logo  img{width:25px; transition: all 2s ease 0s; }
+.all_data .header .logo  span{margin-left: 10px;color: #BFC0C1;font-size: 18px;display: inline-block;}
+.all_data .header .cloud img{margin-top: -4px;padding: 0px 5px;}
+.all_data .header .cloud {padding:0px 10px;}
+.all_data .header .cloud ul li{border-right: 1px #000 solid;display: inline-block;float: left;padding: 0px 10px;font-size: 12px;color: #BFC0C1;line-height: 25px;}
+.all_data .header .cloud ul li a{color: #BFC0C1;transition: all 2s ease 0s;line-height: 20px;}
+/*头部右边小图标*/
+.all_data .header .more ul li{display: inline-block;float: left;padding-left: 35px;font-size: 12px;transition: all 2s ease 0s;}
+.all_data .header .more ul li a{color: #BFC0C1;transition: all 2s ease 0s;line-height: 20px;}
+.all_data .header .more ul li img{transition: all 1s ease 0s;cursor: pointer;width: 20px;}
+.all_data .header .more ul li img:hover {
+        animation: myfirst 1s;
+        -ms-animation:myfirst 1s; 
+        -moz-animation: myfirst 1s; /* Firefox */
+        -webkit-animation: myfirst 1s;  /* Safari 和 Chrome */
+        -o-animation: myfirst 1s; /* Opera */
+        }
+        @keyframes myfirst{
+          0% {transform:rotateZ(0deg)}
+          30% {transform:rotateZ(45deg)}
+          60% {transform:rotateZ(-45deg)}
+          100% {transform:rotateZ(0deg)}
+        }
+        
+  /*导航*/
+#nav_all .nav>li{color: #BFC0C1;height: 40px;transition: all 2s ease 0s;text-align: center;padding:0px 20px;}
+#nav_all .nav>li>a{padding:10px 0px ;color: #BFC0C1; transition: all 0.5s ease 0s;font-size: 16px;}
+#nav_all .nav>li>a:hover{color: white;border-bottom: 2px #BFC0C1 solid;}
+#nav_all.navbar-toggle {   border-color: #ddd;}
+#nav_all .navbar-brand { color: white;}
+#nav_all {background-color: rgba(0,0,0,0.2); padding-top:0px;border-color: rgba(0,0,0,0);}
+
+#nav_all.navbar-toggle {   border-color: #ddd;}
+#nav_all .navbar-brand { color: white;}
+#nav_all {background-color: rgba(0,0,0,0.2); padding-top:0px;border-color: rgba(0,0,0,0);}
+.nav_active{color: white !important;border-bottom: 2px #fff solid;font-weight: bolder;}
+/*内容*/
+.pandect_con{padding: 0px 20px;width: 100%;}
+.pandect_con #nav_all .nav{padding: 0px 3%;}
+ 
+/*能耗总览页*/
+/*能耗总览页-分类*/
+.pandect  ul li{width:33%;float: left;display: inline-block;padding: 10px;cursor: pointer;}  
+.pandect_kind{background-color: rgba(0,0,0,0.2);height: 290px;width: 100%;}
+.kind_smallred .title{width: 100%;height: 45px;background-color: #EB6867;}
+.kind_smallred:hover{border-bottom: 6px #EB6867 solid;transform: translateY(-10px) ;transition: all 0.5s ease 0s;}
+
+.kind_smallyellow .title{width: 100%;height: 45px;background-color: #F39D15;}
+.kind_smallyellow:hover{border-bottom: 6px #F39D15 solid;transform: translateY(-10px) ;transition: all 0.5s ease 0s;}
+  
+.kind_smallgreen .title{width: 100%;height: 45px;background-color: #45ADA7;}
+.kind_smallgreen:hover{border-bottom: 6px #45ADA7 solid;transform: translateY(-10px) ;transition: all 0.5s ease 0s;}
+  
+.kind_smallblue .title{width: 100%;height: 45px;background-color: #66B9D3;}
+.kind_smallblue:hover{border-bottom: 6px #66B9D3 solid;transform: translateY(-10px) ;transition: all 0.5s ease 0s;}
+  
+.kind_smallgray .title{width: 100%;height: 45px;background-color: #A5BACB;}
+.kind_smallgray:hover{border-bottom: 6px #A5BACB solid;transform: translateY(-10px) ;transition: all 0.5s ease 0s;}
+ 
+ 
+.kind_bigred .title{width: 10%;height: 290px;background-color: #EB6867;}
+.kind_bigred:hover{border-right: 6px #EB6867 solid;transform: translateX(-10px) ;transition: all 0.5s ease 0s;}
+
+.kind_bigyellow .title{width: 10%;height: 290px;background-color: #F39D15;}
+.kind_bigyellow:hover{border-right: 6px #F39D15 solid;transform: translateX(-10px) ;transition: all 0.5s ease 0s;}
+  
+.kind_biggreen .title{width: 10%;height: 290px;background-color: #45ADA7;}
+.kind_biggreen:hover{border-right: 6px #45ADA7 solid;transform: translateX(-10px) ;transition: all 0.5s ease 0s;}
+  
+.kind_bigblue .title{width: 10%;height: 290px;background-color: #66B9D3;}
+.kind_bigblue:hover{border-right: 6px #66B9D3 solid;transform: translateX(-10px) ;transition: all 0.5s ease 0s;}
+  
+.kind_biggray .title{width: 10%;height: 290px;background-color: #A5BACB;}
+.kind_biggray:hover{border-right: 6px #A5BACB solid;transform: translateX(-10px) ;transition: all 0.5s ease 0s;}
+  
+.small_width .title{line-height:45px ;color: white;padding: 0px 10px;}
+.small_width .title img{height: 20px;}
+.small_width  .main .charts{text-align: center;height: 200px;color: white;padding: 20px 0px;}
+.small_width  .main .charts .GaugeMeter{height: 170px;width: 170px;margin: 0 auto;}
+.small_width  .main .all {padding: 0px 8%;color: white;line-height: 19px;}
+.small_width  .main .all_num{font-size: 18px; font-family: 'DIN Condensed'}
+.big_width .title{padding: 50px 0px;color: white;font-size: 16px;line-height: 40px;text-align: center;}
+.big_width .title img{margin-bottom: 10px;} 
+.big_width  .main{width: 80%;}
+.big_width  .main .charts{text-align: center;height: 290px;color: white;padding: 10px; width:70%;color: white;padding: 20px 0px;}
+.big_width  .main .charts .GaugeMeter{height: 250px;width: 250px;margin: 0 auto;}
+.big_width  .main .all{color: white;width: 30%;height: 290px;padding: 50px 0px;text-align: center;}
+.big_width  .main .all_num{font-size: 18px; font-family: 'DIN Condensed'}
+.kind_biggray .title{padding:9px 0px;}
+.kind_biggray .main .all{padding:13px 0px;}
+  
+/*能耗总览页-数据展现*/
+.pandect_con .data{margin-right: -15px;margin-left: -15px;}
+.pandect_con .dataf,.pandect_con .datas{width: 100%;padding: 0px 10px;overflow: hidden;}
+.pandect_con .dataf_kind,.pandect_con .datas_kind{background-color: rgba(0,0,0,0.4);transition: all 0.5s ease 0s;width: 100%;}
+.pandect_con .dataf,.pandect_con .dataf_kind{min-height: 480px;}
+.pandect_con .dataf .title img ,.pandect_con .datas .title img{height: 16px;padding-right: 5px;}
+.pandect_con .dataf .title,.pandect_con .datas .title{/*height: 50px;*/width: 100%;background-color: rgba(0,0,0,0.1);padding: 10px 20px;color: #CCCDCE;line-height: 37px;}
+.pandect_con .dataf .title_kind{height: 40px;line-height: 37px;min-width: 200px;}
+.pandect_con .dataf .title select{background-color: rgba(0,0,0,0);margin-right: 10px;border: 1px #545658 solid;width:12%; padding: 3px 5px;padding-left: 1%; transition: all 2s ease 0s; min-width: 120px;color: #C6C7CB;}
+.pandect_con .dataf  .main{min-height: 370px;padding:0px 1%;}
+.pandect_con .dataf  .main #main1{width: 100%; min-height: 370px; margin: 0 auto ;}
+.pandect_con .dataf .main #main1  div:nth-child(2){background-color: white !important;}
+.pandect_con .dataf .footer{text-align: center;color: #BFC0C1;padding: 10px;}
+.pandect_con .dataf .footer ul{max-width:350px;;margin: 0 auto;}
+.pandect_con .dataf .footer ul li{display: inline-block; float: left;margin-left: 20px;padding: 5px;}
+.pandect_con .dataf .footer i{width: 10px;height: 10px;display: inline-block;margin-right: 5px;}
+.pandect_con .dataf .footer .i_red{background-color: #3ACA60;}
+.pandect_con .dataf .footer .i_ora{background-color: #1090E1;}
+.pandect_con .dataf .footer .i_blue{background-color: #CA513A;}
+.pandect_con .datas .main{line-height: 17px;font-size: 15px;}
+.pandect_con .datas .main .t{color: #808388;padding-bottom: 5px;}
+.pandect_con .datas .main .c{color: #FFFFFF;}
+.pandect_con .datas .main .c .timer{font-family: "DIN Condensed";font-size: 34px;padding-left: 2%;}
+.pandect_con .datas .danwei{padding-left:5px;font-size: 16px;color: #B8BCBF;}
+.pandect_con .datas .datas_font{height: 30px;line-height: 39px;padding-left: 3px;}
+.small_width{margin-bottom:0px;}
+
+/*分项能耗*/
+.pandect_con .dataf .dataf_point{width: 100px;height: 30px;line-height: 20px;border-radius: 2px;}
+.subentry_con .dataf  .main{min-height: 330px;padding:0px 1%;}
+.subentry_con .dataf  .main #main1{width: 100%; min-height: 330px; margin: 0 auto ;}
+.dataf_point_more{position: fixed;top: 0;right:-250px;height: 100%;width: 250px;z-index: 1;background-color: rgba(0,0,0,1);overflow-y: auto;transition: all 0.5s ease 0s;opacity: 0;}
+.builder-list .list_title{color: #E8E9EA;background-color: #2B3942;font-size:16px;height: 50px;padding-left: 15px ;line-height: 50px;padding-right: 15px;margin-top: 0px; margin-bottom: 30px;}
+.builder-list .list_title span{padding-right: 10px;}
+.pandect_con .sel .btn_search{min-width: 50px;height:30px;background-color: #6A6B6F;color: #C6C7CB;border: 0;}
+.builder-list .checklist {padding-bottom: 10px;padding-left: 15px;padding-right: 15px;}
+.builder-list .checklist li{color:#718495;padding-left: 10px; }
+.builder-list .checklist  label{padding-left: 10px;margin-bottom: 0px;}
+.builder-list .sub{width: 80%;height: 35px;background-color: #60C1F7;margin:15% 10%;margin-top: 50px;}
+.builder-list .back{cursor: pointer;}
+.border_bottom{border-bottom: 1px #394348 solid;}
+.con .region {width:6%;min-width:100px; height: 26px; line-height: 26px; border: 1px #545658 solid;color: #C6C7CB;border-radius: 20px;text-align: center;
+						cursor: pointer;margin: auto;transition: all 1s ease 0s;position: relative;top: 8px;}
+.con .region .glyphicon { line-height: 22px;padding-right: 7%;}
+.con .region:hover{background-color: #60C1F7;color: white ;}
+
+/*视图*/
+.pandect_con .dataview{color: #DCE0E9;padding: 0px 0px;margin: 0px 10px;height: 290px;}
+.pandect_con .dataview .table_list{color: #DCE0E9;height: 290px;border: 0;background-color: rgba(0,0,0,0.4);}
+.table_list>tbody>tr>td, 
+.table_list>tbody>tr>th,
+.table_list>tfoot>tr>td, 
+.table_list>tfoot>tr>th, 
+.table_list>thead>tr>td, 
+.table_list>thead>tr>th{border:0;border-bottom: 1px #313B44 solid;padding: 0;font-family: "DIN Condensed";  font-size: 17px;color: #B6BEC1;cursor: pointer;}
+.pandect_con .dataview td{text-align: center;line-height: 45px;}
+.pandect_con .dataview .namef{width: 25%;}
+.pandect_con .dataview .namef .all_num{font-size: 22px; font-family: 'DIN Condensed'}
+.pandect_con .dataview .name{margin-bottom: 0;border-right: 1px #313B44 solid;}
+.pandect_con .dataview .name li{float: left;display: inline-block;width: 50%;}
+.pandect_con .dataview .print{width: 100%;padding-bottom: 10px;}
+.pandect_con .dataview .print p{margin-bottom: 0;}
+.pandect_con .dataview .print  ul{max-width: 250px;width: 90%;text-align: center;margin: 0 auto;}
+.pandect_con .dataview .print  ul li{padding-left: 1%;padding-right: 1%;background:rgba(0,0,0,0.4);padding: 0px 10px;min-width: 100px;margin-right: 20px;height: 35px;overflow: hidden;margin-top: 10px;}
+.pandect_con .dataview .print  .print_img,.pandect_con .dataview .print  .print_pro{padding-left: 5px;padding-right: 5px;padding: 0px 10px;}
+ .dataview .print  .print_img{line-height: 35px;} 
+ .dataview .print  .print_img img{height: 15px;}
+ .dataview .print  .print_pro{line-height: 40px;font-size: 14px;}
+
+
+
+/*设备能耗*/
+.dataf_watch{width: 30%;}
+.facility_con .dataf  .main{min-height: 300px;padding:0px 1%;}
+.facility_con .dataf  .main #main1{width: 100%; min-height: 300px; margin: 0 auto ;}
+.con .facility_con .select_con{padding: 0px 10px;}
+.con .facility_con .select_kind{width: 100%;color: white;padding: 0px;min-height: 100px;background-color: rgba(0,0,0,0.4);margin-bottom: 20px;}
+.con .facility_con .select_kind .navbar { margin-bottom: 0px;}
+.con .facility_con .select_kind #fnav {width: 80%;}
+.con .facility_con .select_kind #fnav .navbar-brand{font-size: 14px;color: white;line-height: 20px;}
+.con .facility_con .select_kind #fnav .nav {max-width: 580px;width: 100%;margin: auto;}
+.con .facility_con .select_kind #fnav .nav>li{padding: 0px ;transition: all 0.5s ease 0s;text-align: center;font-size: 14px;line-height: 22px;}
+.con .facility_con .select_kind #fnav .nav>li>a {padding: 5px 2px;}
+.con .facility_con .select_kind #fnav .nav>li:hover{background-color: #60C1F7;border-radius: 50px;}
+.fnav_active{background-color: #60C1F7;border-radius: 50px;color: white !important;}
+.con .facility_con .select_kind .ptop6 .p1,.con .facility_con .select_kind .ptop6 .p2{clear: both;overflow: hidden;}
+.con .facility_con .select_kind .ptop6_more{line-height: 22px;color: #9d9d9d;cursor: pointer;}
+#fnav .fnav_active>a {color: white;}
+.facility_con .select_kind #fnav {border: 0;background-color: rgba(0,0,0,0);}
+.facility_con .select_kind .search{width: 20%;height: 100px;background-color: rgba(0,0,0,0);}
+.dataf_watch .pandect_kind{background-color: rgba(0,0,0,0.4);min-height: 380px; padding: 0px 10px;}
+.dataf_watch  .main .charts{text-align: center;height: 240px;color: white;padding: 14px 0px;}
+.dataf_watch  .main .charts .GaugeMeter{height: 170px;width: 170px;margin: 0 auto;}
+.facility_con .f_view{height: 270px;}
+.facility_con .f_view .table_list{height: 270px;}
+.facility_con .f_view td { line-height: 40px;}
+.facility_con .first70_father  .title{background-color: rgba(0,0,0,0);}
+.facility_con .dataf  .first70  .title{padding: 10px 37px;}
+.facility_con .dataf  .first70  .title_kind{padding-right: 10px;}
+.facility_con .dataf  .first70 .title img{height: 16px}
+.facility_con .dataf  .dataf_watch .dw_footer ul{padding: 10px 0px;border-top: 1px #394045 solid;}
+.facility_con .dataf  .dataf_watch .dw_footer ul li{display: inline-block;float: left;width:33.3%;text-align: center;height: 65px;color: #FFFFFF;font-size: 12px;}
+.facility_con .dataf  .dataf_watch .dw_footer .fontsize15{font-family:"DIN Condensed";font-size: 32px;margin: 0px 0px 0px;}
+.facility_con .dataf  .dataf_watch .GaugeMeter_num{top: 135px; left: 144px; line-height: 28px; color: #fff;font-size: 12px; width:100px;}
+.facility_con .dataf  .dataf_watch .GaugeMeter_num .timer {font-size: 65px; color: #E06950;font-family: 'DIN Condensed';}
+
+/*能耗对比*/
+.contrast_con .dataf .title .sel ul{margin-bottom: 0;padding-top: 4px;}
+.contrast_con .dataf .title .sel ul li{float: left;display: inline-block;width: 60px;height:26px;margin-left: 10px;margin-right:10px;font-size:14px;color:#CCCDCE;border-radius: 20px;text-align: center;cursor: pointer;line-height: 26px;}
+.contrast_con .dataf .title .sel ul li:hover{background-color: #01B8E5;color: #FFFFFF;}
+.contrast_con .dataf .title_kind {height: 40px; line-height: 33px; min-width: 125px;}
+.contrast_con .dataf .consel select{background-color: rgba(0,0,0,0);margin-right: 10px;border: 1px #545658 solid;width:10%; padding: 3px 5px;padding-left: 1%; transition: all 2s ease 0s; min-width: 100px;color: #C6C7CB;margin-top: 18px;}
+.sel_active{background-color: #01B8E5;color: #FFFFFF !important;}
+.contrast_con .dataf .footer .i_red{background-color: #5FC8E6;}
+.contrast_con .dataf .footer .i_ora{background-color: #62CD20;}
+.contrast_con .dataf .footer .i_blue{background-color: #FFC760;}
+.contrast_con  .cont_more{padding: 0px 15px;}
+.contrast_con  .cont_more p{margin: 0px;}
+.contrast_con  .cont_more ul li{margin-top: 10px;padding: 0px 10px; }
+.contrast_con  .cont_more .cont{background-color: rgba(0,0,0,0.4);min-height: 250px;width: 100%;overflow: hidden;}
+.contrast_con  .cont_more .cont .title{background-color: rgba(0,0,0,0.4);min-height: 50px;padding: 10px;line-height: 27px;color: #FFFFFF;}
+.contrast_con  .cont_more .cont .title img,.dataf .dataf_kind .title_kind img{height: 14px;vertical-align: middle;}
+.contrast_con  .cont_more .cont .title .datas_font{padding-left: 10px;line-height: 30px;}
+/*能耗对比-能耗占比*/
+.contrast_con  .cont_more .cont .main .ring {padding: 1% ;}
+.contrast_con  .cont_more .cont .main .ringgauge {width: 55%; height: 180px;}
+.contrast_con  .cont_more .cont .main .ringgauge  #pizza{height: 180px;}
+.contrast_con  .cont_more .cont .main .ringpro {width: 45%;color: #F5F6F6;}
+.contrast_con  .cont_more .cont .main .ringpro ul li{height: 43px;width: 100%;font-size: 12px;}
+.contrast_con  .cont_more .cont .main .ringpro ul li .i_color{width: 10px;height: 10px;margin-top: 3px;margin-right: 10px;}
+.contrast_con  .cont_more .cont .main .ringpro ul li .i_red{background-color: #CA513A;}
+.contrast_con  .cont_more .cont .main .ringpro ul li .i_ora{background-color: #1090E1;}
+.contrast_con  .cont_more .cont .main .ringpro ul li .i_blue{background-color: #3ACA60;}
+.contrast_con  .cont_more .cont .main .ringpro .timer{font-size: 22px;font-family: 'DIN Condensed';color: #FFFFFF;}
+/*能耗对比-能耗排名*/
+.contrast_con  .cont_more .cont .title  .topbot{min-width: 50px;}
+.contrast_con  .cont_more .cont .title .top img,.contrast_con  .cont_more .cont .title .bot img{height: 20px;padding-right: 10px;cursor: pointer;}
+.contrast_con  .cont_more .cont .main .ranking li{height: 50px;color: white;}
+.contrast_con  .cont_more .cont .main .ranking {padding: 1% 9%;}
+.contrast_con  .cont_more .cont .main .ranking .rpic{width: 20%;text-align: right;padding-right: 5%;height: 45px;}
+.contrast_con  .cont_more .cont .main .ranking .rpic img{height: 45px;}
+.contrast_con  .cont_more .cont .main .ranking .rmore{width: 80%;font-size: 12px;}
+.contrast_con  .cont_more .cont .main .ranking .rmore .timer{font-family: 'DIN Condensed';font-size: 18px;padding: 0px 5px;}
+.rmore_pro p{line-height: 25px;}
+
+
+/*能耗分析*/
+.analyze_con .dataf .dataf_kind .title_kind .dataf_font .titlesmall{color: #4D5157;font-size: 12px;padding-left: 10px;}
+.analyze_con .consel{color: #FFFFFF;padding-top: 10px ;}
+.analyze_con .consel p{margin-bottom: 0;}
+.analyze_con .consel .data_show{color: #E6E6E6;font-size: 14px;width: 75%;padding-left: 7%;}
+.analyze_con .consel .data_show .timer{font-size: 55px;color: #FFFFFF;font-family:"DIN Condensed";}
+.analyze_con .consel .data_show .data_showt{padding-left: 5px;}
+.analyze_con .consel .data_updown{width: 25%;padding-top: 25px;}
+.analyze_con .consel .data_updown img{height: 40px;}
+.analyze_con .dataf .dataf_kind .sel ul li{margin-right: 10px;border: 1px #545658 solid;width:10%;  min-width: 100px;color: #C6C7CB;}
+.analyze_con .sel .glyphicon{line-height: 22px;padding-right: 7%;}
+.analyze_con .builder-list .sub {margin: 0% 10%; margin-top: 20px;}
+.analyze_con .conkind{padding-left:1%;text-align: center;}
+.analyze_con .conkind ul{max-width: 250px;margin: 0 auto;margin-top: 15px;}
+.analyze_con .conkind ul li{display: inline-block;float: left;min-width: 50px;color: #9A9FA4;text-align: center;margin-top: 10px;padding:2px 14px;cursor: pointer;margin-left: 7%;border-radius: 50px;}
+.analyze_con .conkind ul li:hover{background-color: #60C1F7;color: white ;}
+/*tab标签页*/
+.analyze_con .dataf .dataf_kind .analyze_tab{padding-bottom: 20px;}
+.analyze_con .dataf .dataf_kind .analyze_tab ul li{float: left;display: inline-block;line-height: 50px;width:3%;overflow: hidden;line-height: 135px;cursor: pointer;}
+.analyze_con .dataf .dataf_kind .analyze_tab .analyze_tabcon{width:94%;color: white;margin: 0 auto; position: relative;height: 170px;}
+.analyze_con .dataf .dataf_kind .analyze_tab .tabcon {width: 334%;height: 170px;position: relative;transition: all 0.5s ease 0s;}
+.analyze_con .dataf .dataf_kind .analyze_tab .tabcon  ul li{width:5%;height: 170px;text-align: center;}
+.analyze_con .dataf .dataf_kind .analyze_tab .tabcon .tabcon_one{height: 170px;width: 95%;margin: auto;padding-top: 20px;}
+.analyze_con .dataf .dataf_kind .analyze_tab .tabcon .tabcon_one p{margin:0 0 0;}
+.analyze_con .dataf .dataf_kind .analyze_tab .tabcon .tabcon_one .tab_img{width: 100%;height: 100px;box-shadow: 0 1px 10px #000000;background: url(../img/analyze_list.png);background-size: cover;}
+.analyze_con .dataf .dataf_kind .analyze_tab .tabcon .tabcon_one .tab_img:hover{border: 3px #488CB9 solid;}
+.tab_img_active{border: 3px #488CB9 solid;}
+.analyze_con .dataf .dataf_kind .analyze_tab .tabcon .tabcon_one .tab_title{width: 100%;color: white;height: 40px;line-height: 40px;font-size: 16PX;}
+
+
+/*能耗对标and能耗预测*/
+.con .bench .dataf,.con .bench .dataf_kind{min-height: 430px;}
+.con .bench .dataf .main{min-height: 430px;}
+.con .bench .dataf #main1{min-height: 430px;}
+.con .bench .dataview{height: 150px;}
+.con .bench .dataview .table_list{height: 150px;}
+.con .bench .dataview .namef{width: 10%;}
+.con .bench .dataview .namef .name li{width: 100%;}
+.bench .dataf .footer ul{max-width:220px;;margin: 0 auto;}
+
+
+ /*媒体查询*/
+@media only screen and (min-width: 970px)  {
+       		/*头部*/
+        	.all_data .header .more{width: 380px;}
+        	.all_data .header .logo_all{min-width: 560px;overflow: hidden;}
+			.all_data .header .logo  img{margin-top: -3px;}
+			/*导航*/
+     		.con .pandect_con .select_kind #nav_all .nav>li{padding: 0px 30px;}
+ 			.con .pandect_con .select_kind #fnav .nav>li{padding: 0px;}
+			/*能耗总览页*/
+     		.pandect ul li{width:20%;}  
+			.pandect_con .first80{width: 80%;}
+			.pandect_con .first70{width: 70%;min-height: 380px;}
+			.pandect_con .first70_father{min-height:380px;margin-bottom: 20px;}
+			.pandect_con .dataf .first70  #main1{height: 320px;}
+			.pandect_con .dataf  .first70 .main{min-height: 295px;padding: 0px 1%;}
+			.pandect_con .first100{width: 100%;}
+			.pandect_con .datas{width: 20%;}
+			.pandect_con .datas,.pandect_con .datas_kind{height: 480px;}
+      }
+@media only screen and (min-width: 1200px)  {
+			.con .facility_con .select_kind #fnav .nav {max-width: 750px;width: 100%;margin: auto;}
+ 			.con .pandect_con .select_kind	#fnav .nav>li{padding: 0px 10px;}
+	
+}
+@media only screen and (min-width: 768px)  {
+			/*能耗总览页*/
+     		 .big_width{display: none;}
+			.pandect_con .datas .main{padding: 5% 9%;}
+			.pandect_con .datas .main .main_one{padding: 15px 0px;}
+			.dataf_point{float: right;}
+			.dataf .title_kind{float: left;}
+			.dataf .sel{float: left;}
+			.con .facility_con .select_kind .ptop6_more{float: right;}
+      }  
+@media only screen and (max-width: 768px)  {
+			/*导航*/
+     		#nav_all { padding-top: 20px;}
+     		 /*内容*/
+			/*能耗总览页*/
+     		.pandect ul li{width:100%;}  
+     		.small_width{display: none;}
+     		.dataf_watch{display: block;}
+			.pandect_con .dataf .footer ul li{min-width: 100px;}
+			.pandect_con .dataf .title select,.pandect_con .sel .btn_search{margin-top: 5px;}
+			.con .region {margin-left: 20px;top: 0px;}
+ 			.dataf_point_more{width: 100%;}
+			.dataf_point{margin-top: 5px;}
+			.analyze_con .dataf .dataf_kind .analyze_tab ul li{width:10%;}
+			.analyze_con .dataf .dataf_kind .analyze_tab .analyze_tabcon{width:80%;}
+     		.analyze_con .dataf .dataf_kind .analyze_tab .tabcon {width: 2000%;}
+		
+			.contrast_con  .cont_more .cont .main .ranking {min-width: 100px;}
+			.contrast_con  .cont_more .cont .main .ranking .rmore{min-width: 150px;}
+			.con .facility_con .select_kind .ptop6_more{width: 100px;display: block;margin: auto;text-align: center;}
+      }
+@media only screen and (max-width: 970px) {
+			/*导航*/
+			#nav_all .nav>li{padding:0px 15px;}
+		 	.pandect_con .datas, .pandect_con .datas_kind{width: 100%;padding-bottom: 5px;margin-top: 10px;}
+     		.dataf_watch{width: 100%;margin-top: 10px;margin-bottom: 10px;}
+			.pandect_con .first70{width: 100%;margin-top: 10px;margin-bottom: 10px;}
+			.pandect_con .datas .main{padding: 10px 0px;}
+			.pandect_con .datas .main .main_one{float: left;width: 25%;text-align: center;min-width: 140px;margin-top: 10px;}
+     	
+      }
+@media only screen and (min-width: 970px) and (max-width: 1370px) {
+       .small_width  .all span{width: 100%;text-align: center;}
+      }
+@media only screen and (max-width: 491px) {
+		.pandect_con .dataview .namef{width: 50%;}
+		.dataf_watch .pandect_kind { min-height: 420px;}
+      	.contrast_con  .cont_more .cont .main .ringgauge {width: 100%;}
+		.contrast_con  .cont_more .cont .main .ringpro {width: 100%;}
+      }
+@media only screen and (min-width: 491px) and (max-width: 970px) {
+      	.contrast_con  .cont_more .cont .main .ringgauge {width: 75%;}
+		.contrast_con  .cont_more .cont .main .ringpro {width: 25%;}
+
+      }

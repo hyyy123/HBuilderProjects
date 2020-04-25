@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="../js/mui.min.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../plugins/picker/dist/css/mui.picker.min.css" />
+		<link rel="stylesheet" href="../css/normal.css" />
+		<link rel="stylesheet" href="../css/code/equip_log.css" />
+		<link rel="stylesheet" href="../plugins/mobileSelect/css/mobileSelect.css" />
+		<link href="../plugins/dropload/dropload.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../plugins/font-awesome-4.7.0/css/font-awesome.css" />
+		<script src="../plugins/jquery/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/dropload/dropload.js"></script>
+		<script src="../plugins/mobileSelect/js/mobileSelect.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/picker/dist/js/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--图片放大-->
+		<link rel="stylesheet" href="../css/imagebig.css" />
+		<script src="../plugins/mui.zoom.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/mui.previewimage.js" type="text/javascript" charset="utf-8"></script>
+
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/code/equip_log.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body class="mui-bg-gray equip">
+		<header class="mui-bar mui-bar-nav mui-bar-nav-bg">
+			<a href="../index.html" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">设备</h1>
+		</header>
+		<div class="mui-content">
+			<!-- 导航 -->
+			<div class="equip_nav  mui-bar-nav-bg">
+				<ul class="clearfix row">
+					<li class="col-xs-4  text-center borderrsolid ">
+						<a href="equip_info.html">设备信息</a>
+					</li>
+					<li class="col-xs-4  text-center borderrsolid liactive">
+						<a href="equip_log.html">维保记录</a>
+					</li>
+					<li class="col-xs-4  text-center">
+						<a href="equip_connect.html">关联信息</a>
+					</li>
+				</ul>
+			</div>
+			<!--内容-->
+			<div class="info-list">
+				<!--搜索-->
+				<div class="info-seach clearfix mui-bg-white">
+					<div class="pull-left " id="infocon">
+						<ul class="clearfix row">
+							<li class="clearfix col-xs-4" id="infotype">
+								<span id="infotypetext">请选择</span>
+								<span id="info_id" class="hide">-1</span>
+								<span class="pull-right"><i class="fa fa-angle-down" ></i></span>
+							</li>
+							<li class="clearfix col-xs-8">
+								<p class="pull-left colorblack"><span id="begindata">2017-12</span> ~ <span id="enddata">2017-12</span></p>
+								<span class="pull-right"><i class="fa fa-angle-down" ></i></span>
+							</li>
+						</ul>
+					</div>
+					<div class="pull-right text-center " id="infoadd">
+						<a href="../home_page/maintenance_log.html?id=0">
+							<i class="fa fa-plus"></i><br />
+							<span class="text-blue">新增</span>
+						</a>
+					</div>
+				</div>
+				<!--内容-->
+				<div class="info-a-list">
+					<ul class="con" id="equip_list"> </ul>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

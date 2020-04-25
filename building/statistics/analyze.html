@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; " charset="utf-8"/> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge">   <!-- 在IE运行最新的渲染模式 -->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+      <!--CSS-->
+    <link rel="stylesheet" href="../assets/css/reset.css"  type="text/css" />
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/statistics.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="../assets/plugins/gauge/css/gauge.css">
+	<link rel="stylesheet" href="../assets/plugins/check/css/blue.css" />
+	<script src="../assets/plugins/ie_more/repond.js" type="text/javascript" charset="utf-8"></script> 
+    <!--JS-->
+    <script type="text/javascript" src="../assets/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- gauge-->
+    <script src="../assets/plugins/gauge/js/excanves.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../assets/plugins/gauge/js/jquery.AshAlom.gaugeMeter-2.0.0.min.js"></script>
+    <!--fullpage-->
+	<script src="../assets/plugins/fullpage/js/jquery.easings.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../assets/plugins/fullpage/js/jquery.slimscroll.js" ></script>
+	<script src="../assets/plugins/fullpage/js/jquery.fullPage.js"></script>
+	<!--check-->
+	<script src="../assets/plugins/check/js/icheck.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../assets/plugins/check/js/check_aside.js" type="text/javascript" charset="utf-8"></script>
+	
+	<!--图表-->
+	<script src="../assets/plugins/chart/js/jquery.animsition.min.js"></script>
+	<script src="../assets/plugins/chart/js/echarts.min.js"></script>
+	<script src="../assets/plugins/chart/js/macarons .js"></script>
+	<script src="../assets/plugins/chart/js/charts_analyze.js" type="text/javascript" charset="utf-8"></script>
+	<!--数字动画-->
+	<script src="../assets/plugins/number/jquery.waypoints.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../assets/plugins/number/jquery.countup.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="../assets/js/statistics.js"></script>
+</head>
+<body >
+	<div id="fullpage">
+		<div class="all_data container-fiuld  section">
+	    	<!--头部-->
+	        <div class="header clearfix hidden-xs">
+	                <div class="row  clearfix">
+	                    <div class=" col-lg-5 col-md-6 col-sm-6 col-xs-6 pull-left logo_all clearfix   ">
+	                        <div class="logo  pull-left">
+	                            <img src="../assets/img/logo.png" alt="Alternate Text" align="absmiddle" />
+	                            <span class=" hidden-sm hidden-xs">建筑综合性能监督平台</span>
+	                        </div>
+	                        <div class="cloud clearfix  pull-left  hidden-xs">
+	                        	<ul class="clearfix">
+										<li><img src="../assets/img/cloud.png" alt="" /></li>
+										<li><a href="">多云</a>&nbsp;<span class="more_cloud">30</span>m</li>
+										<li><a href="">PM2.5</a>&nbsp;<span class="PM2.5">36</span>m</li>
+										<li class="border0"><a href="">湿度</a>&nbsp;<span class="">77</span>m</li>
+									</ul>
+	                        </div>
+	                    </div>
+	                    <div class=" col-lg-3 col-md-6 col-sm-6 col-xs-6  more  pull-right clearfix">
+								<ul class="pull-right clearfix">
+									<li ><img src="../assets/img/sir.png" alt="" /></li>
+									<li><img src="../assets/img/mes.png" alt="" /></li>
+									<li><img src="../assets/img/sys.png" alt="" /></li>
+									<li><img src="../assets/img/person.png" alt="" /></li>
+									<li class="padding0"><a href=""  class=" hidden-sm hidden-xs">欢迎您，超级管理员</a></li>
+								</ul>
+	                    </div>
+	                </div>
+	        </div>
+	        <!--导航-->
+		    <nav class="navbar navbar-default navbar-inverse"id="nav_all">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header clearfix">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="colorwhite">更多</span>
+			      </button>
+			      <a class="navbar-brand hidden-lg hidden-md hidden-sm" href="#"><span>能耗分析</span></a>
+			    </div>
+			
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			       		<li ><a href="index.html">能耗总览</a></li>
+				 		<li ><a href="subentry.html" >分项能耗</a></li>
+				 		<li ><a href="facility.html">设备能耗</a></li>
+				 		<li ><a href="analyze.html"class="nav_active">能耗分析</a></li>
+				 		<li ><a href="contrast.html">能耗对比</a></li>
+				 		<li ><a href="forecast.html">能耗预测</a></li>
+				 		<li ><a href="benchmarking.html">能耗对标</a></li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+	 		<!--内容-->
+	 		<div class="con container-fiuld" >
+	 			<!--能耗分析-->
+		  		<div class="pandect_con container-fiuld contrast_con analyze_con">
+				 		<div class=" dataf first100">
+				 			<div class="dataf_kind">
+				 				<div class="title clearfix">
+				 					<div class="title_kind ">
+				 						<img src="../assets/img/electricity.png" alt="" class="data_img"/>
+				 						<span class="dataf_font">已选条件：</span>
+				 					</div>
+				 					<div class=" sel ">
+					 					<ul>
+					 						<li><span class="selyear">2017</span><span class="glyphicon glyphicon-arrow-right pull-right" ></span></li>
+					 						<li><span class="selfour">第一季度</span><span class="glyphicon glyphicon-arrow-right pull-right"></span></li>
+					 						<li><span class="selpo">区域1</span><span class="glyphicon glyphicon-arrow-right pull-right"></span></li>
+					 						<li><span class="selele">电</span><span class="glyphicon glyphicon-arrow-right pull-right"></span></li>
+					 					</ul>
+				 					</div>
+				 					<button class="dataf_point  colorwhite btn-primary">分项指标》</button>
+				 					<div class="dataf_point_more">
+				 						  <div class="builder-list clear">
+									        	<h5 class="list_title"><span class="glyphicon glyphicon-arrow-right back"></span>分线指标筛选</h5>
+									        	<!--1-->
+									          <ul class="checklist  selpo_more">
+									          	 <li class="border_bottom">
+									             选择区域
+									            </li>
+									            <li>
+									              <input  type="radio" id="add-1" class="check1" name="po" checked="checked">
+									              <label for="add-1">区域1</label>
+									            </li>
+									            <li>
+									              <input  type="radio" id="add-2" class="check1"  name="po">
+									              <label for="add-2">区域2</label>
+									            </li>
+									            <li>
+									              <input  type="radio" id="add-3" class="check1"  name="po">
+									              <label for="add-3">区域3</label>
+									            </li>
+									          </ul>
+									           <!--2-->
+									          <ul class="checklist  selele_more" >
+									          	 <li class="border_bottom">
+									             总项
+									            </li>
+									          	 <li >
+									              <input  type="radio" class="check1" id="ele" name="selall"  checked="checked">
+									              <label for="ele">电</label>
+									            </li>
+									          	 <li >
+									              <input  type="radio" class="check1" id="hot"  name="selall">
+									              <label for="hot">热</label>
+									            </li>
+									          	 <li >
+									              <input  type="radio" class="check1" id="water"  name="selall">
+									              <label for="water">水</label>
+									            </li>
+									          	 <li >
+									              <input  type="radio" class="check1" id="gas"  name="selall">
+									              <label for="gas">气</label>
+									            </li>
+									          	 <li >
+									              <input  type="radio" class="check1" id="diff"  name="selall">
+									              <label for="diff">特殊</label>
+									            </li>
+									          </ul>
+									           <!--3-->
+									          <ul class="checklist  x_more">
+									          	 <li class="border_bottom">
+									             方式
+									            </li>
+									          	 <li >
+									              <input  type="radio" class="check1" id="method_mouth" name="method" checked="checked">
+									              <label for="method_mouth">按月份</label>
+									            </li>
+									          	 <li >
+									              <input  type="radio" class="check1" id="method_four" name="method">
+									              <label for="method_four">按季度</label>
+									            </li>
+									          </ul>
+									          <!--4-->
+									          <ul class="checklist  selyear_more">
+									          	 <li class="border_bottom">
+									          	年份
+									            </li>
+									          	 <li >
+									              <input  type="radio" class="check1" id="year7"  name="year" checked="checked">
+									              <label for="year7">2017</label>
+									            </li>
+									          	 <li >
+									              <input  type="radio" class="check1" id="year6"  name="year">
+									              <label for="year6">2016</label>
+									            </li>
+									             <li >
+									              <input  type="radio" class="check1" id="year5"  name="year">
+									              <label for="year5">2015</label>
+									            </li>
+									          	 <li >
+									              <input  type="radio" class="check1" id="year4"  name="year">
+									              <label for="year4">2014</label>
+									            </li>
+									          </ul>
+									           <!--5-->
+									          <ul class="checklist  selfour_more">
+									          	 <li class="border_bottom">
+									              季度
+									            </li>
+									          	 <li >
+									              <input  type="radio" class="check1" id="fourone" name="four" checked="checked">
+									              <label for="fourone">第一季度</label>
+									            </li>
+									          	 <li >
+									              <input  type="radio" class="check1" id="fourtwo" name="four">
+									              <label for="fourtwo">第二季度</label>
+									            </li>
+									             <li >
+									              <input  type="radio" class="check1" id="fourthree" name="four">
+									              <label for="fourthree">第三季度</label>
+									            </li>
+									          	 <li >
+									              <input  type="radio" class="check1" id="fourfor" name="four">
+									              <label for="fourfor">第四季度</label>
+									            </li>
+									          </ul>
+									        <input class="btn-primary btn-md  sub"  type="submit" onclick="pointsel()"></input>
+				 						  </div>
+				 					</div>
+				 				</div>
+				 				<!--数据展示-->
+				 				<div class="consel row">
+				 					<ul>
+				 						<li class="col-md-3 col-sm-12 col-xs-12 clearfix borderightdotted">
+				 							<div class="pull-left data_show">
+				 								<p ><span class="timer counter" >1,324</span><span class="dswei">kw·h</span></p>
+				 								<p class="data_showt">本期耗电量</p>
+				 							</div>
+				 						</li>
+				 						<li class="col-md-3 col-sm-12 col-xs-12 clearfix borderightdotted">
+				 							<div class="pull-left data_show">
+				 								<p ><span class="timer counter" >1,324</span><span class="dswei">kw·h</span></p>
+				 								<p class="data_showt colorgreen">同比&nbsp;（+<span class="counter">1.35</span>%）</p>
+				 							</div>
+				 							<div class="pull-left data_updown"><img src="../assets/img/up.png" alt="" /></div>
+				 						</li>
+				 						<li class="col-md-3 col-sm-12 col-xs-12 clearfix borderightdotted">
+				 							<div class="pull-left data_show">
+				 								<p ><span class="timer counter" >1,324</span><span class="dswei">kw·h</span></p>
+				 								<p class="data_showt colorred">环比&nbsp;（-<span class="counter">1.35</span>%）</p>
+				 							</div>
+				 							<div class="pull-left data_updown"><img src="../assets/img/down.png" alt="" /></div>
+				 						</li>
+				 						<li class="col-md-3 col-sm-12 col-xs-12 clearfix borderightdotted">
+				 							<div class="pull-left data_show">
+				 								<p ><span class="timer counter" >1,324</span><span class="dswei">kw·h</span></p>
+				 								<p class="data_showt colorgreen">标比&nbsp;（+<span class="counter">1.35</span>%）</p>
+				 							</div>
+				 							<div class="pull-left data_updown"><img src="../assets/img/up.png" alt="" /></div>
+				 						</li>
+				 					</ul>
+								</div>
+				 				<!--同比环比标比-->
+				 				<div class="conkind">
+				 					<ul class="clearfix">
+				 						<li class="fnav_active">同比</li>
+				 						<li>环比</li>
+				 						<li>标比</li>
+				 					</ul>
+				 				</div>
+				 				<div class="main"  >
+									<div id="main1" ></div>
+				 				</div>
+						 		<!--tab-->
+				  				<div class="analyze_tab clearfix">
+				  					<ul>
+				  						<!--left-->
+				  						<li class="text-right tab_left"><img src="../assets/img/left.png" alt="" /></li>
+				  						<!--con-->
+				  						<li class="analyze_tabcon">
+				  							<div class="tabcon">
+				  								<ul>
+				  									<li>
+				  										<div class="tabcon_one">
+				  											<p class="tab_img tab_img_active"></p>
+				  											<p class="tab_title">照明用电</p>
+				  										</div>
+				  									</li>
+				  									<li>
+				  										<div class="tabcon_one">
+				  											<p class="tab_img"></p>
+				  											<p class="tab_title">照明用电-照明插座</p>
+				  										</div>
+				  									</li>
+				  									<li>
+				  										<div class="tabcon_one">
+				  											<p class="tab_img"></p>
+				  											<p class="tab_title">照明用电-走廊应急</p>
+				  										</div>
+				  									</li>
+				  									<li>
+				  										<div class="tabcon_one">
+				  											<p class="tab_img"></p>
+				  											<p class="tab_title">照明用电-室外景观</p>
+				  										</div>
+				  									</li>
+				  									<li>
+				  										<div class="tabcon_one">
+				  											<p class="tab_img"></p>
+				  											<p class="tab_title">空调用电</p>
+				  										</div>
+				  									</li>
+				  									<li>
+				  										<div class="tabcon_one">
+				  											<p class="tab_img"></p>
+				  											<p class="tab_title">空调用电-空调末端</p>
+				  										</div>
+				  									</li>
+				  									<li>
+				  										<div class="tabcon_one">
+				  											<p class="tab_img"></p>
+				  											<p class="tab_title">空调用电-市政供暖</p>
+				  										</div>
+				  									</li>
+				  									<li>
+				  										<div class="tabcon_one">
+				  											<p class="tab_img"></p>
+				  											<p class="tab_title">空调用电-冷水机组</p>
+				  										</div>
+				  									</li>
+				  									<li>
+				  										<div class="tabcon_one">
+				  											<p class="tab_img"></p>
+				  											<p class="tab_title">空调用电-辅助水泵</p>
+				  										</div>
+				  									</li>
+				  									<li>
+				  										<div class="tabcon_one">
+				  											<p class="tab_img "></p>
+				  											<p class="tab_title">动力用电</p>
+				  										</div>
+				  									</li>
+				  									<li>
+				  										<div class="tabcon_one">
+				  											<p class="tab_img"></p>
+				  											<p class="tab_title">动力用电-电梯</p>
+				  										</div>
+				  									</li>
+				  									<li>
+				  										<div class="tabcon_one">
+				  											<p class="tab_img"></p>
+				  											<p class="tab_title">动力用电-水泵</p>
+				  										</div>
+				  									</li>
+				  									<li>
+				  										<div class="tabcon_one">
+				  											<p class="tab_img"></p>
+				  											<p class="tab_title">动力用电-通风机</p>
+				  										</div>
+				  									</li>
+				  									<li>
+				  										<div class="tabcon_one">
+				  											<p class="tab_img "></p>
+				  											<p class="tab_title">特殊用电</p>
+				  										</div>
+				  									</li>
+				  									<li>
+				  										<div class="tabcon_one">
+				  											<p class="tab_img"></p>
+				  											<p class="tab_title">特殊用电-信息中心</p>
+				  										</div>
+				  									</li>
+				  									<li>
+				  										<div class="tabcon_one">
+				  											<p class="tab_img"></p>
+				  											<p class="tab_title">特殊用电-其他</p>
+				  										</div>
+				  									</li>
+				  								</ul>
+				  							</div>
+				  						</li>
+				  						<!--right-->
+				  						<li class="text-left tab_right"><img src="../assets/img/right.png" alt="" /></li>
+				  					</ul>
+				  				</div>
+				 			</div>
+				 		</div>
+		  		</div>
+		  	</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="../js/mui.min.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../plugins/picker/dist/css/mui.picker.min.css" />
+		<link rel="stylesheet" href="../css/normal.css" />
+		<link rel="stylesheet" href="../css/code/equip_log.css" />
+		<link rel="stylesheet" href="../plugins/mobileSelect/css/mobileSelect.css" />
+		<link rel="stylesheet" href="../plugins/font-awesome-4.7.0/css/font-awesome.css" />
+		<script src="../plugins/jquery/jquery-1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script> 
+		<script src="../plugins/mobileSelect/js/mobileSelect.js"  type="text/javascript" charset="utf-8"></script>
+		<script src="../plugins/jquery.cookie.js"  type="text/javascript" charset="utf-8"></script>
+		<script  src="../plugins/picker/dist/js/mui.picker.min.js"  type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/code/equip_log.js" type="text/javascript" charset="utf-8"></script> 
+	</head>
+	<body class="mui-bg-gray equip" > 
+		<header class="mui-bar mui-bar-nav mui-bar-nav-bg"> 
+			<a id="icon-menu" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title" >设备</h1>  
+			<a class="mui-pull-right mui-a-color" href="../index/inspection.html" >
+				<div class="fontsize15 " style="line-height: 44px;color: #fff;padding-top: 2px;" >
+					<i class="fa fa-gears" style="font-size: 14px;"></i>
+					<span style="line-height: 15px;display: inline-block;width: 30px;font-size: 12px;position: relative;top: 5px;">巡检报修</span>
+				</div>
+			</a>
+		</header>  
+		<div class="mui-content"> 
+			<!-- 导航 -->
+			<div class="equip_nav  mui-bar-nav-bg">
+				<ul class="clearfix row">
+					<li class="col-xs-4  text-center borderrsolid ">
+						<a href="equip_info.html" >设备信息</a>
+					</li>
+					<li class="col-xs-4  text-center borderrsolid liactive">
+						<a href="equip_log.html" >维保记录</a>
+					</li>
+					<li class="col-xs-4  text-center">
+						<a href="equip_connect.html" >关联信息</a>
+					</li>
+				</ul>
+			</div>
+			<!--内容--> 
+			<div class="info-list">
+				<!--搜索-->
+				<div  class="info-seach clearfix mui-bg-white">
+					<div class="pull-left " id="infocon"  > 
+						<ul class="clearfix row" >
+							<li class="clearfix col-xs-5" id="infotype" >
+								<span id="infotypetext" >维保记录</span>
+								<span id="info_id" class="hide" >1</span>
+								<span class="pull-right" ><i class="fa fa-angle-down" ></i></span>
+							</li> 
+							<li class="clearfix col-xs-7" >
+								<p class="pull-left colorblack" ><span id="begindata" >2017-12</span> ~ <span id="enddata" >2017-12</span></p> 
+								<span class="pull-right" ><i class="fa fa-angle-down" ></i></span>
+							</li>  
+						</ul> 
+					</div>
+					<div class="pull-right text-center " id="infoadd" >
+						<a href="../index/maintenance_log.html" >
+							<i class="fa fa-plus" ></i><br />
+							<span class="text-blue" >新增</span>
+						</a>
+					</div>
+				</div>
+				<!--内容--> 
+					<ul class="con" id="equip_list">
+						<li>
+							<div class="licon  clearfix mui-bg-white" >  
+								<p class="pull-left  text-blue-deep" ><b>检验合格</b></p>
+								<p class="pull-right " ><span class=" text-blue-deep"><b>2019/12/6</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-circle-up" ></i></p>
+							</div>
+							<div class="litip hide" >
+								<ul >
+									<li class="clearfix" > 
+										<p class="pull-left" ><img src="../img/code/question.png" alt="" />&nbsp;&nbsp;<b>设备状态</b></p>
+										<p class="pull-left colorblack" ><b class="colorblack" >设备无法启动</b></p>
+									</li>
+									<li class="clearfix" > 
+										<p class="pull-left" ><img src="../img/code/question.png" alt="" />&nbsp;&nbsp;<b>维修人员</b></p>
+										<p class="pull-left colorblack" ><b class="colorblack" >维修人员</b></p>
+									</li>
+									<li class="clearfix" > 
+										<p class="pull-left" ><img src="../img/code/question.png" alt="" />&nbsp;&nbsp;<b>更换设备</b></p>
+										<p class="pull-left colorblack" ><b class="colorblack" >否</b></p>
+									</li>
+									<li class="clearfix" > 
+										<p class="pull-left" ><img src="../img/code/question.png" alt="" />&nbsp;&nbsp;<b>负责单位</b></p>
+										<p class="pull-left colorblack" ><b class="colorblack" >负责单位</b></p>
+									</li>
+									<li class="clearfix" > 
+										<p class="pull-left" ><img src="../img/code/question.png" alt="" />&nbsp;&nbsp;<b>联系方式</b></p>
+										<p class="pull-left colorblack" ><b class="colorblack" >联系方式</b></p>
+									</li>
+									<li class="clearfix border0" > 
+										<p  ><img src="../img/code/question.png" alt="" />&nbsp;&nbsp;<b>现场图片</b></p>
+										<div class="colorblack clearfix" >
+											<div class="lipicture col-xs-4" >
+												<img src="../img/index/indexbg.png" alt="" />
+											</div>
+											<div class="lipicture col-xs-4" >
+												<img src="../img/index/indexbg.png" alt="" />
+											</div>
+											<div class="lipicture col-xs-4" >
+												<img src="../img/index/indexbg.png" alt="" />
+											</div>
+										</div>
+									</li>
+								</ul> 
+							</div>
+						</li>   
+						<li>
+							<div class="licon  clearfix mui-bg-white" >  
+								<p class="pull-left  text-blue-deep" ><b>检验合格</b></p>
+								<p class="pull-right " ><span class=" text-blue-deep"><b>2019/12/6</b></span>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-circle-up" ></i></p>
+							</div>
+							<div class="litip hide" >
+								<ul >
+									<li class="clearfix" > 
+										<p class="pull-left" ><img src="../img/code/question.png" alt="" />&nbsp;&nbsp;<b>设备状态</b></p>
+										<p class="pull-left colorblack" ><b class="colorblack" >设备无法启动</b></p>
+									</li>
+									<li class="clearfix" > 
+										<p class="pull-left" ><img src="../img/code/question.png" alt="" />&nbsp;&nbsp;<b>维修人员</b></p>
+										<p class="pull-left colorblack" ><b class="colorblack" >维修人员</b></p>
+									</li>
+									<li class="clearfix" > 
+										<p class="pull-left" ><img src="../img/code/question.png" alt="" />&nbsp;&nbsp;<b>更换设备</b></p>
+										<p class="pull-left colorblack" ><b class="colorblack" >否</b></p>
+									</li>
+									<li class="clearfix" > 
+										<p class="pull-left" ><img src="../img/code/question.png" alt="" />&nbsp;&nbsp;<b>负责单位</b></p>
+										<p class="pull-left colorblack" ><b class="colorblack" >负责单位</b></p>
+									</li>
+									<li class="clearfix" > 
+										<p class="pull-left" ><img src="../img/code/question.png" alt="" />&nbsp;&nbsp;<b>联系方式</b></p>
+										<p class="pull-left colorblack" ><b class="colorblack" >联系方式</b></p>
+									</li>
+									<li class="clearfix border0" > 
+										<p  ><img src="../img/code/question.png" alt="" />&nbsp;&nbsp;<b>现场图片</b></p>
+										<div class="colorblack clearfix" >
+											<div class="lipicture col-xs-4" >
+												<img src="../img/index/indexbg.png" alt="" />
+											</div>
+											<div class="lipicture col-xs-4" >
+												<img src="../img/index/indexbg.png" alt="" />
+											</div>
+											<div class="lipicture col-xs-4" >
+												<img src="../img/index/indexbg.png" alt="" />
+											</div>
+										</div>
+									</li>
+								</ul> 
+							</div>
+						</li>   
+					</ul>
+					 
+			</div>  
+		</div>
+	</body>
+</html>
+

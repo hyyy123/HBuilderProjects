@@ -1,0 +1,13 @@
+#info_list {
+	padding: 20px; 
+}
+#info_list li{
+	margin-bottom: 20px;
+}
+#info_list .licon{
+width: 100%; 
+}
+#info_list .licon img{
+width: 100%;
+	
+}
